@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="custom_ir_attachment_view_form_inherit" model="ir.ui.view">
+        <field name="name">custom.ir.attachment.view.form.inherit</field>
+        <field name="model">ir.attachment</field>
+        <field name="inherit_id" ref="base.view_attachment_form"/>
+        <field name="arch" type="xml">
+            <!-- Remove or hide the fields from the form view -->
+            <field name="res_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+
+            <field name="res_model" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+
+            <field name="res_field" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+
+            <field name="res_name" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+
+        </field>
+    </record>
+</odoo>

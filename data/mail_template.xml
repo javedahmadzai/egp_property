@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<odoo>
+     
+    <data noupdate="0">
+        <!--Email template -->
+        <record id="email_template_tenant_rent_payment" model="mail.template">
+            <field name="name">Rent Payment: Receiving</field>
+            <field name="model_id" ref="egp_property.model_real_estate"/>
+            <field name="email_from">${object.user_id.email_formatted | safe}</field>
+            <field name="email_to">{{ object.email_id }}</field>
+            <field name="subject">{{ object.company_id.name }} Invoice (Ref {{object.name or 'n/a' }})</field>
+            <field name="description">Sent to tenant with their rent payment in attachment</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear
+                        <t t-if="object.name">
+                            <t t-out="object.partner_id.name or ''">Javed Ahmadzai</t>
+                            (<t t-out="object.partner_id.parent_id.name or ''">Javed</t>),
+                        </t>
+                        <t t-else="">
+                            <t t-out="object.partner_id.name or ''">Brandon Freeman</t>,
+                        </t>
+                        <br/>
+                        <br/>
+                        Here is your
+                        <t t-if="object.name">
+                            invoice
+                            <span style="font-weight:bold;" t-out="object.name or ''">INV/2021/05/0005</span>
+                        </t>
+
+                        from <t t-out="object.company_id.name or ''">MCIT Kabul Afghanistan</t>.
+                        <t t-if="object.is_paid = True">
+                            This Payment of rent is already paid.
+                        </t>
+                        <t t-else="">
+                            Please remit payment at your earliest convenience.
+                            <t t-if="object.payment_date">
+                                <br/>
+                                <br/>
+                                Please use the following communication for your payment: <span style="font-weight:bold;"
+                                                                                               t-out="object.payment_date or ''">
+                                INV/2023/11/0005</span>.
+                            </t>
+                        </t>
+                        <br/>
+                        <br/>
+                        Do not hesitate to contact us if you have any questions.
+                        <t t-if="not is_html_empty(object.tenant_id.name)">
+                            <br/>
+                            <br/>
+                            <t t-out="object.tenant_id.name or ''">--<br/>PMS - MCIT
+                            </t>
+                        </t>
+                    </p>
+                </div>
+            </field>
+<!--            <field name="report_template" ref="account_invoices"/>-->
+<!--            <field name="report_name">Invoice_{{ (object.name or '').replace('/','_') }}{{ object.state == 'draft' and-->
+<!--                '_draft' or '' }}-->
+<!--            </field>-->
+<!--            <field name="lang">{{ object.partner_id.lang }}</field>-->
+<!--            <field name="auto_delete" eval="True"/>-->
+        </record>
+
+
+    </data>
+</odoo>

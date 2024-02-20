@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="action_report_property" model="ir.actions.report">
+        <field name="name">Property Details</field>
+        <field name="model">real.estate</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.report_property_offers</field>
+        <field name="report_file">egp_property.report_property_offers</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="egp_property.model_real_estate"/>
+    </record>
+
+
+<!-- property details   -->
+    <record id="action_report_property_details" model="ir.actions.report">
+        <field name="name">Property</field>
+        <field name="model">real.estate</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.report_property_details</field>
+        <field name="report_file">egp_property.report_property_details</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="egp_property.model_real_estate"/>
+    </record>
+
+
+    <record id="email_estate_view" model="mail.template">
+        <field name="name">Real Estate: Request For Confirmation</field>
+        <field name="model_id" ref="egp_property.model_real_estate" />
+        <field
+            name="subject"
+        >{{ object.name }} Confirmation Mail (Ref {{ object.sales_person.name or 'n/a' }})</field>
+
+      <field name="partner_to"/>
+<!--        <field name="description">Sent manually to Property Details</field>-->
+        <field name="body_html" type="html">
+            <div style="margin: 0px; padding: 0px;">
+                <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                    Dear
+                     <t t-out="object.sale_buyer.name or ''">Brandon Freeman</t>
+                    <br />
+                    <br />
+                    Here is in attachment a Reminder for Your Purchased Property
+                    <span style="font-weight:bold;" t-out="object.name or ''" />
+                    from <t t-out="object.sales_person.name or ''">YourCompany</t>.
+                    <br />
+                    <br />
+                    If you have any questions, please do not hesitate to contact us.
+                    <br />
+                    <br />
+                    Best regards,
+                    Mitchell Admin
+
+                </p>
+            </div>
+        </field>
+        <field name="report_template" ref="action_report_property" />
+        <field name="report_name">BO_{{ (object.name or '').replace('/','_') }}</field>
+        <field name="auto_delete" eval="True" />
+    </record>
+
+
+
+
+
+</odoo>

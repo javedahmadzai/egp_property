@@ -1,2 +1,2 @@
-# egp_property
-This repository is for MCIT EGP Property management system
+# new-property-management-system
+removing offer, contract, tenant payment agent pages from real.estate model

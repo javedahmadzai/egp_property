@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- building part tree  -->
+    <record id="view_building_part_tree" model="ir.ui.view">
+        <field name="name">building.part.tree</field>
+        <field name="model">building.part</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="property_id" string="Property Name"/>
+                <field name="parent_id" string="Parent Part" optional="hide"/>
+                <field name="name" string="Part Name"/>
+                <field name="part_type" string="Part Type" optional="hide"/>
+                <field name="details" string="Details"/>
+                <field name="complete_name" string="Complete Name"/>
+            </tree>
+        </field>
+    </record>
+
+     <!-- building part search  -->
+    <record id="view_building_part_search" model="ir.ui.view" >
+        <field name="name">building.part.search</field>
+        <field name="model">building.part</field>
+        <field name="arch" type="xml">
+            <search>
+                <!--   search panel   -->
+                <field name="property_id" string="Property Name"/>
+                <field name="parent_id" string="Parent Part" />
+                <field name="name" string="Part Name"/>
+                <field name="part_type" string="Part Type" optional="hide"/>
+                <field name="details" string="Details"/>
+                <field name="complete_name" string="Complete Name"/>
+
+                <!--  filter by part type -->
+                <filter name="filter_floor" string="Floors" domain="[('part_type', '=' ,'floor')]" groups="egp_property.group_admin,egp_property.group_manager"/>
+                <filter name="filter_room" string="Rooms" domain="[('part_type', '=' ,'room')]" groups="egp_property.group_admin,egp_property.group_manager"/>
+                <filter name="filter_toilet" string="Toilets" domain="[('part_type', '=' ,'toilet')]" groups="egp_property.group_admin,egp_property.group_manager"/>
+                <filter name="filter_hall" string="Hall" domain="[('part_type', '=' ,'hall')]" groups="egp_property.group_admin,egp_property.group_manager"/>
+                <filter name="filter_kitchen" string="Kitchen" domain="[('part_type', '=' ,'kitchen')]" groups="egp_property.group_admin,egp_property.group_manager"/>
+
+               <!--     group by building part    -->
+                <group expand="0" string="Group By">
+                    <filter name="group_by_property" string="Property" context="{'group_by':'property_id'}"/>
+                    <filter name="group_by_floor" string="Parent Part" context="{'group_by':'parent_id'}"/>
+
+                </group>
+
+            </search>
+        </field>
+    </record>
+
+    <!-- building part form  -->
+    <record id="view_building_part_form" model="ir.ui.view">
+        <field name="name">building.part.form</field>
+        <field name="model">building.part</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="property_id" string="Property Name"/>
+                        <field name="parent_id" string="Parent Part"/>
+                        <field name="name" string="Part Name"/>
+                        <field name="part_type" string="Part Type"/>
+                        <field name="details" string="Details"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <!-- building part action  -->
+    <record id="action_building_part" model="ir.actions.act_window">
+        <field name="name">Building Part</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">building.part</field>
+        <field name="view_mode">tree,form,search</field>
+        <field name="context">{'search_default_group_by_property':1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your new record here...
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="building_part_menu"
+              name="Building Part"
+              parent="menu_second"
+              action="action_building_part"
+              groups="egp_property.group_admin,egp_property.group_manager"
+              sequence="15"/>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="res_users_view_form" model="ir.ui.view">
+            <field name="name">res.users.view.form.inherit</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='preferences']" position="after">
+                    <page name="property_ids" string="Real Estate Property">
+                        <field name="property_ids" readonly="1">
+                            <tree decoration-warning="state == 'offer_received'"
+                                  decoration-info="state == 'offer_accepted'" decoration-danger="state == 'cancel'"
+                                  decoration-success="state == 'sold'">
+                                <field name="name" decoration-bf="1"/>
+<!--                                <field name="postcode" decoration-bf="1"/>-->
+                                <field name="bedrooms" decoration-bf="1"/>
+                                <field name="living_area" decoration-bf="1"/>
+                                <field name="expected_price" decoration-bf="1"/>
+                                <field name="selling_price" decoration-bf="1"/>
+                                <field name="state" decoration-bf="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+
+</odoo>

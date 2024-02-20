@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_product_details">
+        <style>
+            .report_border {
+            border: 1px solid black;
+            }
+            .none_border {
+            border: none;
+            border-top: none;
+            }
+            .report_border > thead > tr > th,
+            .report_border > tbody > tr > th,
+            .report_border > thead > tr > td,
+            .report_border > tbody > tr > td {
+            border: 1px solid black !important;
+            }
+        </style>
+
+        <t t-foreach="docs" t-as="product">
+            <t t-call="web.html_container">
+                <br t-call="web.external_layout">
+                    <div class="page">
+
+                        <!-- ... ( Logo and header information) ... -->
+                        <div class="row">
+                            <!-- add some additional information -->
+                            <div class="oe_structure col-4 text-center text-nowrap ">
+                                <!-- Printing MCIT Logo in a property report -->
+                                <img src="pms_real_estate/static/description/img/mcit_logo.png" height="130"
+                                     width="150"/>
+                            </div>
+
+                            <div class="oe_structure col-4 text-center text-nowrap ">
+                                <!-- Simple text printing -->
+                                <p>د افغانستان اسلامي امارت</p>
+                                <p>وزارت مخابرات و تکنالوجی معلوماتی</p>
+                                <p>رياست اداری</p>
+                                <p>مديرت عمومی املاک</p>
+                            </div>
+
+                            <div class="oe_structure col-4 text-center text-nowrap ">
+                                <!-- Printing Emirates Logo in a property report -->
+                                <img src="pms_real_estate/static/description/img/Emirate_logo.png" height="130"
+                                     width="150"/>
+                            </div>
+                        </div>
+
+                        <!-- Heading Part -->
+                        <div class="heading-part mt-5">
+                            <table class="table none_border table-responsive">
+                                <tr class="text-end" style="background-color:lightblue">
+                                    <td style="font-size:20px;">
+                                        <!-- Displaying Floor Name -->
+                                        <span t-field="product.floor_id.name"/>
+                                    </td>
+                                    <th style="width: 30%; font-size:18px;">اسم منزل</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Body Part -->
+
+                        <!-- Table 1 -->
+                        <div class="table-part">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="6" class="fw-bold">معلومات اطاق</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Table 1 body rows -->
+                                    <tr class="text-end">
+                                        <th>وظاحت اطاق</th>
+                                        <th>اسم اطاق</th>
+                                    </tr>
+
+                                    <tr class="text-end">
+                                        <!-- Displaying Room Details -->
+                                        <td>
+                                            <span t-field="product.details"/>
+                                        </td>
+                                        <!-- Displaying Room Name -->
+                                        <td>
+                                            <span t-field="product.name"/>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Table 2 -->
+                        <div class="table-part">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="6" class="fw-bold">معلومات جنس</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Table 2 body rows -->
+                                    <tr class="text-end">
+                                        <th>نام جنس</th>
+                                        <th>نوع جنس</th>
+                                        <th>تعداد</th>
+                                    </tr>
+
+                                    <!-- Move the loop outside the row -->
+                                    <t t-foreach="product.product_ids" t-as="pro">
+                                        <tr class="text-end">
+                                            <!-- Displaying Products info -->
+                                            <td>
+                                                <span t-field="pro.name"/>
+<!--                                                <p>,</p>-->
+                                            </td>
+                                            <td>
+                                                <span t-field="pro.product_type"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                         <td colspan="3">
+                                            <span t-esc="len(product.product_ids)"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <!-- ... (Signature and user information) ... -->
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <p class="text-center">امظاء</p>
+                            </div>
+                            <div class="col-6  mt-5" style="margin-left:30%;">
+                                <p>ترتيب کننده</p>
+                                <hr/>
+                                <span t-field="user.name"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </br>
+            </t>
+        </t>
+    </template>
+</odoo>
