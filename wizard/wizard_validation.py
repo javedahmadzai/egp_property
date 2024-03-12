@@ -100,15 +100,15 @@ class WizardValidationEstate(models.TransientModel):
             table_data.append(data_row)
 
         # Register an Arabic font
-        pdfmetrics.registerFont(TTFont('Arabic',
-                                       'E:\\OdooDevelopment\\odoo-16.0\\custom_addons\\egp_property\\static\\src\\fonts\\tt-cufonfonts\\TTReg.ttf'))
+        # pdfmetrics.registerFont(TTFont('Arabic',
+        #                                'E:\\OdooDevelopment\\odoo-16.0\\custom_addons\\egp_property\\static\\src\\fonts\\tt-cufonfonts\\TTReg.ttf'))
 
         # Create the table and set style with Arabic font
         table = Table(table_data)
         style = TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.grey),
                             ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
                             ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                            ('FONTNAME', (0, 0), (-1, 0), 'Arabic'),  # Use Arabic font
+                         #   ('FONTNAME', (0, 0), (-1, 0), 'Arabic'),  # Use Arabic font
                             ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
                             ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
                             ('GRID', (0, 0), (-1, -1), 1, colors.black)])

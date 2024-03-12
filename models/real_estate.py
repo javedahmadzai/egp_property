@@ -7,6 +7,7 @@ from datetime import timedelta
 from datetime import datetime
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
+import os
 
 
 class RealEstate(models.Model):
@@ -62,11 +63,6 @@ class RealEstate(models.Model):
         ('not_use', 'غير مازاد')
     ], required=True, default='not_use', string='Current Status')
 
-    # add columns for a rent section
-    tenant_ids = fields.One2many('tenant.payment', 'property_id', string="Tenants")
-    # add column for property monthly rent payment
-    monthly_rent = fields.Float(string="Monthly Rent", help="Monthly rent amount for the property")
-
     garage = fields.Boolean()
     garden = fields.Boolean()
     tag_ids = fields.Many2many('property.type.tag', tracking=True, ondelete='cascade')
@@ -89,54 +85,36 @@ class RealEstate(models.Model):
     ])
     # Define a Many2many field to store attachments/files for each Property
     property_attachments = fields.Many2many('ir.attachment', string='Attachments',
-                                            domain="[('res_model', '=', 'real.estate')]")
-
-    # property_attachments = fields.Many2many(
-    #     'ir.attachment',
-    #     string='ضميمه اسناد زمين',
-    #     domain="[('res_model', '=', 'real.estate')]",
-    #     file_mime="image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    #     file_size=1048576,  # 1 MB in bytes
-    # )
-
-    email_id = fields.Char(string="Email")
+                                            domain="[('res_model', '=', 'real.estate')]",
+                                            help="Upload property photos and documents.")
     sales_person = fields.Many2one('res.users', string="Salesman", default=lambda self: self.env.user, tracking=True,
                                    ondelete='cascade')
 
-    # sales_person_email = fields.Char(string="Seller_Email", related='sales_person.email', tracking=True)
     sale_buyer = fields.Many2one('res.partner', string="Buyer", tracking=True, ondelete='cascade')
     sale_buyer_email = fields.Char(string='Buyer Mail')
-    offer_ids = fields.One2many('estate.property.offer', 'property_id', ondelete='cascade', store=True)
     total_area = fields.Integer(string="Total Area(sqm)", compute='_compute_total_area', tracking=True, readonly=True,
                                 store=True)
     ''' contract info '''
-    contract_ids = fields.One2many('pms.offerghoshai', 'property_id', ondelete='cascade', store=True)
+    contract_ids = fields.One2many('pms.contract', 'property_id', ondelete='cascade', store=True)
     # convert total area into Gereb, Beswa, Beswasa
     gereb = fields.Float(string="Gereb", compute="_compute_area_values", store=True)
     beswa = fields.Float(string="Beswa", compute="_compute_area_values", store=True)
     beswasa = fields.Float(string="Beswasa", compute="_compute_area_values", store=True)
-    best_offer = fields.Float(compute='_compute_best_offer', string="Best Offered", readonly=True, deafult=0.0,
-                              store=True)
+    remaining_meters = fields.Integer(string="Meters", compute="_compute_area_values", store=True)
+
     ''' building part info '''
     building_part_id = fields.One2many('building.part', 'property_id', ondelete='cascade')
 
     progress = fields.Integer(string="progress", compute="_compute_progress", store=True)
-    price = fields.Float(related='offer_ids.price')  # For Demonstrate > Not Uses
     image = fields.Image(string="Upload Property Image")
 
-    '''Agents Details Fields'''
-    agent_id = fields.Many2one('agent.view', string="Agent", ondelte='cascade', tracking=True)
-    agent_mail = fields.Char(string="Agent mail Id", related="agent_id.agent_mail", tracking=True)
-    agent_address = fields.Char(string="Agent Address", related='agent_id.agent_address', tracking=True)
-    agent_phone = fields.Char(string="Agent Phone:", related='agent_id.agent_phone', tracking=True)
-    agent_pic = fields.Image(string="Agent Image", related='agent_id.agent_pic', tracking=True)
-    # password = fields.Char(string="Password")
-
     '''below field For smart button '''
-    count_offer = fields.Integer(compute="_compute_count_offer", store=True)
     count_tags = fields.Integer(compute="_compute_count_tags")
     property_types = fields.Integer(compute="_compute_count_property_types")
     total_properties = fields.Integer(string="Total Properties")
+
+    ''' add for payment section '''
+    tenant_ids = fields.One2many('tenant.payment', 'property_id', string="Tenants")
 
     @api.depends('living_area', 'garden_area')
     def _compute_total_area(self):
@@ -144,21 +122,6 @@ class RealEstate(models.Model):
         for rec in self:
             total = rec.living_area + rec.garden_area
         self.total_area = total
-
-    #  1st way for check maximum best offer give by Clients(Create Button Not Work When it apply)
-    # @api.depends('offer_ids.price')
-    # def _compute_best_offer(self):
-    #     for rec in self:
-    #         self.best_offer = max(rec.offer_ids.mapped('price'))
-
-    # 2nd way for check maximum best offer give by Clients
-    @api.depends('offer_ids.price')
-    def _compute_best_offer(self):
-        com = 0.0
-        for rec in self.offer_ids:
-            if rec.price > com:
-                com = rec.price
-        self.best_offer = com
 
     @api.onchange('garden')
     def _onchange_garden(self):
@@ -202,12 +165,6 @@ class RealEstate(models.Model):
                 self.state = 'offer_accepted'
         return True
 
-    # @api.constrains('postcode')
-    # def check_postcode(self):
-    #     for rec in self:
-    #         if len(rec.postcode) != 6:
-    #             raise ValidationError(_("INVALID POSTCODE ,\n Please Enter Correct Postcode"))
-
     @api.constrains('living_area')
     def check_living_area(self):
         for rec in self:
@@ -247,7 +204,6 @@ class RealEstate(models.Model):
             vals['state'] = 'offer_received'
         return super(RealEstate, self).create(vals)
 
-
     @api.depends('tag_ids')
     def _compute_count_tags(self):
         # local = 0
@@ -261,21 +217,6 @@ class RealEstate(models.Model):
         for rec in self:
             result = len(rec.property_type)
         self.property_types = result
-
-    @api.depends('offer_ids.partner_id')
-    def _compute_count_offer(self):
-        for rec in self:
-            rec.count_offer = self.env['estate.property.offer'].search_count([('property_id', '=', rec.id)])
-
-    def action_count_offer(self):
-        return {
-            'name': _('Total Offered'),
-            'view_mode': 'list',
-            'type': 'ir.actions.act_window',
-            'domain': [('property_id', '=', self.id)],
-            'res_model': 'estate.property.offer',
-            'target': 'current',
-        }
 
     def action_count_tags(self):
         return {
@@ -298,31 +239,53 @@ class RealEstate(models.Model):
             'target': 'current',
         }
 
-    # convert total area into automatic gereb, beswa, beswasa
+    # convert total area into automatic gereb, beswa, beswasa and meters
     @api.depends('living_area')
     def _compute_area_values(self):
         for record in self:
-            # Assuming 1 gereb = 2000 square meters
-            record.gereb = int(record.living_area / 2000.0)
-
-            # Assuming 1 gereb = 20 beswa
-            record.beswa = int(record.gereb * 20)
-
-            # Assuming 1 beswa = 20 beswasa
-            record.beswasa = int(record.beswa * 20)
+            record.gereb = int(record.living_area // 2000.0)
+            # Calculate the remaining area after gereb
+            remaining_area = record.living_area % 2000.0
+            record.beswa = int(remaining_area // 100)
+            remaining_area %= 100
+            record.beswasa = int(remaining_area // 5)
+            remaining_meters = remaining_area % 5
+            record.remaining_meters = remaining_meters
 
     def _default_date():
         today = fields.Date.today()
         default_date = today + timedelta(days=90)
         return default_date
 
-    # implement email validation regex
-    @api.onchange('email_id')
-    def validate_mail(self):
-        if self.email_id:
-            match = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', self.email_id)
-            if match is None:
-                raise ValidationError('Not a valid E-mail ID')
+    # check property attachments files
+    @api.constrains('property_attachments')
+    def _check_attachment_types(self):
+        allowed_extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'doc', 'docx', 'pdf', 'txt']
+        for attachment in self.property_attachments:
+            filename, extension = attachment.name.lower().rsplit('.', 1)
+            if extension not in allowed_extensions:
+                raise ValidationError(
+                    "Sorry, only pictures and documents files are allowed. Please upload only pictures (jpg, jpeg, "
+                    "png, gif, bmp) and documents (doc, docx, pdf, txt).")
+
+    @api.constrains('property_attachments')
+    def _check_attachment_types_and_size(self):
+        allowed_extensions = [
+            'jpg', 'jpeg', 'png', 'gif', 'bmp', 'doc', 'docx', 'pdf', 'txt']
+        max_file_size = 1048576  # 1 MB in bytes
+
+        for attachment in self.property_attachments:
+            filename, extension = os.path.splitext(attachment.name.lower())[1:]
+
+            if extension not in allowed_extensions:
+                raise ValidationError(
+                    "Sorry, only pictures and documents are allowed. Please upload only pictures (jpg, jpeg, png, gif, bmp) and documents (doc, docx, pdf, txt).")
+
+            if len(attachment.datas) > max_file_size:
+                raise ValidationError(
+                    "File size exceeds limit (1 MB). Please upload smaller files.")
+
+        return True
 
     # Check garden area
     @api.constrains('garden', 'garden_area')

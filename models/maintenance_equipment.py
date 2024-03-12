@@ -1,5 +1,4 @@
 from odoo import models, fields, api
-from odoo.odoo.exceptions import ValidationError
 
 
 class CustomMaintenanceEquipment(models.Model):
@@ -11,7 +10,6 @@ class CustomMaintenanceEquipment(models.Model):
             ('department', 'Department'),
             ('employee', 'Employee'),
             ('other', 'Other'),
-            # ... add other values as needed
         ],
     )
     property_id = fields.Many2one(
@@ -24,7 +22,6 @@ class CustomMaintenanceEquipment(models.Model):
 
     buildingPart_id = fields.Many2one('building.part', string='Building Part', compute='_compute_equipment_assign',
                                       store=True, readonly=False)
-    # complete_name = fields.Char(string="Complete Name", related='buildingPart_id.complete_name', store=True)
 
     product_category_type = fields.Selection([
         ('document', 'مکتوب'),

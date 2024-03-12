@@ -22,16 +22,17 @@
                 </sheet>
                 <footer>
 
-                    <button name="action_validate_property" type="object" class="fa fa-eye btn-warning" title="View all records"/>
+                    <button name="action_validate_property" type="object" class="fa fa-eye btn-warning"
+                            title="View all records"/>
                     <button name="action_download_data" type="object" class="fa fa-download btn-success"
                             help="Download The Filtered Record "/>
                     <button name="action_cancel" type="object" class="fa fa-times btn-danger"
                             help="Closed This Wizard PopUp" title="Close This Wizard PopUp"/>
 
-<!--                    <button name="action_validate_property" type="object" string="View Property" class="oe_highlight"/>-->
+                    <!--                    <button name="action_validate_property" type="object" string="View Property" class="oe_highlight"/>-->
 
-<!--                    <button name="action_download_data" string="Download Record" type="object" class="oe_highlight"/>-->
-<!--                    <button name="action_cancel" type="object" string="Close" class="btn btn-primary mr-1"/>-->
+                    <!--                    <button name="action_download_data" string="Download Record" type="object" class="oe_highlight"/>-->
+                    <!--                    <button name="action_cancel" type="object" string="Close" class="btn btn-primary mr-1"/>-->
 
                 </footer>
             </form>
@@ -46,7 +47,7 @@
         <field name="target">new</field>
     </record>
 
-     <menuitem
+    <menuitem
             id="wizard_main_id"
             name="Reporting"
             parent="menu_root"

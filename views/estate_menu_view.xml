@@ -14,12 +14,12 @@
               name="Configurations"
               parent="menu_root"
               groups="egp_property.group_admin,egp_property.group_manager"
-              sequence="20"/>
+              sequence="30"/>
 
     <menuitem id="agent_menu"
               name="Agents"
               parent="menu_root"
               groups="egp_property.group_admin,egp_property.group_manager"
-              sequence="15"/>
+              sequence="20"/>
 
 </odoo>

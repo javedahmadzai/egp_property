@@ -11,12 +11,17 @@ access_agent_language,agent.language,model_agent_language,egp_property.group_adm
 access_res_users,res.users,model_res_users,egp_property.group_admin,1,1,1,1
 access_tenant_payment,tenant.payment,model_tenant_payment,egp_property.group_admin,1,1,1,1
 
-access_offerghoshai,pms.offerghoshai,model_pms_offerghoshai,egp_property.group_admin,1,1,1,1
+access_pms_contract,pms.contract,model_pms_contract,egp_property.group_admin,1,1,1,1
+
+access_pms_contract_type,pms.contract.type,model_pms_contract_type,egp_property.group_admin,1,1,1,1
+
 access_pms_department,pms.department,model_pms_department,egp_property.group_admin,1,1,1,1
 
 access_building_part,building.part,model_building_part,egp_property.group_admin,1,1,1,1
 
 access_agent_team,agent.team,model_agent_team,egp_property.group_admin,1,1,1,1
+
+access_agent_category,epg.agent.category,model_epg_agent_category,egp_property.group_admin,1,1,1,1
 
 access_maintenance_equipment,maintenance.equipment,model_maintenance_equipment,egp_property.group_admin,1,1,1,1
 
@@ -33,11 +38,12 @@ access_base_res_users_manager,base.res.users.manager,base.model_res_users,egp_pr
 access_tenant_payment_manager,tenant.payment.manager,model_tenant_payment,egp_property.group_manager,1,1,1,0
 
 access_building_part_manager,building.part.manager,model_building_part,egp_property.group_manager,1,1,1,0
-access_offerghoshai_manager,pms.offerghoshai.manager,model_pms_offerghoshai,egp_property.group_manager,1,1,1,0
+access_pms_contract_manager,pms.contract.manager,model_pms_contract,egp_property.group_manager,1,1,1,0
 access_pms_department_manager,pms.department.manager,model_pms_department,egp_property.group_manager,1,1,1,0
 access_agent_team_manager,agent.team.manager,model_agent_team,egp_property.group_manager,1,1,1,0
 access_maintenance_equipment_manager,maintenance.equipment.manager,model_maintenance_equipment,egp_property.group_manager,1,1,1,0
 
+access_agent_category_manager,epg.agent.category.manager,model_epg_agent_category,egp_property.group_manager,1,1,1,0
 
 access_real_estate_public_user,real.estate.public.user,model_real_estate,egp_property.group_public_user,1,0,0,0
 access_estate_property_type_public_user,estate.property.type.public.user,model_estate_property_type,egp_property.group_public_user,1,0,0,0
@@ -47,6 +53,8 @@ access_property_type_tag_public_user,property.type.tag.public.user,model_propert
 access_res_partner,access_res_partner,base.model_res_partner,egp_property.group_public_user,1,1,1,0
 access_ir_report,access_ir_report,base.model_ir_actions_report,egp_property.group_public_user,0,0,0,0
 access_tenant_payment_public_user,tenant.payment.public.user,model_tenant_payment,egp_property.group_public_user,1,0,0,0
+
+access_agent_category_public_user,epg.agent.category.public.user,model_epg_agent_category,egp_property.group_public_user,1,0,0,0
 
 
 

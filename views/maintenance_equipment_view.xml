@@ -2,6 +2,18 @@
 <odoo>
 
     <!--    Kanban view for maintenance equipment-->
+    <record id="maintenance_request_view_kanban_inherit" model="ir.ui.view">
+        <field name="name">maintenance.request.view.kanban.inherit</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@t-if='!record.employee_id.raw_value']" position="replace">
+                <div t-if="record.buildingPart_id.value">
+                    <field name="buildingPart_id"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
 
     <!-- maintenance equipment tree   -->
     <record id="view_equipment_tree" model="ir.ui.view">
@@ -96,8 +108,7 @@
             </xpath>
             <xpath expr="//field[@name='effective_date']" position="replace">
             </xpath>
-            <!--            <xpath expr="//field[@name='warranty_date']" position="replace">-->
-            <!--            </xpath>-->
+
         </field>
     </record>
 

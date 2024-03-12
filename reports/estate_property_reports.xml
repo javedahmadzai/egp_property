@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-    <!-- Property Offer report action -->
-    <record id="action_report_property" model="ir.actions.report">
-        <field name="name">Property Details</field>
-        <field name="model">real.estate</field>
-        <field name="report_type">qweb-pdf</field>
-        <field name="report_name">egp_property.report_property_offers</field>
-        <field name="report_file">egp_property.report_property_offers</field>
-        <field name="binding_type">report</field>
-        <field name="binding_model_id" ref="egp_property.model_real_estate"/>
-    </record>
-
-
     <!-- property details report action    -->
     <record id="action_report_property_details" model="ir.actions.report">
         <field name="name">Property</field>
@@ -24,5 +12,15 @@
         <field name="binding_model_id" ref="egp_property.model_real_estate"/>
     </record>
 
+     <!-- Equipment report action -->
+    <record id="action_report_equipment" model="ir.actions.report">
+        <field name="name">Equipment report</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.equipment_report</field>
+        <field name="report_file">egp_property.equipment_report</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="egp_property.model_maintenance_equipment"/>
+    </record>
 
 </odoo>

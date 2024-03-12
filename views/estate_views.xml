@@ -40,7 +40,6 @@
                 <field name="living_area" class="text-center"/>
                 <field name="floors" class="text-center"/>
                 <field name="expected_price"/>
-                <field name="selling_price" decoration-bf="1"/>
                 <field name="date_availability" optional="hide"/>
                 <field name="state"/>
                 <field name="tag_ids" widget="many2many_tags" options="{'color_field':'color'}"/>
@@ -68,12 +67,6 @@
                 <field name="living_area"/>
                 <field name="name"/>
                 <field name="bedrooms"/>
-                <field name="offer_ids" string="Offer_Ids" filter_domain="[('offer_ids.status','ilike',self)]"/>
-
-                <!--                <filter name="filter_state" string="Cancelled " domain="[('state','=','cancel')]"/>-->
-                <!--                <filter name="filter_active" string="All Property"-->
-                <!--                        domain="['|', ('active', '=', True), ('active', '=', False)]"/>-->
-
                 <!-- Add arvhive filter -->
                 <separator/>
                 <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
@@ -124,10 +117,6 @@
                                     <li>
                                         <b>Expected Price:</b>
                                         <field name="expected_price"/>
-                                    </li>
-                                    <li>
-                                        <b>Selling Price:</b>
-                                        <field name="selling_price"/>
                                     </li>
                                     <li>
                                         <b>Location:</b>
@@ -194,12 +183,6 @@
                                    style="font-weight: bold;"/>
                         </button>
 
-                        <button class="oe_stat_button" type="object" name="action_count_offer" icon="fa-ticket"
-                                invisible="state == 'new'">
-                            <field name="count_offer" widget="statinfo" string="Offers" style="font-weight: bold;"/>
-                        </button>
-
-
                     </div>
 
                     <widget name="web_ribbon" title="New" bg_color="bg-danger"
@@ -242,13 +225,12 @@
                         </group>
                         <group>
                             <field name="expected_price" string="Expected Price"/>
-                            <field name="monthly_rent"/>
                             <field name="date_availability"/>
-                            <field name="selling_price"/>
-                            <field name="best_offer"/>
+<!--                            <field name="best_offer"/>-->
                             <field name="gereb"/>
                             <field name="beswa"/>
                             <field name="beswasa"/>
+                            <field name="remaining_meters"/>
                         </group>
                     </group>
 

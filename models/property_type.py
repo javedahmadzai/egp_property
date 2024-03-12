@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api, _
+from random import randint
+
+
+def _get_default_color(self):
+    return randint(1, 11)
 
 
 class EstatePropertyType(models.Model):
@@ -12,8 +17,7 @@ class EstatePropertyType(models.Model):
     sequence = fields.Integer(string="Sequence", default=1, help="Used to order stages. Lower is better.")
     property_ids = fields.One2many('real.estate', 'property_type_id', readonly=True, ondelete='cascade')
     active = fields.Boolean(string='Active', default=True)
-    color = fields.Integer(string="Color")
-    # offer_counts = fields.Integer(string="Offers")
+    color = fields.Integer(string="Color", default=_get_default_color)
     offer_counts = fields.Integer(compute="_compute_offer")
 
     @api.depends('property_ids.name')
@@ -39,7 +43,7 @@ class PropertyTypeTag(models.Model):
     _order = "tag_name"
     tag_name = fields.Char(string="Tags", required=True)
     active = fields.Boolean(string='Active', default=True)
-    color = fields.Integer(string="Color")
+    color = fields.Integer(string="Color", default=_get_default_color)
     _sql_constraints = [
         ('unique_tag_name', 'unique(tag_name)', 'WARNING..\n Tag Name Must Be Unique from Each Other.')
     ]

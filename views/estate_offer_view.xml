@@ -6,7 +6,8 @@
         <field name="model">estate.property.offer</field>
         <field name="arch" type="xml">
             <tree editable="top" decoration-success="status == 'accepted'" decoration-danger="status == 'refused'">
-                <field name="property_id" string="Property Name"/>
+                <field name="offer_number"/>
+                <field name="offer_property_id" options="{'no_create_edit':True,'no_create':True}"/>
                 <field name="price" string="Price" widget="monospace"/>
                 <field name='status' string="Status" optional="hide"/>
                 <field name="partner_id" string="Partner"/>

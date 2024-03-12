@@ -15,7 +15,7 @@
     'maintainer': 'Ministry of Communication and IT ',
     'support': 'Ministry of Communication and IT Afghanistan',
     'category': 'Real Estate/PMS MCIT',
-    'depends': ['mail', 'board','maintenance', 'account', 'hr'],
+    'depends': ['mail', 'board', 'maintenance', 'account', 'hr'],
     # data files always loaded at installation
     'data': [
         'security/security.xml',
@@ -28,8 +28,8 @@
         'views/view_property_type_tags.xml',
         'views/estate_offer_view.xml',
         'reports/estate_property_reports.xml',
-        'reports/estate_offer.xml',
         'reports/property_details.xml',
+        'reports/equipment_template.xml',
         # 'reports/mail_template.xml',
 
         'views/res_user_view.xml',
@@ -37,16 +37,15 @@
         'wizard/valuation_view.xml',
         'views/agent_view.xml',
         'views/agent_language.xml',
-        'views/custom_ir_attachment_form_view.xml',
-        'views/custom_ir_attachment_form_view_real_estate.xml',
         'views/tenant_payment_views.xml',
-        # 'views/config_parameter_settings.xml'
         # 'views/sales_dashboard.xml'
-        'views/pms_offer_ghoshai.xml',
+        'views/pms_contract.xml',
+        'views/pms_contract_type.xml',
         'views/view_department.xml',
         'views/maintenance_equipment_view.xml',
         'views/agent_team_views.xml',
         'views/building_part_view.xml',
+        'views/egp_agent_category.xml',
     ],
 
     # 'assets': {
@@ -59,7 +58,7 @@
     # },
 
     'currency': 'AF',
-    # data files containing optionally loaded demonstration data
+    # demo data files containing optionally loaded demonstration data
     'demo': [],
     'images': [],
     'installable': True,

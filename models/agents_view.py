@@ -4,17 +4,20 @@ from odoo import models, fields, api, _, SUPERUSER_ID
 import random
 import re
 from markupsafe import Markup
+from random import randint
+
+
+# get random color int for language
+def _get_default_color(self):
+    return randint(1, 11)
 
 
 class AgentView(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _name = 'agent.view'
-    _description = 'Agent Commission View'
+    _description = 'Agent View'
     _rec_name = "agent_name"
     reference = fields.Char(string='Agent ID', required=True, copy=False, readonly=True, default=lambda self: _('New'))
-
-    # property_name=fields.Many2one('real.estate',ondelete='cascade',tracking=True)
-    # property_id=fields.Many2one('estate.property.offer',ondelete='cascade',tracking=True)
 
     agent_property_id = fields.Many2one('estate.property.type', string="Property Involved:", tracking=True)
     agent_name = fields.Char(string="Agent", tracking=True)
@@ -22,7 +25,7 @@ class AgentView(models.Model):
     agent_mail = fields.Char(string="Agent mail Id", tracking=True)
     agent_address = fields.Char(string="Agent Address", tracking=True)
     agent_phone = fields.Char(string="Agent Phone:", tracking=True)
-    agent_pic = fields.Image(string="Agent Image", tracking=True)
+    agent_pic = fields.Binary(string="Agent Image")
     color = fields.Integer("Color Index", default=0)
     agent_exp = fields.Selection([
         ('fresher', 'FRESHER'),
@@ -46,9 +49,8 @@ class AgentView(models.Model):
     )
     department_id = fields.Many2one('pms.department', string="Agent Department")
 
-    # agents_ids = fields.One2many('real.estate', 'offer_agent_id', string='Agents')
     agent_id = fields.Many2one('agent.view', string="Agent", ondelte='cascade', tracking=True)
-    offer_agent_ghoshai_id = fields.Many2one('pms.offerghoshai', string="Offer Ghoshai Agent")
+    offer_agent_ghoshai_id = fields.Many2one('pms.contract', string="Offer Ghoshai Agent")
     employee_id = fields.Many2one('hr.employee', string="Employee")
     efficiency = fields.Integer(string="Language Efficiency", compute='_compute_efficiency')
     proficient_level = fields.Selection([
@@ -56,7 +58,6 @@ class AgentView(models.Model):
         ('beginner', 'Beginner'),
         ('professional', 'Professional'),
     ], string="Language Efficiency", required=True, Tracking=True, default='professional')
-    agent_offers_ids = fields.One2many('real.estate', 'agent_id', ondelete='cascade', tracking=True)
 
     # implements sql constraints to check agent mail ID
     _sql_constraints = [
@@ -90,6 +91,9 @@ class AgentView(models.Model):
             if match is None:
                 raise ValidationError('Not a valid Agent E-mail ID')
 
+    # get Agent Type
+    category_id = fields.Many2many('epg.agent.category', string='Tags')
+
     # get Employee info
     @api.onchange('employee_id')
     def _onchange_employee(self):
@@ -97,10 +101,18 @@ class AgentView(models.Model):
             self.agent_name = self.employee_id.name
             self.agent_mail = self.employee_id.work_email
             self.agent_phone = self.employee_id.work_phone
-            self.agent_position_title = self.employee_id.private_street
+            self.agent_address = self.employee_id.private_street
             # self.department_id = self.employee_id.department_id.id if self.employee_id.department_id else False
             self.agent_position_title = self.employee_id.job_id.name if self.employee_id.job_id else False
             self.agent_address = self.employee_id.private_street or ""
+            self.agent_pic = self.employee_id.image_1920
+
+    @api.constrains('agent_phone')
+    def check_agent_phone(self):
+        for rec in self:
+            if rec.agent_phone and len(str(rec.agent_phone)) > 14:
+                raise ValidationError(
+                    _("INVALID agent phone number ,\n The agent phone number cannot exceed 14 characters."))
 
 
 class AgentLangauge(models.Model):
@@ -109,4 +121,4 @@ class AgentLangauge(models.Model):
     _description = 'Agent Info'
     language = fields.Char(string="Language", required=True)
     active = fields.Boolean(string='Active', default=True)
-    color = fields.Integer(string="Color")
+    color = fields.Integer(string="Color", default=_get_default_color)

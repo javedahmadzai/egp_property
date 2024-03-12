@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_epg_agent_category_form" model="ir.ui.view">
+        <field name="name">epg.agent.category.form</field>
+        <field name="model">epg.agent.category</field>
+        <field name="arch" type="xml">
+            <form string="Agent Tags">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_egp_agent_category_list" model="ir.ui.view">
+        <field name="name">egp.agent.category.list</field>
+        <field name="model">epg.agent.category</field>
+        <field eval="8" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Agent Tags" editable="bottom">
+                <field name="name"/>
+                <field name="color" widget="color_picker"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="open_view_categ_form" model="ir.actions.act_window">
+        <field name="name">Agents Tags</field>
+        <field name="res_model">epg.agent.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Tags found ! Let's create one
+            </p>
+            <p>
+                Use tags to categorize your Employees or Agents.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="second_submenu_agent_category"
+              name="Agent Category"
+              parent="menu_second"
+              action="open_view_categ_form"
+              groups="egp_property.group_admin,egp_property.group_manager"
+              sequence="12"/>
+</odoo>

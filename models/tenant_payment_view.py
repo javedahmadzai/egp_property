@@ -11,10 +11,13 @@ class TenantPayment(models.Model):
     tenant_id = fields.Many2one('res.partner', string="Tenant", required=True)
     tenant_phone_number = fields.Char(string="Phone Number", size=20)
     email_id = fields.Char(string="Email")
-    property_id = fields.Many2one('real.estate', string="Property", required=True)
+    property_id = fields.Many2one('real.estate', string="Property")
+
+    contract_id = fields.Many2one('pms.contract', string="Contract")
+
     payment_date = fields.Date(string="Payment Date", default=fields.Date.today())
     amount = fields.Float(string="Amount")
-    monthly_rent = fields.Float(string="Monthly Rent", related="property_id.monthly_rent", store=True, readonly=True)
+    monthly_rent = fields.Float(string="Monthly Rent", related='contract_id.monthly_rent', store=True, readonly=True)
     is_paid = fields.Boolean(string="Is Paid", compute="_compute_is_paid", store=True, readonly=False)
     months = fields.Selection([
         ('january', 'January'),
@@ -31,7 +34,6 @@ class TenantPayment(models.Model):
         ('december', 'December'),
     ], string='Paid Months')
     total_rent_received = fields.Float(string="Total Rent Received", compute="_compute_total_rent_received", store=True)
-    # months_paid = fields.Integer(string="Months Paid", compute="_compute_months_paid", store=True)
     months_paid = fields.Integer(string="Months Paid", compute="_compute_months_paid", store=True)
     # showing the remaining amount in days
     remaining_amount = fields.Float(string="Remaining Amount", compute="_compute_remaining_amount", store=True)
@@ -44,7 +46,8 @@ class TenantPayment(models.Model):
 
     # Define a Many2many field to store attachments/files for each Tenant Payment
     tenant_attachments = fields.Many2many('ir.attachment', string='ضميمه اسناد',
-                                          domain="[('res_model', '=', 'tenant.payment')]")
+                                          domain="[('res_model', '=', 'tenant.payment')]",
+                                          help="Upload Tenant Payment photos and documents.")
 
     @api.depends('payment_date')
     def _compute_is_paid(self):
@@ -52,17 +55,6 @@ class TenantPayment(models.Model):
             payment_date = fields.Date.from_string(payment.payment_date)
             current_date = fields.Date.today()
             payment.is_paid = payment_date.month == current_date.month and payment_date.year == current_date.year
-
-    # checking which month rent is paid or which is not paid
-    # @api.onchange('is_paid')
-    # def onchange_is_paid(self):
-    #     if self.is_paid:
-    #         # If payment is made, set the current month as paid
-    #         current_month = fields.Date.today().strftime('%B').lower()
-    #         self.months = current_month
-    #     else:
-    #         # If payment is not made, clear the paid months
-    #         self.months = False
 
     # check if the amount is Zero (0)
     @api.constrains('amount')
@@ -110,3 +102,14 @@ class TenantPayment(models.Model):
     def _compute_is_paid(self):
         for payment in self:
             payment.is_paid = payment.amount > 0 and payment.total_rent_received >= payment.amount
+
+    # check Payments attachments files
+    @api.constrains('tenant_attachments')
+    def _check_attachment_types(self):
+        allowed_extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'doc', 'docx', 'pdf', 'txt']
+        for attachment in self.tenant_attachments:
+            filename, extension = attachment.name.lower().rsplit('.', 1)
+            if extension not in allowed_extensions:
+                raise ValidationError(
+                    "Sorry, only pictures and documents files are allowed. Please upload only pictures (jpg, jpeg, "
+                    "png, gif, bmp) and documents (doc, docx, pdf, txt).")

@@ -50,6 +50,6 @@
               parent="menu_second"
               action="action_property_type_tag"
               groups="egp_property.group_admin,egp_property.group_manager"
-              sequence="13"/>
+              sequence="11"/>
 
 </odoo>

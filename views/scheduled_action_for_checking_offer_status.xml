@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Define scheduled action for checking offer status -->
+        <record id="ir_cron_action_offer_status_check" model="ir.cron">
+            <field name="name">Check Offer Status</field>
+            <field name="model_id" ref="model_estate_property_offer"/>
+            <field name="state">code</field>
+            <field name="code">model.check_offer_status()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" widget="datetime" options="{'format': 'DD/MM/YYYY'}"/>
+        </record>
+
+    </data>
+</odoo>

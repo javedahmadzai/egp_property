@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Report Layout -->
+        <template id="equipment_report">
+            <style>
+                .text-center {
+                text-align: center;
+                }
+            </style>
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+
+
+                            <!-- ... ( Logo and header information) ... -->
+                            <div class="row mb-5">
+                                <!-- add some additional information -->
+                                <div class="oe_structure col-4 text-center text-nowrap ">
+                                    <!-- Printing MCIT Logo in a property report -->
+                                    <img src="pms_real_estate/static/description/img/mcit_logo.png" height="130"
+                                         width="150"/>
+                                </div>
+
+                                <div class="oe_structure col-4 text-center text-nowrap ">
+                                    <!-- Simple text printing -->
+                                    <p>Islamic Emirate of Afghanistan</p>
+                                    <p>Ministry of Communications and IT</p>
+                                    <p>Head of Administration</p>
+                                    <p>General Property Management</p>
+                                </div>
+
+                                <div class="oe_structure col-4 text-center text-nowrap ">
+                                    <!-- Printing Emirates Logo in a property report -->
+                                    <img src="pms_real_estate/static/description/img/Emirate_logo.png" height="100"
+                                         width="100"/>
+                                </div>
+                            </div>
+
+                            <!-- Body Section -->
+                            <div class="body">
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <t t-if="o.equipment_assign_to == 'property'">
+                                            <tr>
+                                                <th>Property Name</th>
+                                                <th>Product Location</th>
+                                                <th>Details</th>
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'employee'">
+                                            <tr>
+                                                <th>Employee Name</th>
+                                                <th>Details</th>
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'department'">
+                                            <tr>
+                                                <th>Department Name</th>
+                                                <th>Details</th>
+
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'other'">
+                                            <tr>
+                                                <th>Employee Name</th>
+                                                <th>Department Name</th>
+                                                <th>Details</th>
+
+                                            </tr>
+                                        </t>
+
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <t t-if="o.equipment_assign_to == 'property'">
+                                            <tr>
+
+                                                <td>
+                                                    <span t-field="o.property_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.buildingPart_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.note"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'employee'">
+                                            <tr>
+
+                                                <td>
+                                                    <span t-field="o.employee_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.note"/>
+                                                </td>
+
+
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'department'">
+                                            <tr>
+
+                                                <td>
+                                                    <span t-field="o.department_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.note"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'other'">
+                                            <tr>
+
+                                                <td>
+                                                    <span t-field="o.employee_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.department_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.note"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <t t-if="o.product_category_type == 'document'">
+                                            <tr>
+                                                <th>Document Type</th>
+                                                <th>Requester</th>
+                                                <th>Document Number</th>
+                                                <th>Date</th>
+
+                                            </tr>
+
+                                        </t>
+                                        <t t-if="o.product_category_type == 'inquiry'">
+                                            <tr>
+                                                <th>Document Type</th>
+                                                <th>Inquiry Number</th>
+                                                <th>Card Number</th>
+                                                <th>Date</th>
+                                                <th>Details</th>
+
+                                            </tr>
+
+                                        </t>
+                                        <t t-if="o.product_category_type == 'offer'">
+                                            <tr>
+                                                <th>Document Type</th>
+                                                <th>Number</th>
+                                                <th>Date</th>
+
+                                            </tr>
+
+                                        </t>
+
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <t t-if="o.product_category_type == 'document'">
+                                            <tr>
+                                                <td>Document</td>
+
+                                                <td>
+                                                    <span t-field="o.order_office"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.document_number"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.date"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.product_category_type == 'inquiry'">
+                                            <tr>
+                                                <td>Inquiry</td>
+                                                <td>
+                                                    <span t-field="o.inquiry_number"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.card_number"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.date"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.inquiry_details"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.product_category_type == 'offer'">
+                                            <tr>
+                                                <td>Offer</td>
+                                                <td>
+                                                    <span t-field="o.offer_number"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.offer_date"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+                                        <t t-if="o.equipment_assign_to == 'other'">
+                                            <tr>
+
+                                                <td>
+                                                    <span t-field="o.employee_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="o.department_id"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+
+                                    </tbody>
+                                </table>
+                                <!-- Your report data goes here -->
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Name</th>
+                                            <th>Book Year</th>
+                                            <th>Book Volume</th>
+                                            <th>Book Page</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <t t-foreach="docs" t-as="record">
+                                            <tr>
+                                                <td>
+                                                    <span t-field="record.book_name"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="record.book_year"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="record.book_vol"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="record.book_page"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+
+                                <!-- Your report data goes here -->
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Serial Number</th>
+                                            <th>Category</th>
+                                            <th>Mothamed</th>
+                                            <th>Quantity</th>
+                                            <th>Cost</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <t t-foreach="docs" t-as="line">
+                                            <tr>
+                                                <td class="text-center">
+                                                    <span t-field="line.name"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.serial_no"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.category_id"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.partner_id"/>
+                                                </td>
+
+                                                <td>
+                                                    <span t-field="line.quantity"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.cost"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="line.total_amount"/>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Footer Section -->
+                            <div class="footer">
+                                <p>Printed by:
+                                    <span t-esc="user.name"/>
+                                </p>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

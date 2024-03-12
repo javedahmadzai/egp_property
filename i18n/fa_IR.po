@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 06:49+0000\n"
-"PO-Revision-Date: 2024-02-17 06:49+0000\n"
+"POT-Creation-Date: 2024-03-02 04:32+0000\n"
+"PO-Revision-Date: 2024-03-02 04:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,30 +21,14 @@ msgid "+93"
 msgstr ""
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_agent_kanban
-msgid "<b>Email:</b>"
-msgstr "ايميل"
-
-#. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
 msgid "<b>Expected Price:</b>"
 msgstr "قيمت ملکيت"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_agent_kanban
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
 msgid "<b>Location:</b>"
 msgstr "موقيعت"
-
-#. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_agent_kanban
-msgid "<b>Phone No:</b>"
-msgstr "شماره تماس"
-
-#. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
-msgid "<b>Selling Price:</b>"
-msgstr ""
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
@@ -80,14 +64,30 @@ msgid ""
 msgstr ""
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_egp_offerGhoshai_kanban
-msgid "<span>Contract Start Date :</span>"
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
+msgid "<i class=\"fa fa-fw me-2 fa-envelope text-primary\" title=\"Email\"/>"
 msgstr ""
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_egp_offerGhoshai_kanban
-msgid "<span>Deed Number :</span>"
-msgstr "نمبر قباله"
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
+msgid "<i class=\"fa fa-fw me-2 fa-phone text-primary\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                            To\n"
+"                                        </span>"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                        From\n"
+"                                    </span>"
+msgstr ""
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.report_property_offers
@@ -96,6 +96,9 @@ msgid ""
 "                                No Property Offers yet !!\n"
 "                            </strong>"
 msgstr ""
+"<strong style=\"font-size:30px;color:red;font-family:Gilroy;margin-top:50px\">\n"
+"هنوز درخواست ملکیت وجود ندارد!!\n"
+"</strong>"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.report_property_offers
@@ -119,8 +122,8 @@ msgstr "شماره اکونت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_needaction
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_needaction
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_needaction
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_needaction
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_needaction
 msgid "Action Needed"
 msgstr "اقدام مورد نیاز"
@@ -129,6 +132,7 @@ msgstr "اقدام مورد نیاز"
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__active
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__active
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__active
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__active
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__active
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__active
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__active
@@ -138,32 +142,32 @@ msgstr "فعال"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_ids
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_ids
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_ids
 msgid "Activities"
 msgstr "فعالیت ها"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_exception_decoration
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_exception_decoration
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_exception_decoration
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_exception_decoration
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_exception_decoration
 msgid "Activity Exception Decoration"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_state
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_state
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_state
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_state
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_state
 msgid "Activity State"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_type_icon
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_type_icon
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_type_icon
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_type_icon
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_type_icon
 msgid "Activity Type Icon"
 msgstr ""
@@ -185,11 +189,6 @@ msgstr "هيت"
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__agent_address
 msgid "Agent Address"
 msgstr "ادرس هيت"
-
-#. module: egp_property
-#: model:ir.model,name:egp_property.model_agent_view
-msgid "Agent Commission View"
-msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__department_id
@@ -255,9 +254,10 @@ msgid "Agent Residential"
 msgstr "هيت مسکونی"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__agent_team_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__agent_team_id
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Agent Team"
 msgstr "تيم هيت"
 
@@ -274,6 +274,11 @@ msgid "Agent Type"
 msgstr "نوع هيت"
 
 #. module: egp_property
+#: model:ir.model,name:egp_property.model_agent_view
+msgid "Agent View"
+msgstr ""
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_mail
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__agent_mail
 msgid "Agent mail Id"
@@ -287,6 +292,7 @@ msgstr "هيت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__amount
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Amount"
 msgstr "مقدار"
 
@@ -298,6 +304,8 @@ msgstr ""
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_search
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 msgid "Archived"
@@ -305,8 +313,8 @@ msgstr "بايګانی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_attachment_count
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_attachment_count
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_attachment_count
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_attachment_count
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_attachment_count
 msgid "Attachment Count"
 msgstr ""
@@ -348,7 +356,7 @@ msgid "Bedroom Area(sqm)"
 msgstr "مساحت اطاق(متر مربع)"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__bedrooms
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__bedrooms
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__bedrooms
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__bedrooms
 msgid "Bedrooms"
@@ -360,6 +368,7 @@ msgid "Beginner"
 msgstr "ابتدايي"
 
 #. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__best_offer
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__best_offer
 msgid "Best Offered"
 msgstr "بلندترين درخواستی"
@@ -376,18 +385,26 @@ msgstr "بسواسه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_name
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Name"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_page
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Page"
 msgstr "صفحه کتاب"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_vol
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Volume"
 msgstr "جلد کتاب"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Book Year"
+msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__building
@@ -404,6 +421,7 @@ msgid "Building Part"
 msgstr "اجزآ تعمير"
 
 #. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__building_type
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__building_type
 msgid "Building Type"
 msgstr "نوع تعمير"
@@ -434,6 +452,7 @@ msgid "Cancel"
 msgstr "لغو کنید"
 
 #. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__cancel
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__cancel
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Cancelled"
@@ -441,8 +460,14 @@ msgstr "لغو شد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__card_number
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Card Number"
 msgstr "نمبر کارت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Category"
+msgstr ""
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
@@ -465,15 +490,21 @@ msgid "Close This Wizard PopUp"
 msgstr "این پاپ‌ آپ را ببندید"
 
 #. module: egp_property
-#: model:ir.model.fields.selection,name:egp_property.selection__pms_offerghoshai__contract_status__close
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__close
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__close
 msgid "Closed"
-msgstr "قرارداد بسته شد"
+msgstr "بسته شد"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Closed This Wizard PopUp"
 msgstr "این پاپ‌ آپ را ببندید"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__code
+msgid "Code"
+msgstr "کود"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__color
@@ -488,11 +519,6 @@ msgstr "رنک"
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__color
 msgid "Color Index"
 msgstr ""
-
-#. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__note
-msgid "Comments"
-msgstr "نظرات"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__company_id
@@ -517,38 +543,72 @@ msgid "Configurations"
 msgstr "تنظيمات"
 
 #. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_pms_contract
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__contract_ids
-#: model:ir.ui.menu,name:egp_property.menu_pms_offerghoshai
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__contract_id
+#: model:ir.ui.menu,name:egp_property.menu_pms_contract
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Contract"
 msgstr "قرارداد"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-msgid "Contract Closed"
-msgstr "قرارداد بسته شد"
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Contract Details"
+msgstr "توضيحات قرارداد"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-msgid "Contract Drafted"
-msgstr "قرارداد تنظیم شد"
-
-#. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__contract_end_date
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Contract End Date"
-msgstr "تاریخ پایان قرارداد"
+msgstr "تاريخ ختم قرازداد"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-msgid "Contract Running"
-msgstr "قرارداد در حال اجرا"
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__name
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Contract Reference"
+msgstr "ريفرينس قرارداد"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__contract_start_date
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Contract Start Date"
-msgstr "تاریخ شروع قرارداد"
+msgstr "تاريخ شروع قرارداد"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_real_estate__count_offer
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__contract_type_id
+msgid "Contract Type"
+msgstr "نوع قرارداد"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_pms_contract
+msgid "Contract information"
+msgstr "معلومات قرارداد"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.pms_contract_menu
+msgid "Contract type"
+msgstr "نوع قرارداد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__selling_price
+msgid "Contracted Price"
+msgstr "قیمت قرارداد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+msgid "Contracts"
+msgstr "قراردادها"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Contracts to review"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Cost"
+msgstr "قيمت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__count_offer
 msgid "Count Offer"
 msgstr "تعداد درخواستی"
 
@@ -556,6 +616,11 @@ msgstr "تعداد درخواستی"
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__count_tags
 msgid "Count Tags"
 msgstr "تعداد نوع ملکيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__country_id
+msgid "Country"
+msgstr "کشور"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_property_type_tag
@@ -573,9 +638,9 @@ msgid "Create Your Housing Estate !!"
 msgstr "املاک مسکونی خود را ایجاد کنید!!"
 
 #. module: egp_property
-#: model_terms:ir.actions.act_window,help:egp_property.action_pms_offerghoshai
+#: model_terms:ir.actions.act_window,help:egp_property.action_pms_contract
 msgid "Create Your New Contract !!"
-msgstr "قرارداد جدید خود را بسازید!!!"
+msgstr "قرارداد جدید خود را بسازید!!"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_real_estate
@@ -593,14 +658,20 @@ msgid "Create Your new record here..."
 msgstr "رکورد جدید خود را اینجا بسازید..."
 
 #. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.pms_contract_type_action
+msgid "Create a new property contract type"
+msgstr "یک نوع قرارداد ملکیت جدید ایجاد کنید"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_building_part__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__create_uid
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__create_uid
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__create_uid
@@ -616,8 +687,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_building_part__create_date
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__create_date
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__create_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__create_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__create_date
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__create_date
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__create_date
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__create_date
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__create_date
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__create_date
@@ -627,6 +699,11 @@ msgid "Created on"
 msgstr ""
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Current Contract"
+msgstr "قرارداد فعلی"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__current_status
 msgid "Current Status"
 msgstr "حالت فعلی"
@@ -634,7 +711,7 @@ msgstr "حالت فعلی"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__date
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_date
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__offer_ghoshai_date
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Date"
 msgstr "تاريخ"
 
@@ -649,18 +726,12 @@ msgid "Date Deadline"
 msgstr "تاریخ مهلت"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__day_name
-msgid "Day Name"
-msgstr "نام روز"
-
-#. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Days Paid"
 msgstr "روزهای پرداخت شده"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Deadline"
 msgstr "ضرب الاجل"
 
@@ -670,16 +741,22 @@ msgid "December"
 msgstr ""
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Deed Number"
 msgstr "نمبر قباله"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__deed_number
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__deed_number
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__deed_number
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__deed_number
 msgid "Deed or title deed number"
 msgstr "شماره یا سند ملکیت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid "Delete"
+msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__department
@@ -689,6 +766,7 @@ msgstr "دپارتمان"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__department_name
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 #: model_terms:ir.ui.view,arch_db:egp_property.view_department_form
 msgid "Department Name"
 msgstr "نام ديپارتمنت"
@@ -714,6 +792,7 @@ msgstr "توضیحات"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_building_part__details
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_details
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
@@ -727,8 +806,9 @@ msgstr "جزئیات"
 #: model:ir.model.fields,field_description:egp_property.field_building_part__display_name
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__display_name
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__display_name
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__display_name
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__display_name
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__display_name
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__display_name
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__display_name
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__display_name
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__display_name
@@ -736,6 +816,11 @@ msgstr "جزئیات"
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__display_name
 msgid "Display Name"
 msgstr "نام نمایش"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Document"
+msgstr "اسعلام"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__document_number
@@ -748,6 +833,11 @@ msgid "Document Property"
 msgstr "سند ملکیت"
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Document Type"
+msgstr "نوع استعلام"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__download_format
 msgid "Download Format"
 msgstr "فرمت دانلود"
@@ -758,8 +848,19 @@ msgid "Download The Filtered Record"
 msgstr ""
 
 #. module: egp_property
-#: model:ir.model.fields.selection,name:egp_property.selection__pms_offerghoshai__contract_status__draft
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__draft
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__draft
 msgid "Draft"
+msgstr "جديد"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_pms_contract_type
+msgid "EGP PMS Contract Type"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_type_view_tree
+msgid "EGP PMS Contract Types"
 msgstr ""
 
 #. module: egp_property
@@ -771,6 +872,11 @@ msgstr "تجربه از ۱ سال زياد"
 #: model:ir.model.fields.selection,name:egp_property.selection__agent_view__agent_exp__three_four
 msgid "EXP > 3Year"
 msgstr "تجربه از ۳ سال زياد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid "Edit Contract"
+msgstr "ویرایش قرارداد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__email_id
@@ -786,9 +892,40 @@ msgid "Employee"
 msgstr "کارمند"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__end_hour
-msgid "End Hour"
-msgstr "ساعت پایان"
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Employee Name"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
+msgid "Employee's Name"
+msgstr "نام کارمند"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.pms_contract_type_action
+msgid "Employment Types"
+msgstr "انواع استخدام"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__date_end
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "End Date"
+msgstr "تاريخ ختم"
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_pms_contract__date_end
+msgid "End date of the contract (if it's a fixed-term contract)."
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_pms_contract__trial_date_end
+msgid "End date of the trial period (if there is one)."
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__trial_date_end
+msgid "End of Trial Period"
+msgstr "پایان دوره آزمایشی"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_maintenance_equipment
@@ -827,7 +964,7 @@ msgid "Expectation Price"
 msgstr "قيمت ملکيت"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__expected_price
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__expected_price
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__expected_price
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__expected_price
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
@@ -855,16 +992,12 @@ msgid "February"
 msgstr ""
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__finish_hour1
-msgid "Finish Time"
-msgstr "زمان خاتمه"
-
-#. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__floor
 msgid "Floor"
 msgstr "منزل"
 
 #. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__floors
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__floors
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 msgid "Floors"
@@ -872,24 +1005,24 @@ msgstr "منازل"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_follower_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_follower_ids
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_follower_ids
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_follower_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_follower_ids
 msgid "Followers"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_partner_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_partner_ids
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_partner_ids
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_partner_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_partner_ids
 msgid "Followers (Partners)"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__activity_type_icon
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_type_icon
 #: model:ir.model.fields,help:egp_property.field_pms_department__activity_type_icon
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__activity_type_icon
 #: model:ir.model.fields,help:egp_property.field_real_estate__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
 msgstr ""
@@ -910,7 +1043,12 @@ msgid "Full Time"
 msgstr "تمام وقت"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__garage
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Future Activities"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__garage
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__garage
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__garage
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
@@ -918,14 +1056,14 @@ msgid "Garage"
 msgstr "ګيراج"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Garage Availability"
-msgstr ""
+msgstr "ګيراج دارد ؟"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__garden
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__garden
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__garden
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__garden
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
@@ -939,18 +1077,18 @@ msgid "Garden Area(Sqm)"
 msgstr "ساحه باغ (متر مربع)"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__garden_area
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__garden_area
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__garden_area
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__garden_area
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Garden Area(sqm)"
 msgstr "ساحه باغ (متر مربع)"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Garden Availability"
 msgstr "باغ دارد ؟"
@@ -959,6 +1097,16 @@ msgstr "باغ دارد ؟"
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__garden_orientation
 msgid "Garden Orientation"
 msgstr "موقيعت باغ"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "General Property Management"
+msgstr "مديريت عمومی املاک"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Generated by:"
+msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__gereb
@@ -971,11 +1119,22 @@ msgid "Grade Type Property"
 msgstr "حالت درجه"
 
 #. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__done
+msgid "Green"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__normal
+msgid "Grey"
+msgstr ""
+
+#. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__ground
 msgid "Ground"
 msgstr "زمين خالی"
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_agent_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
@@ -996,15 +1155,20 @@ msgstr ""
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__hall
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 msgid "Hall"
-msgstr ""
+msgstr "سالون"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__has_message
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__has_message
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__has_message
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__has_message
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__has_message
 msgid "Has Message"
 msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Head of Administration"
+msgstr "رياست اداری و خدمات"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__id
@@ -1013,8 +1177,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_building_part__id
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__id
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__id
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__id
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__id
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__id
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__id
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__id
@@ -1031,27 +1196,40 @@ msgid ""
 "INVALID LIVING AREA ,\n"
 " The living area must be positive and greater than 0"
 msgstr ""
+"منطقه ساحه نامعتبر،\n"
+"منطقه ساحه باید مثبت و بزرگتر از 0 باشد"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/agents_view.py:0
+#, python-format
+msgid ""
+"INVALID agent phone number ,\n"
+" Phone number should not be more than 14 digits"
+msgstr ""
+"شماره تماس هيت نامعتبر،\n"
+"شماره تماس نباید بیش از 14 رقم باشد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_exception_icon
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_exception_icon
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_exception_icon
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_exception_icon
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_exception_icon
 msgid "Icon"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__activity_exception_icon
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_exception_icon
 #: model:ir.model.fields,help:egp_property.field_pms_department__activity_exception_icon
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__activity_exception_icon
 #: model:ir.model.fields,help:egp_property.field_real_estate__activity_exception_icon
 msgid "Icon to indicate an exception activity."
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__message_needaction
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_needaction
 #: model:ir.model.fields,help:egp_property.field_pms_department__message_needaction
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__message_needaction
 #: model:ir.model.fields,help:egp_property.field_real_estate__message_needaction
 msgid "If checked, new messages require your attention."
 msgstr ""
@@ -1059,10 +1237,10 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__message_has_error
 #: model:ir.model.fields,help:egp_property.field_agent_view__message_has_sms_error
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_has_error
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_has_sms_error
 #: model:ir.model.fields,help:egp_property.field_pms_department__message_has_error
 #: model:ir.model.fields,help:egp_property.field_pms_department__message_has_sms_error
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__message_has_error
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__message_has_sms_error
 #: model:ir.model.fields,help:egp_property.field_real_estate__message_has_error
 #: model:ir.model.fields,help:egp_property.field_real_estate__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
@@ -1075,8 +1253,14 @@ msgstr ""
 msgid ""
 "Input Error in End Date Field \n"
 " You can Choose end Date Till Today"
-msgstr "خطای ورودی در فیلد تاریخ پایان \n"
+msgstr ""
+"خطای ورودی در فیلد تاریخ پایان \n"
 "می توانید تاریخ پایان تا امروز را انتخاب کنید"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Inquiry"
+msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_number
@@ -1100,8 +1284,8 @@ msgstr "ساحه ملکيت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_is_follower
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_is_follower
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_is_follower
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_is_follower
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_is_follower
 msgid "Is Follower"
 msgstr ""
@@ -1110,6 +1294,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__is_paid
 msgid "Is Paid"
 msgstr "پرداخت شده؟"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Islamic Emirate of Afghanistan"
+msgstr "امارت اسلامی افغانستان"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__tenant_payment__months__january
@@ -1129,6 +1318,11 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__tenant_payment__months__june
 msgid "June"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__kanban_state
+msgid "Kanban State"
 msgstr ""
 
 #. module: egp_property
@@ -1201,8 +1395,9 @@ msgstr "۹۰ روز گذشته"
 #: model:ir.model.fields,field_description:egp_property.field_building_part__write_uid
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__write_uid
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__write_uid
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__write_uid
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__write_uid
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__write_uid
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__write_uid
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__write_uid
@@ -1218,8 +1413,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_building_part__write_date
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__write_date
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__write_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__write_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__write_date
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__write_date
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__write_date
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__write_date
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__write_date
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__write_date
@@ -1229,12 +1425,17 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Late Activities"
+msgstr ""
+
+#. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__agent_view__agent_exp__less_one
 msgid "Less Than 1 Yr"
 msgstr "کمتر از يک سال"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__living_area
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__living_area
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__living_area
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__living_area
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
@@ -1246,11 +1447,13 @@ msgstr "ساحه زمين(متر مربع)"
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__property_type
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_property_form
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Location Type"
 msgstr "ساحه ملکيت"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.second_submenu
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Location type"
 msgstr "ساحه ملکيت"
 
@@ -1295,32 +1498,40 @@ msgid "May"
 msgstr ""
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__meeting_address
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__meeting_address
 msgid "Meeting Address"
-msgstr "اطاق جلسه"
+msgstr "موقيعت جلسه"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Meeting Information"
+msgstr "معلومات جلسه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_error
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_has_error
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_has_error
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_has_error
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_has_error
 msgid "Message Delivery error"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_ids
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_ids
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_ids
 msgid "Messages"
 msgstr ""
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__monthly_rent
-#: model:ir.model.fields,field_description:egp_property.field_real_estate__monthly_rent
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Ministry of Communications and IT"
+msgstr "وزارت مخابرات و تکنالوجی معلوماتی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__monthly_rent
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__monthly_rent
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Monthly Rent"
 msgstr "کرايه ماهانه"
 
@@ -1332,29 +1543,34 @@ msgid "Monthly Rent Income"
 msgstr "درآمد کرايه ماهانه"
 
 #. module: egp_property
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__monthly_rent
-#: model:ir.model.fields,help:egp_property.field_real_estate__monthly_rent
+#: model:ir.model.fields,help:egp_property.field_pms_contract__monthly_rent
 #: model:ir.model.fields,help:egp_property.field_tenant_payment__monthly_rent
 msgid "Monthly rent amount for the property"
 msgstr "مبلغ اجاره ماهانه ملک"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__months_paid
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Months Paid"
+msgstr "ماه های پرداخت شده"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Mothamed"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__my_activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__my_activity_date_deadline
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__my_activity_date_deadline
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__my_activity_date_deadline
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__my_activity_date_deadline
 msgid "My Activity Deadline"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_building_part__name
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__name
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Name"
 msgstr "نام"
 
@@ -1366,34 +1582,38 @@ msgstr "نيمه پخته"
 #. module: egp_property
 #. odoo-python
 #: code:addons/egp_property/models/agents_view.py:0
-#: model:ir.model.fields.selection,name:egp_property.selection__pms_offerghoshai__contract_status__new
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__new
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__new
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
 #, python-format
 msgid "New"
 msgstr "جديد"
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_agent_view_pivot
+msgid "New Agent"
+msgstr "هيت جدید"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_date_deadline
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_date_deadline
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_date_deadline
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_date_deadline
 msgid "Next Activity Deadline"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_summary
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_summary
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_summary
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_summary
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_summary
 msgid "Next Activity Summary"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_type_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_type_id
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_type_id
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_type_id
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_type_id
 msgid "Next Activity Type"
 msgstr ""
@@ -1415,9 +1635,10 @@ msgid "North"
 msgstr "شمال"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-msgid "Notify Tenant on Whatsapp"
-msgstr "مستاجر اطلاع دهید"
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__notes
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Notes"
+msgstr "وظاحت"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__tenant_payment__months__november
@@ -1425,33 +1646,38 @@ msgid "November"
 msgstr ""
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Number"
+msgstr "شماره"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_needaction_counter
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_needaction_counter
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_needaction_counter
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_needaction_counter
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_needaction_counter
 msgid "Number of Actions"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_error_counter
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_has_error_counter
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_has_error_counter
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_has_error_counter
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_has_error_counter
 msgid "Number of errors"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__message_needaction_counter
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_needaction_counter
 #: model:ir.model.fields,help:egp_property.field_pms_department__message_needaction_counter
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__message_needaction_counter
 #: model:ir.model.fields,help:egp_property.field_real_estate__message_needaction_counter
 msgid "Number of messages requiring action"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__message_has_error_counter
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_has_error_counter
 #: model:ir.model.fields,help:egp_property.field_pms_department__message_has_error_counter
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__message_has_error_counter
 #: model:ir.model.fields,help:egp_property.field_real_estate__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr ""
@@ -1467,9 +1693,10 @@ msgid "October"
 msgstr ""
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__offer_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__offer_id
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__offer_ids
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Offer"
 msgstr "درخواستی"
 
@@ -1494,20 +1721,9 @@ msgid "Offer Date"
 msgstr "تاريخ درخواستی"
 
 #. module: egp_property
-#: model:ir.actions.act_window,name:egp_property.action_pms_offerghoshai
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_tree
-msgid "Offer Ghoshai"
-msgstr ""
-
-#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__offer_agent_ghoshai_id
 msgid "Offer Ghoshai Agent"
 msgstr "هيت افر ګوشايی"
-
-#. module: egp_property
-#: model:ir.model,name:egp_property.model_pms_offerghoshai
-msgid "Offer Ghoshai information"
-msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__offer_number
@@ -1528,8 +1744,9 @@ msgstr ""
 #. module: egp_property
 #. odoo-python
 #: code:addons/egp_property/models/property_type.py:0
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__offer_ids
 #: model:ir.ui.menu,name:egp_property.offer_submenu
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 #, python-format
 msgid "Offers"
@@ -1609,7 +1826,7 @@ msgstr "وقت غير رسمی"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
 msgid "Part Type"
-msgstr ""
+msgstr "وقت غير رسمی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__partner_id
@@ -1664,9 +1881,19 @@ msgid "Price Evaluation for Specific Property Based on Living area Size"
 msgstr "ارزیابی قیمت برای ملکيت خاص بر اساس اندازه ساحه منطقه"
 
 #. module: egp_property
+#: model:ir.actions.report,name:egp_property.action_report_equipment
+msgid "Print"
+msgstr "فرنت"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__product_category_type
 msgid "Product Category Type"
-msgstr ""
+msgstr "نوع جنس"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Product Location"
+msgstr "موقيعت جنس"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__agent_view__agent_exp__professional
@@ -1693,10 +1920,11 @@ msgstr "املاک"
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__property_id
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__property_ids
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__property_id
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__property_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_id
 #: model:ir.model.fields,field_description:egp_property.field_res_users__property_ids
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__property_id
 #: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 msgid "Property"
 msgstr "ملکيت"
@@ -1719,14 +1947,15 @@ msgstr "نمای گانت ملکيت"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_property_id
 msgid "Property Involved:"
-msgstr ""
+msgstr "املاک مربوطه:"
 
 #. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__property_name
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__Property_value_id
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
-#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
 msgid "Property Name"
 msgstr "نام ملکيت"
 
@@ -1751,7 +1980,8 @@ msgid "Property Tags"
 msgstr "نوع ملکيت"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__property_type
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_type
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__property_area_type
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__property_type
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__property_type_id
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__property_area_type
@@ -1773,7 +2003,7 @@ msgstr "ساحه ملکيت"
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__property_types
 #, python-format
 msgid "Property Types"
-msgstr ""
+msgstr "انواع املاک"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_wizard_validation_estate
@@ -1794,15 +2024,16 @@ msgstr "موقيعت ملکيت"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Property types"
-msgstr ""
+msgstr "انواع املاک"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_property_valuation
 msgid "Property valuation"
-msgstr ""
+msgstr "ارزش گذاری ملکيت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__quantity
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Quantity"
 msgstr "مقدار"
 
@@ -1820,8 +2051,8 @@ msgstr "RESET فقط در حالت لغو امکان پذیر است"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__rating_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__rating_ids
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__rating_ids
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__rating_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__rating_ids
 msgid "Ratings"
 msgstr ""
@@ -1840,6 +2071,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_graph
 msgid "Real Estates"
 msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__blocked
+msgid "Red"
+msgstr "سرخ"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__estate_property_offer__status__refused
@@ -1862,9 +2098,14 @@ msgid "Reporting"
 msgstr "گزارش"
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Requester"
+msgstr "درخواست کننده"
+
+#. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_user_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_user_id
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_user_id
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__activity_user_id
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_user_id
 msgid "Responsible User"
 msgstr ""
@@ -1880,14 +2121,20 @@ msgid "Rooms"
 msgstr "اطاقها"
 
 #. module: egp_property
-#: model:ir.model.fields.selection,name:egp_property.selection__pms_offerghoshai__contract_status__running
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__running
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__open
 msgid "Running"
-msgstr "درحال جريان"
+msgstr "در حال جريان"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Running Contracts"
+msgstr "قراردادهای در حال اجرا"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_sms_error
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_has_sms_error
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__message_has_sms_error
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__message_has_sms_error
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__message_has_sms_error
 msgid "SMS Delivery error"
 msgstr ""
@@ -1901,6 +2148,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_search
 msgid "Search"
 msgstr "جستجو کردن"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Search Contract"
+msgstr "قرارداد جستجو"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.wizard_menu_id
@@ -1926,8 +2178,19 @@ msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__sequence
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__sequence
 msgid "Sequence"
 msgstr "ترتيب"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Serial Number"
+msgstr "شماره سریال"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Show all records which have a next action date before today"
+msgstr "نمایش تمام رکوردهایی که تاریخ اقدام بعدی قبل از امروز دارند"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__sold
@@ -1941,14 +2204,10 @@ msgid "South"
 msgstr "جنوب"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__start_hour
-msgid "Start Hour"
-msgstr "ساعت شروع"
-
-#. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__start_hour1
-msgid "Start Time"
-msgstr "وقت شروع"
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__date_start
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Start Date"
+msgstr "تاریخ شروع"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
@@ -1957,22 +2216,24 @@ msgstr "شروع به جستجو در تاریخ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__status
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__contract_status
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__contract_status
 msgid "State"
 msgstr "حالت"
 
 #. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__state
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__state
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
 msgid "Status"
 msgstr "حالت"
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__activity_state
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_state
 #: model:ir.model.fields,help:egp_property.field_pms_department__activity_state
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__activity_state
 #: model:ir.model.fields,help:egp_property.field_real_estate__activity_state
 msgid ""
 "Status based on activities\n"
@@ -1982,7 +2243,12 @@ msgid ""
 msgstr ""
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__tag_ids
+#: model:ir.model.fields,help:egp_property.field_pms_contract__state
+msgid "Status of the contract"
+msgstr "حالت قرارداد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__tag_ids
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__tag_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__tag_ids
 #: model_terms:ir.ui.view,arch_db:egp_property.report_property_details
@@ -2030,14 +2296,9 @@ msgstr "مستاجر"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_tenant_payment
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Tenant Payment"
 msgstr "کرايه"
-
-#. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-msgid "Tenant Payment Details"
-msgstr ""
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_tenant_payment
@@ -2045,7 +2306,7 @@ msgid "Tenant Payments"
 msgstr "پرداخت های مستاجر"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__tenant_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__tenant_payment_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__tenant_ids
 msgid "Tenants"
 msgstr "مستاجرین"
@@ -2058,6 +2319,11 @@ msgid ""
 msgstr ""
 "متشکرم برای معاملات با\n"
 "ما!!!!🙂"
+
+#. module: egp_property
+#: model:ir.model.constraint,message:egp_property.constraint_agent_view_check_unique_email
+msgid "The Agent Email must be unique"
+msgstr ""
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_agent_language
@@ -2079,6 +2345,11 @@ msgstr "نام"
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__end_date
 msgid "To: "
 msgstr "تا :"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Today Activities"
+msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__toilet
@@ -2115,14 +2386,14 @@ msgid "Total Amount :"
 msgstr "مقدار کل :"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Total Area :"
 msgstr "مساحت کل :"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__total_area
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__total_area
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__total_area
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__total_area
 msgid "Total Area(sqm)"
@@ -2130,7 +2401,7 @@ msgstr "مساحت کل (متر مربع)"
 
 #. module: egp_property
 #. odoo-python
-#: code:addons/egp_property/models/real_estate.py:0
+#: code:addons/egp_property/models/property_contract.py:0
 #, python-format
 msgid "Total Offered"
 msgstr "درخواستی مجموع"
@@ -2168,10 +2439,9 @@ msgid "Total Property Validation"
 msgstr "اعتبار سنجی کل املاک"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Total Received Amount"
-msgstr ""
+msgstr "مجموع مبلغ دریافتی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__total_rent_received
@@ -2184,9 +2454,14 @@ msgid "Total Rent Received (Sum)"
 msgstr "مجموع کرايه دریافتی (مجموع)"
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Type in notes about this contract..."
+msgstr "یادداشت های مربوط به این قرارداد را تایپ کنید ..."
+
+#. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__activity_exception_decoration
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_exception_decoration
 #: model:ir.model.fields,help:egp_property.field_pms_department__activity_exception_decoration
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__activity_exception_decoration
 #: model:ir.model.fields,help:egp_property.field_real_estate__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr ""
@@ -2224,8 +2499,8 @@ msgid "Validity"
 msgstr "اعتبار"
 
 #. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.report_property_offers
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
 msgid "Validity(Days)"
 msgstr "اعتبار (روزها)"
 
@@ -2238,6 +2513,20 @@ msgstr "قیمت ارزیابی شده()"
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "View all records"
 msgstr "مشاهده تمام معلومات"
+
+#. module: egp_property
+#: model:ir.model.constraint,message:egp_property.constraint_pms_department_unique_department_name
+msgid ""
+"WARNING..\n"
+" Department Name Must Be Unique from Each Other."
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.constraint,message:egp_property.constraint_property_type_tag_unique_tag_name
+msgid ""
+"WARNING..\n"
+" Tag Name Must Be Unique from Each Other."
+msgstr ""
 
 #. module: egp_property
 #. odoo-python
@@ -2253,17 +2542,6 @@ msgstr "اشتباه شد, حذف تنها درحالت جديد و لغو مي�
 #: code:addons/egp_property/models/estate_offer.py:0
 #, python-format
 msgid ""
-"WARNING....\n"
-" Price Must be at Least 90% of Monthly Rent Price!!🚫"
-msgstr ""
-"اشتباه...\n"
-"قیمت قبول کردن درخواستی باید حداقل ۹۰٪ قیمت کرايه ماهانه باشد!!🚫"
-
-#. module: egp_property
-#. odoo-python
-#: code:addons/egp_property/models/estate_offer.py:0
-#, python-format
-msgid ""
 "Warning....\n"
 " Offered Price should Never Non Positive!!!!"
 msgstr ""
@@ -2272,16 +2550,16 @@ msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__website_message_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__website_message_ids
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__website_message_ids
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__website_message_ids
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__website_message_ids
 msgid "Website Messages"
 msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_agent_view__website_message_ids
+#: model:ir.model.fields,help:egp_property.field_pms_contract__website_message_ids
 #: model:ir.model.fields,help:egp_property.field_pms_department__website_message_ids
-#: model:ir.model.fields,help:egp_property.field_pms_offerghoshai__website_message_ids
 #: model:ir.model.fields,help:egp_property.field_real_estate__website_message_ids
 msgid "Website communication history"
 msgstr ""
@@ -2292,14 +2570,15 @@ msgid "West"
 msgstr "غرب"
 
 #. module: egp_property
-#: model:ir.model.fields,field_description:egp_property.field_pms_offerghoshai__winner_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__winner_id
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Winner"
-msgstr ""
+msgstr "برنده"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_year
 msgid "Year"
-msgstr ""
+msgstr "سال"
 
 #. module: egp_property
 #. odoo-python
@@ -2323,7 +2602,6 @@ msgid "abc@gmail.com"
 msgstr ""
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_agent_kanban
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
 msgid "avtar"
 msgstr ""
@@ -2346,8 +2624,7 @@ msgid "since last period"
 msgstr "از آخرین دوره"
 
 #. module: egp_property
-#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
-#: model_terms:ir.ui.view,arch_db:egp_property.view_pms_offerghoshai_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "total_rent_received"
 msgstr ""
 
