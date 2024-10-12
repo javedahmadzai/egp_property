@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="egp_property_report_details_copy">
+            <t t-call="web.html_container">
+                <t t-call="web.basic_layout">
+                    <t t-foreach="docs" t-as="property">
+                        <div class="page" style="font-family: Calibri;">
+                            <div class="row">
+                                <div class="col-4" style="margin-left: 8; text-align: left;">
+                                    <div class="text-left" style="text-align: left;float:left">
+                                        <img src="egp_property/static/description/img/mcit_logo.png" height="150px;"
+                                             width="130px;"
+                                             alt="MCIT Logo"/>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="content" style="text-align: center;">
+                                        <h5>Islamic Emirates of Afghanistan</h5>
+                                        <p>Ministry of Communications and IT</p>
+                                        <p>Head of Administration</p>
+                                        <p>General Property Management</p>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="margin-right: 8;">
+                                    <div class="text-right" style="float:right">
+                                        <img src="egp_property/static/description/img/Emirate_logo.png" height="150px;"
+                                             width="130px;"
+                                             alt="Emirate Logo"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <h2 style="font-weight: bold; background-color: #F2F2F2; text-align: center;">Property
+                                    Information
+                                    Report
+                                </h2>
+                            </div>
+                            <table class="table table-responsive table-bordered table-condensed">
+                                <thead style="margin-right: 0;">
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Property Name</th>
+                                        <td>
+                                            <t t-esc="property.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Property Owner</th>
+                                        <td>
+                                            <t t-esc="property.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Location</th>
+                                        <td>
+                                            <t t-esc="property.property_location"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">location Type</th>
+                                        <td>
+                                            <t t-foreach="property.property_type" t-as="pro">
+                                                <t t-if="pro != property.property_type[0]">,</t>
+                                                <span t-field="pro.property_type"/>
+                                            </t>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Tag</th>
+                                        <td>
+                                            <t t-foreach="property.tag_ids" t-as="tag">
+                                                <t t-if="tag != property.tag_ids[0]">,</t>
+                                                <span t-field="tag.tag_name"/>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Property Type</th>
+                                        <td>
+                                            <t t-esc="property.property_area_type"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Current Status</th>
+                                        <td>
+                                            <!--                                            <t t-esc="property.current_status"/>-->
+                                            <t t-esc="property.get_current_status_label()"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Rooms</th>
+                                        <td>
+                                            <t t-esc="property.bedrooms"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Floors</th>
+                                        <td>
+                                            <t t-esc="property.floors"/>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table class="table table-responsive table-bordered">
+                                <h3 style="margin-right: 0; display: inline-block;" class="text-nowrap text-truncate">
+                                    Property Document Details
+                                </h3>
+                                <thead style="margin-right: 0; text-align: center;">
+                                    <tr style="font-weight: bold; background-color: #F2F2F2;">
+
+                                        <th>Deed or title deed number</th>
+                                        <th>property price</th>
+                                        <th>Grade and type of land</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tr style="margin-right: 0; text-align: center;">
+                                    <tr style="margin-right: 0; text-align: center;">
+                                        <td>
+                                            <t t-esc="property.deed_number"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="property.expected_price"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="property.grade_type_property"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="property.description"/>
+                                        </td>
+                                    </tr>
+                                </tr>
+                            </table>
+
+                            <table class="table table-responsive table-bordered">
+                                <thead style="margin-right: 0;">
+                                    <tr class="text-center font-weight-bold text-nowrap">
+                                        <th rowspan="5" class="text-center text-uppercase"
+                                            style="width: 8rem; vertical-align: middle">Area
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Gereb</th>
+                                        <td class="text-center">
+                                            <t t-esc="property.gereb"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Beswa</th>
+                                        <td class="text-center">
+                                            <t t-esc="property.beswa"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Beswasa</th>
+                                        <td class="text-center">
+                                            <t t-esc="property.beswasa"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Meters</th>
+                                        <td class="text-center">
+                                            <t t-esc="property.remaining_meters"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">Total Area</th>
+                                        <td class="text-center" colspan="2">
+                                             <t t-esc="property.living_area"/> m²
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <table class="table table-responsive table-bordered">
+                                <thead style="margin-right: 0;">
+                                    <tr class="font-weight-bold text-nowrap">
+                                        <th rowspan="8" class="text-center text-uppercase"
+                                            style="width: 8rem; vertical-align: middle;">Boundaries
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">North</th>
+                                        <td>
+                                            <t t-esc="property.north"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">East</th>
+                                        <td>
+                                            <t t-esc="property.east"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">West</th>
+                                        <td>
+                                            <t t-esc="property.west"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="font-weight: bold; background-color: #F2F2F2;">South</th>
+                                        <td>
+                                            <t t-esc="property.south"/>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <div class="row">
+                                <div class="col-6 mt-3">
+                                    <p>Prepared By</p>
+                                    <span t-field="user.name"/>
+                                </div>
+                                <div class="col-6 mt-3 text-end">
+                                    <p>Signature</p>
+                                </div>
+                            </div>
+                        </div> <!-- /.div page -->
+                    </t>
+                </t>
+            </t>
+            <footer>
+                <div class="footer">
+                </div>
+            </footer>
+        </template>
+    </data>
+</odoo>

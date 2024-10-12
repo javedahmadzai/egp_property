@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="property_tag_search" model="ir.ui.view">
+        <field name="name">property.tag.search</field>
+        <field name="model">property.type.tag</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="tag_name"/>
+                <field name="active"/>
+                <!--                Add archive filter-->
+                <separator/>
+<!--                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>-->
+                <group expand="0" string="Group By">
+                    <filter string="Property Tags" name="group_by_tag" context="{'group_by': 'tag_name'}"/>
+                    <filter string="State" name="group_by_state"
+                            domain="['|',('active', '=',True),('active', '=', False)]"/>
+                </group>
+
+            </search>
+
+        </field>
+    </record>
+
+    <record id="view_property_tag_tree" model="ir.ui.view">
+        <field name="name">property.type.tag.tree</field>
+        <field name="model">property.type.tag</field>
+        <field name="arch" type="xml">
+            <tree sample="1">
+                <field name="tag_name"/>
+                <field name="color" widget="color_picker"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_property_tag_form" model="ir.ui.view">
+        <field name="name">property.type.tag.form</field>
+        <field name="model">property.type.tag</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="tag_name"/>
+                        </group>
+                        <group>
+                            <field name="color" widget="color_picker"/>
+                            <field name="active" widget="boolean_toggle"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_property_type_tag" model="ir.actions.act_window">
+        <field name="name">Property Tag</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">property.type.tag</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your 1st Tags 🤗 !!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="tag_submenu"
+              name="Property Tags"
+              parent="menu_second"
+              action="action_property_type_tag"
+              groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+              sequence="11"/>
+
+</odoo>

@@ -1,0 +1,3926 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* maintenance
+# 	* egp_property
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-28 04:24+0000\n"
+"PO-Revision-Date: 2024-09-28 04:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: egp_property
+#: model:ir.actions.report,print_report_name:egp_property.action_report_property_details_copy
+msgid "'Property - %s' % (object.name).replace('/', '')"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.actions.report,print_report_name:egp_property.action_report_equipment
+msgid "(object.name).replace('/', '')"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
+msgid "+93"
+msgstr "+۹۳"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+msgid "<b>Category:</b>"
+msgstr "<b>دسته‌بندی:</b>"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
+msgid "<b>Expected Price:</b>"
+msgstr "قيمت ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
+msgid "<b>Location:</b>"
+msgstr "موقيعت"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "<b>Model Number:</b>"
+msgstr "<b>شماره مدل:</b>"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+msgid "<b>Request to:</b>"
+msgstr "<b>درخواست به:</b>"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "<b>Serial Number:</b>"
+msgstr "<b>شماره سریال:</b>"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
+msgid "<b>Total Area:</b>"
+msgstr "ساحه مجموع"
+
+#. module: egp_property
+#: model:mail.template,body_html:egp_property.rent_received_mail_template
+msgid ""
+"<div>\n"
+"                    Dear <t t-out=\"object.tenant_id.name\"></t>,<br><br>\n"
+"                    Congratulations! We have received your rent payment for the property: <t t-out=\"object.contract_id.property_id.name\"></t><br>\n"
+"                    Monthly Rent is: <t t-out=\"object.monthly_rent\"></t><br>\n"
+"                    Total Received Amount: <t t-out=\"object.total_rent_received\"></t> AF<br>\n"
+"                    Months Paid: <t t-out=\"object.months_paid\"></t><br>\n"
+"                    Days Paid: <t t-out=\"object.remaining_amount\"></t><br>\n"
+"                    Payment Date: <t t-out=\"object.payment_date\"></t><br>\n"
+"                    Thank you for your prompt payment.<br><br>\n"
+"                    Sincerely,<br>\n"
+"                    [MCIT AFGHANISTAN]<br>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
+msgid "<i class=\"fa fa-fw me-2 fa-envelope text-primary\" title=\"Email\"/>"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
+msgid "<i class=\"fa fa-fw me-2 fa-phone text-primary\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "<span class=\"badge text-bg-warning float-end\">Canceled</span>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+msgid "<span class=\"badge text-bg-warning float-end\">Cancelled</span>"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_department_view_kanban
+msgid "<span class=\"fw-bolder\">Configuration</span>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "<span class=\"ml8\">hours</span>"
+msgstr "<span class=\"ml8\">ساعت</span>"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                            Contract Price\n"
+"                                        </span>"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                            To\n"
+"                                        </span>"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                        From\n"
+"                                    </span>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "<span>Reporting</span>"
+msgstr "<span>گزارش</span>"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "<span>Requests</span>"
+msgstr "<span>درخواست شده</span>"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
+msgid "<strong>Equipment:</strong>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
+msgid "<strong>Maintenance:</strong>"
+msgstr "<strong>نگهداری:</strong>"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr ""
+"یک دیکشنری پایتون که برای فراهم کردن مقادیر پیش‌فرض هنگام ایجاد رکوردهای "
+"جدید برای این نام مستعار مورد  ارزیابی قرار می‌گیرد."
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__estate_property_offer__status__accepted
+msgid "Accepted"
+msgstr "پذیرفته شده"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_search
+msgid "Accepted Property"
+msgstr "ملکيت پذیرفته شده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__account_number
+msgid "Account Number"
+msgstr "شماره اکونت"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_needaction
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_needaction
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_needaction
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_needaction
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_needaction
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_needaction
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_needaction
+msgid "Action Needed"
+msgstr "اقدام مورد نیاز"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Action accept"
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__active
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__active
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__active
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__active
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__active
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__active
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__active
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__active
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__active
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__active
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Active"
+msgstr "فعال"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_ids
+msgid "Activities"
+msgstr "فعالیت ها"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_exception_decoration
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_exception_decoration
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_exception_decoration
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_exception_decoration
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_exception_decoration
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "دکوراسیون استثنایی فعالیت"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_state
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_state
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_state
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_state
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_state
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_state
+msgid "Activity State"
+msgstr "وضعیت فعالیت"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_type_icon
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_type_icon
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_type_icon
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_type_icon
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_type_icon
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "آیکون نوع فعالیت"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.mail_activity_type_action_config_maintenance
+#: model:ir.ui.menu,name:maintenance.maintenance_menu_config_activity_type
+msgid "Activity Types"
+msgstr "انواع فعالیت"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.agent_team_pms_action
+msgid "Add a new Agent Team"
+msgstr "یک تیم هيت جدید اضافه کنید"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
+msgid "Add a new equipment"
+msgstr "افزودن تجهیزات جدید"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_category_action
+msgid "Add a new equipment category"
+msgstr "افزودن یک دسته تجهیزات جدید"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_cal
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_from_equipment
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_link
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_todo_request_action_from_dashboard
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_request_action_reports
+msgid "Add a new maintenance request"
+msgstr "افزودن یک درخواست تعمیر و نگهداری جدید"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_stage_action
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_dashboard_action
+msgid "Add a new stage in the maintenance request"
+msgstr "افزودن یک مرحله جدید در درخواست تعمیر و نگهداری"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_team_action_settings
+msgid "Add a team in the maintenance request"
+msgstr "افزودن یک تیم در درخواست تعمیر و نگهداری"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_name
+msgid "Agent"
+msgstr "هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_address
+msgid "Agent Address"
+msgstr "ادرس هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__reference
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_tree
+msgid "Agent ID"
+msgstr "آی دی هيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
+msgid "Agent Id"
+msgstr "آی دی هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_pic
+msgid "Agent Image"
+msgstr "عکس هيت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_agent_language
+msgid "Agent Info"
+msgstr "معلومات هيت"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_agent_commission
+msgid "Agent Information"
+msgstr "معلومات هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_language_ids
+msgid "Agent Language Known"
+msgstr "زبان هيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
+msgid "Agent Name"
+msgstr "نام هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_phone
+msgid "Agent Phone:"
+msgstr "شماره هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__agent_team_id
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Agent Team"
+msgstr "تيم هيت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_agent_team
+#: model:ir.ui.menu,name:egp_property.menu_agent_teams
+msgid "Agent Teams"
+msgstr "تیم های هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_type
+#: model_terms:ir.ui.view,arch_db:egp_property.view_agent_search
+msgid "Agent Type"
+msgstr "نوع هيت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_agent_view
+msgid "Agent View"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_mail
+msgid "Agent mail Id"
+msgstr "ايميل آی دی"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.agent_menu
+#: model:ir.ui.menu,name:egp_property.commission_menu
+msgid "Agents"
+msgstr "هيت"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_id
+msgid "Alias"
+msgstr "مستعار"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_contact
+msgid "Alias Contact Security"
+msgstr "مستعار تماس امنیتی"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_domain_id
+msgid "Alias Domain"
+msgstr "نام مستعار دامنه"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_domain
+msgid "Alias Domain Name"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_full_name
+msgid "Alias Email"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_name
+msgid "Alias Name"
+msgstr "نام مستعار"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_status
+msgid "Alias Status"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_status
+msgid "Alias status assessed on the last message received."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_model_id
+msgid "Aliased Model"
+msgstr "مدل استعاری"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "All"
+msgstr "همه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__amount
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Amount"
+msgstr "مقدار"
+
+#. module: maintenance
+#: model:ir.model.constraint,message:maintenance.constraint_maintenance_equipment_serial_no
+msgid "Another asset already exists with this serial number!"
+msgstr "دارایی دیگری در حال حاضر با این شماره سریال وجود دارد!"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__archive
+msgid "Archive"
+msgstr "بایگانی"
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_search
+#: model_terms:ir.ui.view,arch_db:egp_property.contract_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.location_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+#: model_terms:ir.ui.view,arch_db:egp_property.property_tag_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
+msgid "Archived"
+msgstr "بايګانی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Area"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
+msgid "Assign To User"
+msgstr "واگذاری به کاربر"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Assigned"
+msgstr "واگذار شده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__assign_date
+msgid "Assigned Date"
+msgstr "تاریخ واگذار شده"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Assigned to"
+msgstr "واگذار شده به"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_ir_attachment
+msgid "Attachment"
+msgstr "پیوست"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_attachment_count
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_attachment_count
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_attachment_count
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_attachment_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_attachment_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_attachment_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "تعداد پیوست ها"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__tenant_attachments
+msgid "Attachment File"
+msgstr "اسناد ضمیمه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__attachments
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__property_attachments
+msgid "Attachments"
+msgstr "ضميمه اسناد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+msgid "Available properties"
+msgstr "ملکيت موجود"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__toilet
+msgid "Bathroom"
+msgstr "تشناب"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Bedroom Area(sqm)"
+msgstr "مساحت اطاق(متر مربع)"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__bedrooms
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__bedrooms
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__bedrooms
+msgid "Bedrooms"
+msgstr "اطاقها"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__best_offer_agent_id
+msgid "Best Offer Agent"
+msgstr "بلندترين درخواست کننده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__best_offer
+msgid "Best Offered"
+msgstr "بلندترين درخواستی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__beswa
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Beswa"
+msgstr "بسوه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__beswasa
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Beswasa"
+msgstr "بسواسه"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__kanban_state__blocked
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Blocked"
+msgstr "مسدود شده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_name
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Book Name"
+msgstr "نام کتاب"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_page
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Book Page"
+msgstr "صفحه کتاب"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_vol
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Book Volume"
+msgstr "جلد کتاب"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Book Year"
+msgstr "سال کتاب"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Boundaries"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__building
+msgid "Building"
+msgstr "بلدينګ"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_building_part
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__buildingPart_id
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__building_part_id
+#: model:ir.ui.menu,name:egp_property.building_part_menu
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Building Part"
+msgstr "اجزآ تعمير"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__building_type
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__building_type
+msgid "Building Type"
+msgstr "نوع تعمير"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__sale_buyer
+msgid "Buyer"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__sale_buyer_email
+msgid "Buyer Mail"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__property_buyer
+msgid "Buyer Name"
+msgstr "نام مستجر"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__wizard_validation_estate__download_format__csv
+msgid "CSV"
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Cancel"
+msgstr "لغو کنید"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__cancel
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__cancel
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Cancelled"
+msgstr "لغو شد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__card_number
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Card Number"
+msgstr "نمبر کارت"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__category_id
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Category"
+msgstr "دسته بندی"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__name
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+msgid "Category Name"
+msgstr "نام دسته بندی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Choose Any Buyer Name ! NOT MANDATORY"
+msgstr "هر نام خریدار را انتخاب کنید! غیر اجباری"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Choose From Calendar"
+msgstr "از تقویم يا حنتری انتخاب کنید"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Close"
+msgstr "بستن"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__close_date
+msgid "Close Date"
+msgstr "تاریخ بستن"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Close This Wizard PopUp"
+msgstr "این پاپ‌ آپ را ببندید"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__close
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__close
+msgid "Closed"
+msgstr "بسته شد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Closed This Wizard PopUp"
+msgstr "این پاپ‌ آپ را ببندید"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__code
+msgid "Code"
+msgstr "کود"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__color
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__color
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__color
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__color
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__color
+msgid "Color"
+msgstr "رنک"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__color
+msgid "Color Index"
+msgstr "رنگ پس زمینه"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__note
+msgid "Comments"
+msgstr "نظرها"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__company_id
+msgid "Company"
+msgstr "شرکت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_building_part__complete_name
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
+msgid "Complete Name"
+msgstr "نام مکمل"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__estimated_next_failure
+#: model:ir.model.fields,help:maintenance.field_maintenance_mixin__estimated_next_failure
+msgid "Computed as Latest Failure Date + MTBF"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__concrete
+msgid "Concrete"
+msgstr "ګنکريټ"
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_res_config_settings
+msgid "Config Settings"
+msgstr "تنظیمات پیکربندی"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_configuration
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Configuration"
+msgstr "پیکربندی"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.menu_second
+msgid "Configurations"
+msgstr "تنظيمات"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_pms_contract
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__contract_ids
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__contract_id
+#: model:ir.ui.menu,name:egp_property.menu_pms_contract
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Contract"
+msgstr "قرارداد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Contract Details"
+msgstr "توضيحات قرارداد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Contract End Date"
+msgstr "تاريخ ختم قرازداد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__name
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Contract Reference"
+msgstr "ريفرينس قرارداد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__contract_type_id
+#: model_terms:ir.ui.view,arch_db:egp_property.contract_type_search
+msgid "Contract Type"
+msgstr "نوع قرارداد"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.pms_contract_type_action
+msgid "Contract Types"
+msgstr "نوع قرار داد "
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_pms_contract
+msgid "Contract information"
+msgstr "معلومات قرارداد"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.pms_contract_menu
+msgid "Contract type"
+msgstr "نوع قرار داد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__selling_price
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Contracted Price"
+msgstr "قیمت قرارداد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+msgid "Contracts"
+msgstr "قراردادها"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Contracts to review"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__maintenance_type__corrective
+msgid "Corrective"
+msgstr "اصلاحی"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__cost
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Cost"
+msgstr "هزینه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__count_offer
+msgid "Count Offer"
+msgstr "تعداد درخواستی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__count_tags
+msgid "Count Tags"
+msgstr "تعداد نوع ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_property_type_tag
+msgid "Create Your 1st Tags 🤗 !!"
+msgstr "نوع ملکيت خود را بسازید 🤗 !!"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_department
+msgid "Create Your First Department !!"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_property_type
+msgid "Create Your Housing Estate !!"
+msgstr "املاک مسکونی خود را ایجاد کنید!!"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_pms_contract
+msgid "Create Your New Contract !!"
+msgstr "قرارداد جدید خود را بسازید!!"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_real_estate
+msgid "Create Your first Property or Housing Estate !!"
+msgstr "اولین ملکيت یا مسکن خود را ایجاد کنید!!"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_tenant_payment
+msgid "Create Your first Tenant Payment of Housing Estate or Property !!"
+msgstr "اولین پرداخت مستاجر خود را برای ملکيت و يا مسکن ایجاد کنید!!"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_building_part
+msgid "Create Your new record here..."
+msgstr "رکورد جدید خود را اینجا بسازید..."
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.pms_contract_type_action
+msgid "Create a new property contract type"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.res_config_settings_view_form
+msgid "Create custom worksheet templates"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Created By"
+msgstr "ایجاد شده توسط"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_building_part__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__create_uid
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__create_uid
+msgid "Created by"
+msgstr "ایجاد شده توسط"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__owner_user_id
+msgid "Created by User"
+msgstr "ایجاد شده توسط کاربر"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__create_date
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__create_date
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__create_date
+#: model:ir.model.fields,field_description:egp_property.field_building_part__create_date
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__create_date
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__create_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__create_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__create_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__create_date
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__create_date
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__create_date
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__create_date
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__create_date
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__create_date
+msgid "Created on"
+msgstr "ایجادشده در"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__currency_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__currency_id
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__currency_id
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_tenant_payment_tree
+msgid "Currency"
+msgstr "واحد پولی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__currency_symbol
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__currency_symbol
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__currency_symbol
+msgid "Currency Symbol"
+msgstr "سمبول واحد پولی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Current Contract"
+msgstr "قرارداد فعلی"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_open_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__maintenance_open_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__maintenance_open_count
+msgid "Current Maintenance"
+msgstr "تعمیر و نگهداری فعلی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__current_status
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Current Status"
+msgstr "حالت فعلی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+msgid "Current state"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_bounced_content
+msgid "Custom Bounced Message"
+msgstr "پیام برگشتی سفارشی"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_res_config_settings__module_maintenance_worksheet
+msgid "Custom Maintenance Worksheets"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.res_config_settings_view_form
+msgid "Custom Worksheets"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_m_dashboard
+msgid "Dashboard"
+msgstr "داشبورد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__date
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_date
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__date_availability
+msgid "Date Availability"
+msgstr "تاریخ دسترس"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__deadline
+msgid "Date Deadline"
+msgstr "تاریخ مهلت"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__request_date
+msgid "Date requested for the maintenance to happen"
+msgstr "تاریخ درخواست شده برای انجام تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__schedule_date
+msgid ""
+"Date the maintenance team plans the maintenance.  It should not differ much "
+"from the Request Date. "
+msgstr ""
+"تاریخ برنامه ریزی تیم تعمیر و نگهداری. نباید با تاریخ درخواست تفاوت زیادی "
+"داشته باشد. "
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__close_date
+msgid "Date the maintenance was finished. "
+msgstr "تاریخ اتمام تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__day
+msgid "Days"
+msgstr "روز"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Days Paid"
+msgstr "روزهای پرداخت شده"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Deadline"
+msgstr "ضرب الاجل"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Deed Number"
+msgstr "نمبر قباله"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__deed_number
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__deed_number
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__deed_number
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Deed or title deed number"
+msgstr "شماره یا سند ملکیت"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_defaults
+msgid "Default Values"
+msgstr "مقادیر پیش فرض"
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "Delete"
+msgstr "حذف"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__department_id
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__department
+#: model_terms:ir.ui.view,arch_db:egp_property.view_maintenance_equipment_form_inherited
+msgid "Department"
+msgstr "ديپارتمنت هيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__department_name
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.view_department_form
+msgid "Department Name"
+msgstr "نام ديپارتمنت"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_department
+#: model:ir.ui.menu,name:egp_property.second_submenu_department
+msgid "Departments"
+msgstr "ديپارتمنت ها"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__description
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__description
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__description
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Description"
+msgstr "وضاحت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_building_part__details
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_details
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
+msgid "Details"
+msgstr "جزئیات"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__display_name
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__display_name
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__display_name
+#: model:ir.model.fields,field_description:egp_property.field_building_part__display_name
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__display_name
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__display_name
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__display_name
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__display_name
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__display_name
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__display_name
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__display_name
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__display_name
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__display_name
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__display_name
+msgid "Display Name"
+msgstr "نام نمایش"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__document_type__document
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Document"
+msgstr "مکتوب"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__document_number
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Document Number"
+msgstr "شماره مکتوب"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__document_property
+msgid "Document Property"
+msgstr "سند ملکیت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__document_type
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Document Type"
+msgstr "نوع سند"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Documents"
+msgstr "اسناد ضمیمه"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Done"
+msgstr "انجام شده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__download_format
+msgid "Download Format"
+msgstr "فرمت دانلود"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Download The Filtered Record"
+msgstr "ریکاردهای فلترشده را داونلود کنيد"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__draft
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__draft
+msgid "Draft"
+msgstr "جديد"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__duration
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Duration"
+msgstr "مدت زمان"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__duration
+msgid "Duration in hours."
+msgstr "مدت زمان بر حسب ساعت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_pms_contract_type
+msgid "EGP PMS Contract Type"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_type_view_tree
+msgid "EGP PMS Contract Types"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.module.category,name:egp_property.module_category_MCIT_PMS
+msgid "EGP Property-PMS"
+msgstr "کتګوری برای سيستم مديريت عمومی املاک"
+
+#. module: egp_property
+#: model:mail.template,name:egp_property.rent_received_mail_template
+msgid "EGP Property: Tenant Rent Received email"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__east
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__garden_orientation__east
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "East"
+msgstr "شرق"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_department_view_kanban
+msgid "Edit"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
+msgid "Edit Contract"
+msgstr "ویرایش قرارداد"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "Edit..."
+msgstr "ویرایش…"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__effective_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__effective_date
+msgid "Effective Date"
+msgstr "تاریخ اجرا"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__email_id
+msgid "Email"
+msgstr "ايميل"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_email
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+msgid "Email Alias"
+msgstr "مستعار ایمیل"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_id
+msgid ""
+"Email alias for this equipment category. New emails will automatically "
+"create a new equipment under this category."
+msgstr ""
+"نام مستعار ایمیل برای این دسته تجهیزات. ایمیل های جدید به طور خودکار تجهیزات"
+" جدیدی را تحت این دسته ایجاد می کنند."
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__email_cc
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Email cc"
+msgstr "ایمیل سی سی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Emirate Logo"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__employee_id
+#: model:ir.model.fields.selection,name:egp_property.selection__agent_view__agent_type__employee
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__employee
+#: model_terms:ir.ui.view,arch_db:egp_property.view_maintenance_equipment_form_inherited
+msgid "Employee"
+msgstr "کارمند"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Employee Name"
+msgstr "نام کارمند"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
+msgid "Employee's Name"
+msgstr "نام کارمند"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__date_end
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__repeat_until
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "End Date"
+msgstr "تاريخ ختم"
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_pms_contract__date_end
+msgid "End date of the contract (if it's a fixed-term contract)."
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model:ir.actions.act_window,name:egp_property.action_maintenance_equipment
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_action
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_action_from_category_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__equipment_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__equipment_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__equipment_ids
+#: model:ir.ui.menu,name:egp_property.equipment_menu
+#: model:ir.ui.menu,name:maintenance.menu_equipment_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Equipment"
+msgstr "تجهیزات يا اجناس"
+
+#. module: maintenance
+#: model:mail.message.subtype,description:maintenance.mt_mat_assign
+#: model:mail.message.subtype,name:maintenance.mt_cat_mat_assign
+#: model:mail.message.subtype,name:maintenance.mt_mat_assign
+msgid "Equipment Assigned"
+msgstr "تجهیزات واگذار شده"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_category_action
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_cat
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+msgid "Equipment Categories"
+msgstr "دسته بندی تجهیزات"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__category_id
+msgid "Equipment Category"
+msgstr "دسته تجهیزات"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__equipment_count
+msgid "Equipment Count"
+msgstr ""
+
+#. module: maintenance
+#: model:res.groups,name:maintenance.group_equipment_manager
+msgid "Equipment Manager"
+msgstr "مدیر تجهیزات"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__name
+msgid "Equipment Name"
+msgstr "نام تجهیزات"
+
+#. module: egp_property
+#: model:ir.actions.report,name:egp_property.action_report_equipment
+msgid "Equipment report"
+msgstr "فرنت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_estate_property_type
+msgid "Estate Property Type"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Estimated Next Failure"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__estimated_next_failure
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__estimated_next_failure
+msgid "Estimated time before next failure (in days)"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Evaluate Price(Afghani)"
+msgstr "ارزیابی قیمت (افغانی)"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Evaluate Price(Dollor $)"
+msgstr "ارزیابی قیمت (دالر$)"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Evaluated Price"
+msgstr "قیمت ارزیابی شده"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__current_status__not_use
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__offer_received
+msgid "Excess"
+msgstr "مازاد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Expectation Price"
+msgstr "قيمت ملکيت"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__expected_mtbf
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__expected_mtbf
+msgid "Expected MTBF"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__expected_mtbf
+#: model:ir.model.fields,help:maintenance.field_maintenance_mixin__expected_mtbf
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Expected Mean Time Between Failure"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__expected_price
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__expected_price
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__expected_price
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Expected Price"
+msgstr "قيمت ملکيت"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__agent_view__agent_type__external
+msgid "External"
+msgstr "شخص بیرونی"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__grade_type_property__first_grade
+msgid "First Grade"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__floor
+msgid "Floor"
+msgstr "منزل"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__floors
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__floors
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+msgid "Floors"
+msgstr "منازل"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__fold
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__fold
+msgid "Folded in Maintenance Pipe"
+msgstr "تا شده در تعمیر و نگهداری"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_cal
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_from_equipment
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_link
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_todo_request_action_from_dashboard
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_request_action_reports
+msgid ""
+"Follow the process of the request and communicate with the collaborator."
+msgstr "روند درخواست را دنبال کنید و با همکار ارتباط برقرار کنید."
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_follower_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_follower_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_follower_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_follower_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_follower_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_follower_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_follower_ids
+msgid "Followers"
+msgstr "دنبال کنندگان"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_partner_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_partner_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_partner_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_partner_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_partner_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_partner_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "پیروان (شرکاء)"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__activity_type_icon
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_type_icon
+#: model:ir.model.fields,help:egp_property.field_pms_department__activity_type_icon
+#: model:ir.model.fields,help:egp_property.field_real_estate__activity_type_icon
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__activity_type_icon
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "آیکون فونت عالی به عبارتی fa-tasks"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_type__forever
+msgid "Forever"
+msgstr "برای همیشه"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__fort
+msgid "Fort Qala"
+msgstr "چهارديوالی شده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__start_date
+msgid "From: "
+msgstr "از: "
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Future Activities"
+msgstr "فعالیت های آینده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__garage
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__garage
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__garage
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Garage"
+msgstr "ګيراج"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Garage Availability"
+msgstr "ګيراج دارد ؟"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__garden
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__garden
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__garden
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+msgid "Garden"
+msgstr "باغ"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Garden Area(Sqm)"
+msgstr "ساحه باغ (متر مربع)"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__garden_area
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__garden_area
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__garden_area
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Garden Area(sqm)"
+msgstr "ساحه باغ (متر مربع)"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Garden Availability"
+msgstr "باغ دارد ؟"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__garden_orientation
+msgid "Garden Orientation"
+msgstr "موقيعت باغ"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "General Property Management"
+msgstr "مديريت عمومی املاک"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__gereb
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Gereb"
+msgstr "جريب"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__instruction_google_slide
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__instruction_type__google_slide
+msgid "Google Slide"
+msgstr "اسلاید گوگل"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Google Slide Link"
+msgstr "لینک اسلاید گوگل"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__grade_type_property
+msgid "Grade Type Property"
+msgstr "حالت درجه"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Grade and type of land"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__done
+msgid "Green"
+msgstr "رنگ سبز"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__normal
+msgid "Grey"
+msgstr "رنگ خاکستری"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__ground
+msgid "Ground"
+msgstr "زمين خالی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.contract_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.location_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+#: model_terms:ir.ui.view,arch_db:egp_property.property_tag_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_agent_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+msgid "Group By"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Group by..."
+msgstr "گروه‌بندی بر مبنای..."
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__hall
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+msgid "Hall"
+msgstr "سالون"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__has_message
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__has_message
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__has_message
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__has_message
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__has_message
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__has_message
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__has_message
+msgid "Has Message"
+msgstr "آیا دارای پیام است"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Head of Administration"
+msgstr "رياست اداری و خدمات"
+
+#. module: egp_property
+#: model:ir.module.category,description:egp_property.module_category_MCIT_PMS
+msgid "Helps you manager your property management system."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__3
+msgid "High"
+msgstr "بالا"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "High-priority"
+msgstr "اولویت بالا"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__id
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__id
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__id
+#: model:ir.model.fields,field_description:egp_property.field_building_part__id
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__id
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__id
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__id
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__id
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__id
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__id
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__id
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
+msgstr ""
+"شناسه رکورد والد حاوی نام مستعار (مثال: پروژه دارای نام مستعار ایجاد وظیفه)"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/real_estate.py:0
+#, python-format
+msgid ""
+"INVALID LIVING AREA ,\n"
+" The living area must be positive and greater than 0"
+msgstr ""
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/agents_view.py:0
+#, python-format
+msgid ""
+"INVALID agent phone number ,\n"
+" The agent phone number cannot exceed 14 characters."
+msgstr "شماره تماس باید از ۱۴ عدد زیات نه باشد"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_exception_icon
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_exception_icon
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_exception_icon
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_exception_icon
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_exception_icon
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_exception_icon
+msgid "Icon"
+msgstr "شمایل"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__activity_exception_icon
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_exception_icon
+#: model:ir.model.fields,help:egp_property.field_pms_department__activity_exception_icon
+#: model:ir.model.fields,help:egp_property.field_real_estate__activity_exception_icon
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__activity_exception_icon
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "آیکون برای نشان دادن یک فعالیت استثنا."
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__message_needaction
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_needaction
+#: model:ir.model.fields,help:egp_property.field_pms_department__message_needaction
+#: model:ir.model.fields,help:egp_property.field_real_estate__message_needaction
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_needaction
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_needaction
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+"اگر این گزینه را انتخاب کنید، پیام‌های جدید به توجه شما نیاز خواهند داشت."
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__message_has_error
+#: model:ir.model.fields,help:egp_property.field_agent_view__message_has_sms_error
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_has_error
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_has_sms_error
+#: model:ir.model.fields,help:egp_property.field_pms_department__message_has_error
+#: model:ir.model.fields,help:egp_property.field_pms_department__message_has_sms_error
+#: model:ir.model.fields,help:egp_property.field_real_estate__message_has_error
+#: model:ir.model.fields,help:egp_property.field_real_estate__message_has_sms_error
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_has_error
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_has_error
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "اگر علامت زده شود، برخی از پیام ها دارای خطای تحویل هستند."
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_bounced_content
+msgid ""
+"If set, this content will automatically be sent out to unauthorized users "
+"instead of the default message."
+msgstr ""
+"در صورت تنظیم، این محتوا به‌جای پیام پیش‌فرض، به‌طور خودکار برای کاربران "
+"غیرمجاز ارسال می‌شود."
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__kanban_state__normal
+#: model:maintenance.stage,name:maintenance.stage_1
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "In Progress"
+msgstr "در جریان"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__offer_accepted
+msgid "In Use"
+msgstr "غیر مازاد"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/wizard/wizard_validation.py:0
+#, python-format
+msgid ""
+"Input Error in End Date Field \n"
+" You can Choose end Date Till Today"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__document_type__inquiry
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Inquiry"
+msgstr "استعلام"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_number
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Inquiry Number"
+msgstr "شماره استعلام"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__instruction_type
+msgid "Instruction"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Instructions"
+msgstr "راهنمایی"
+
+#. module: maintenance
+#: model:maintenance.team,name:maintenance.equipment_team_maintenance
+msgid "Internal Maintenance"
+msgstr "تعمیر و نگهداری داخلی"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Internal Notes"
+msgstr "یادداشت های داخلی"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_is_follower
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_is_follower
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_is_follower
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_is_follower
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_is_follower
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_is_follower
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_is_follower
+msgid "Is Follower"
+msgstr "آیا دنبال می کند"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__is_paid
+msgid "Is Paid"
+msgstr "پرداخت شده؟"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Islamic Emirate of Afghanistan"
+msgstr "امارت اسلامی افغانستان"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Islamic Emirates of Afghanistan"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_account_move
+msgid "Journal Entry"
+msgstr "سند دفترروزنامه‌"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__kanban_state
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__kanban_state
+msgid "Kanban State"
+msgstr "وضعیت کانبان"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__raw
+msgid "Khama"
+msgstr "خامه"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__kitchen
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+msgid "Kitchen"
+msgstr "اشپزخانه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__language
+#: model:ir.ui.menu,name:egp_property.language_menu
+msgid "Language"
+msgstr "زبان"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_agent_language
+msgid "Languages"
+msgstr "زبانها"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_building_part__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__write_uid
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__write_uid
+msgid "Last Updated by"
+msgstr "آخرین بروز رسانی توسط"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_language__write_date
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__write_date
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__write_date
+#: model:ir.model.fields,field_description:egp_property.field_building_part__write_date
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__write_date
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__write_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__write_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__write_date
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__write_date
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__write_date
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__write_date
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__write_date
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__write_date
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__write_date
+msgid "Last Updated on"
+msgstr "آخرین بروز رسانی در"
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Late Activities"
+msgstr "فعالیتهای اخیر"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Latest Failure"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__latest_failure_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__latest_failure_date
+msgid "Latest Failure Date"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__living_area
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__living_area
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__living_area
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Living Area(sqm)"
+msgstr "ساحه زمين(متر مربع)"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_incoming_local
+msgid "Local-part based incoming detection"
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__location
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Location"
+msgstr "مکان"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_property_type
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__property_type
+#: model_terms:ir.ui.view,arch_db:egp_property.location_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_property_form
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Location Type"
+msgstr "ساحه ملکيت"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.second_submenu
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Location type"
+msgstr "ساحه ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Location types"
+msgstr "ساحه ملکیت"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_m_reports_losses
+msgid "Losses Analysis"
+msgstr "تجزیه و تحلیل ضرر و زیان"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__1
+msgid "Low"
+msgstr "پایین"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "MCIT Logo"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__mtbf
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__mtbf
+msgid "MTBF"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__mttr
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__mttr
+msgid "MTTR"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__maintenance_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__maintenance_ids
+#: model:ir.ui.menu,name:maintenance.menu_m_request
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_title
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.res_config_settings_view_form
+msgid "Maintenance"
+msgstr "نگهداری"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_m_request_calendar
+msgid "Maintenance Calendar"
+msgstr "تقویم تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__maintenance_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__maintenance_count
+msgid "Maintenance Count"
+msgstr "تعداد تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "تجهیزات نگهداری"
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_equipment_category
+msgid "Maintenance Equipment Category"
+msgstr "دسته تجهیزات تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_mixin
+msgid "Maintenance Maintained Item"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_request
+#: model:mail.activity.type,name:maintenance.mail_act_maintenance_request
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_request_view_activity
+msgid "Maintenance Request"
+msgstr "درخواست نگهداری"
+
+#. module: maintenance
+#: model:mail.message.subtype,name:maintenance.mt_cat_req_created
+msgid "Maintenance Request Created"
+msgstr "درخواست تعمیر و نگهداری ایجاد شد"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Maintenance Request Search"
+msgstr "جستجوی درخواست تعمیر و نگهداری"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_stage_view_tree
+msgid "Maintenance Request Stage"
+msgstr "مرحله درخواست تعمیر و نگهداری"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_stage_view_search
+msgid "Maintenance Request Stages"
+msgstr "مراحل درخواست تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:mail.message.subtype,description:maintenance.mt_req_created
+msgid "Maintenance Request created"
+msgstr "درخواست تعمیر و نگهداری ایجاد شد"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_request_action
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_request_action_cal
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_request_action_from_equipment
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_request_action_link
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_todo_request_action_from_dashboard
+#: model:ir.actions.act_window,name:maintenance.maintenance_request_action_reports
+#: model:ir.ui.menu,name:maintenance.maintenance_request_reporting
+#: model:ir.ui.menu,name:maintenance.menu_m_request_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Maintenance Requests"
+msgstr "درخواستهای نگهداری"
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_stage
+msgid "Maintenance Stage"
+msgstr "مرحله تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_stage_configuration
+msgid "Maintenance Stages"
+msgstr "مراحل تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_team_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__maintenance_team_id
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_tree
+msgid "Maintenance Team"
+msgstr "تیم تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.maintenance_dashboard_action
+#: model:ir.model,name:maintenance.model_maintenance_team
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_teams
+msgid "Maintenance Teams"
+msgstr "تیم‌های تعمیر و نگهداری"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__maintenance_type
+msgid "Maintenance Type"
+msgstr "نوع تعمیر و نگهداری"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Mean Time Between Failure"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__mtbf
+#: model:ir.model.fields,help:maintenance.field_maintenance_mixin__mtbf
+msgid ""
+"Mean Time Between Failure, computed based on done corrective maintenances."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__mttr
+#: model:ir.model.fields,help:maintenance.field_maintenance_mixin__mttr
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Mean Time To Repair"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__meeting_address
+msgid "Meeting Address"
+msgstr "موقيعت جلسه"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Meeting Information"
+msgstr "معلومات جلسه"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_error
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_has_error
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_has_error
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_has_error
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_has_error
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_has_error
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_has_error
+msgid "Message Delivery error"
+msgstr "خطای تحویل پیام"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_ids
+msgid "Messages"
+msgstr "پیام ها"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__remaining_meters
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Meters"
+msgstr "متر"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Ministry of Communications and IT"
+msgstr "وزارت مخابرات و تکنالوجی معلوماتی"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__model
+msgid "Model"
+msgstr "مدل"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__monthly_rent
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__monthly_rent
+msgid "Monthly Rent"
+msgstr "کرايه ماهانه"
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_pms_contract__monthly_rent
+msgid "Monthly rent amount for the property"
+msgstr "مبلغ اجاره ماهانه ملک"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__month
+msgid "Months"
+msgstr "ماه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__months_paid
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Months Paid"
+msgstr "ماه های پرداخت شده"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Mothamed"
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__my_activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__my_activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__my_activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__my_activity_date_deadline
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نهای فعالیت من"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "My Equipment"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "My Maintenances"
+msgstr "تعمیر و نگهداری من"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_building_part__name
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__name
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Name"
+msgstr "نام"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__nema_pokhta
+msgid "Nema Pokhta"
+msgstr "نيمه پخته"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/agents_view.py:0
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__new
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__new
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_agent_view_pivot
+msgid "New Agent"
+msgstr "هيت جدید"
+
+#. module: maintenance
+#: model:maintenance.stage,name:maintenance.stage_0
+msgid "New Request"
+msgstr "درخواست جدید"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_date_deadline
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_date_deadline
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_date_deadline
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "موعد فعالیت بعدی"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_summary
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_summary
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_summary
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_summary
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_summary
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_summary
+msgid "Next Activity Summary"
+msgstr "خلاصه فعالیت بعدی"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_type_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_type_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_type_id
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_type_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_type_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع فعالیت بعدی"
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_property_offer
+msgid "No Offers Provides Till Yet , Please Wait....."
+msgstr "هنوز هیچ درخواستی ارائه نشده است، لطفا صبر کنید....."
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_agent_commission
+#: model_terms:ir.actions.act_window,help:egp_property.action_maintenance_equipment
+msgid "No records"
+msgstr "هيچ ريکارد وجود ندارد"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__2
+msgid "Normal"
+msgstr "عادی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__north
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__garden_orientation__north
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "North"
+msgstr "شمال"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__note
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Note"
+msgstr "یادداشت"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__notes
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Notes"
+msgstr "وظاحت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Number"
+msgstr "شماره"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_needaction_counter
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_needaction_counter
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_needaction_counter
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_needaction_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_needaction_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_needaction_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr "تعداد اقدامات"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count
+msgid "Number of Requests"
+msgstr "تعداد درخواست ها"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_block
+msgid "Number of Requests Blocked"
+msgstr "تعداد درخواست های مسدود شده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_date
+msgid "Number of Requests Scheduled"
+msgstr "تعداد درخواست های برنامه ریزی شده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_unscheduled
+msgid "Number of Requests Unscheduled"
+msgstr "تعداد درخواست های برنامه ریزی نشده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_high_priority
+msgid "Number of Requests in High Priority"
+msgstr "تعداد درخواست ها در اولویت بالا"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_error_counter
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_has_error_counter
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_has_error_counter
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_has_error_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_has_error_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_has_error_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_has_error_counter
+msgid "Number of errors"
+msgstr "تعداد خطاها"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__message_needaction_counter
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_needaction_counter
+#: model:ir.model.fields,help:egp_property.field_pms_department__message_needaction_counter
+#: model:ir.model.fields,help:egp_property.field_real_estate__message_needaction_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_needaction_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_needaction_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__message_has_error_counter
+#: model:ir.model.fields,help:egp_property.field_pms_contract__message_has_error_counter
+#: model:ir.model.fields,help:egp_property.field_pms_department__message_has_error_counter
+#: model:ir.model.fields,help:egp_property.field_real_estate__message_has_error_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_has_error_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_has_error_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "تعداد پیامهای با خطای تحویل"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__offer_id
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__document_type__offer
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Offer"
+msgstr "درخواستی"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Offer Accept"
+msgstr "درخواستی قبول"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__offer_counts
+msgid "Offer Counts"
+msgstr "تعداد درخواستی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__offer_date
+msgid "Offer Date"
+msgstr "تاريخ درخواستی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__offer_number
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__offer_number
+msgid "Offer Number"
+msgstr "شماره درخواست"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Offer Received"
+msgstr "درخواستی دریافت شد"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/property_type.py:0
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__offer_ids
+#: model:ir.ui.menu,name:egp_property.offer_submenu
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+#, python-format
+msgid "Offers"
+msgstr "درخواستی"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr ""
+"شناسه اختیاری یک موضوع (رکورد) که تمام پیام‌های دریافتی به آن پیوست می‌شود، "
+"حتی اگر به آن پاسخ نداده باشند. اگر تنظیم شود، ایجاد رکوردهای جدید به طور "
+"کامل غیرفعال می شود."
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__order_office
+msgid "Order Office"
+msgstr "ادراه درخواست کننده"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Orientation"
+msgstr "موقيعت باغ"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__other
+msgid "Other"
+msgstr "دیگر"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Other Info"
+msgstr "معلومات دیگر"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_m_reports_oee
+msgid "Overall Equipment Effectiveness (OEE)"
+msgstr "اثربخشی کلی تجهیزات (OEE)"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__OwaisBank
+msgid "Owais Bank"
+msgstr "آوايز بانک"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__owner_user_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
+msgid "Owner"
+msgstr "مالک‌"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__instruction_pdf
+#: model:ir.model.fields.selection,name:egp_property.selection__wizard_validation_estate__download_format__pdf
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__instruction_type__pdf
+msgid "PDF"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_pms_department
+msgid "PMS Department"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_property_offer
+msgid "PROPERTY OFFERS"
+msgstr "درخواستی املاک"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_parent_model_id
+msgid "Parent Model"
+msgstr "مدل والد"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_building_part__parent_id
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
+msgid "Parent Part"
+msgstr "بخش مربوطه"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "شناسه موضوع رکورد والد"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not"
+" necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr ""
+"مدل والد دارای نام مستعار. مدلی که مرجع نام مستعار را نگه می دارد لزوماً "
+"مدلی نیست که توسط alias_model_id (مثال: پروژه (parent_model) و task (model))"
+" ارائه شده است."
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
+msgid "Part Name"
+msgstr "نام بخش"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_building_part__part_type
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
+msgid "Part Type"
+msgstr "نوع بخش"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__partner_id
+msgid "Partner"
+msgstr "مستاجر"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__instruction_google_slide
+msgid ""
+"Paste the url of your Google Slide. Make sure the access to the document is "
+"public."
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__payment_date
+msgid "Payment Date"
+msgstr "تاریخ پرداخت"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.menu_tenant_payment_list
+msgid "Payments"
+msgstr "کرايه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__tenant_phone_number
+msgid "Phone Number"
+msgstr "شماره تماس"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Pick Property Name"
+msgstr "نام ملکيت را انتخاب کنید"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__pokhta
+msgid "Pokhta"
+msgstr "پخته"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following channels\n"
+msgstr ""
+"خط مشی ارسال پیام در سند با استفاده از mailgateway.\n"
+"- همه: همه می توانند پست کنند\n"
+"- شرکا: فقط شرکای تأیید شده\n"
+"- دنبال کنندگان: فقط دنبال کنندگان سند مرتبط یا اعضای کانال های زیر\n"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_position_title
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
+msgid "Position Title"
+msgstr "نام بست"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Prepared By"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Prepared By:"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__maintenance_type__preventive
+msgid "Preventive"
+msgstr "پیشگیرانه"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__price
+#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
+msgid "Price"
+msgstr "قيمت"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/wizard/valuation.py:0
+#: code:addons/egp_property/wizard/valuation.py:0
+#, python-format
+msgid "Price Evaluation for Specific Property Based on Living area Size"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__priority
+msgid "Priority"
+msgstr "اولویت"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Product Information"
+msgstr "اطلاعات محصول"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Product Location"
+msgstr "موقيعت جنس"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_real_estate
+#: model:ir.model.fields,field_description:egp_property.field_account_bank_statement_line__property_id
+#: model:ir.model.fields,field_description:egp_property.field_account_move__property_id
+#: model:ir.model.fields,field_description:egp_property.field_account_payment__property_id
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__property_type_id
+#: model:ir.ui.menu,name:egp_property.first_menu
+#: model:ir.ui.menu,name:egp_property.menu_root
+#: model:ir.ui.menu,name:egp_property.submenu_first_menu
+msgid "Properties"
+msgstr "املاک"
+
+#. module: egp_property
+#: model:ir.actions.report,name:egp_property.action_report_property_details
+#: model:ir.model.fields,field_description:egp_property.field_building_part__property_id
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__offer_property_id
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__property_id
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__property_ids
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__property_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_id
+#: model:ir.model.fields,field_description:egp_property.field_res_users__property_ids
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__property_id
+#: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+msgid "Property"
+msgstr "ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid ""
+"Property\n"
+"                                    Information\n"
+"                                    Report"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_area_type
+msgid "Property Area Type"
+msgstr "نوع ساحه ملکیت"
+
+#. module: egp_property
+#: model:res.groups,name:egp_property.group_public_user
+msgid "Property Auctioneer"
+msgstr "گروپ يوزر عام برای سیستم مدیریت عمومی املاک"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Property Boundaries"
+msgstr "حدود اربعه"
+
+#. module: egp_property
+#: model:res.groups,name:egp_property.group_admin
+msgid "Property Director"
+msgstr "گروپ ادمين برای سیستم مدیریت عمومی املاک"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Property Document Details"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+msgid "Property Document information"
+msgstr ""
+
+#. module: egp_property
+#: model:res.groups,name:egp_property.group_expert_karshinas
+msgid "Property Expert/Karshinas"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.real_estate_view_gantt
+msgid "Property Gantt view"
+msgstr "نمای گانت ملکيت"
+
+#. module: egp_property
+#: model:res.groups,name:egp_property.group_manager
+msgid "Property Manager"
+msgstr "گروپ منيجر برای سیستم مدیریت عمومی املاک"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__property_name
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__Property_value_id
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
+msgid "Property Name"
+msgstr "نام ملکيت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_estate_property_offer
+msgid "Property Offer"
+msgstr "درخواستی ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Property Owner"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_property_type_tag
+msgid "Property Tag"
+msgstr "نوع ملکيت"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.tag_submenu
+#: model_terms:ir.ui.view,arch_db:egp_property.property_tag_search
+msgid "Property Tags"
+msgstr "نوع ملکيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_type
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__property_area_type
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__property_type
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__property_type_id
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__property_area_type
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__property_type
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__property_type_id
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Property Type"
+msgstr "نوع ساحه ملکيت"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_property_type_tag
+msgid "Property Type Tag"
+msgstr "ساحه ملکيت"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/real_estate.py:0
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__property_types
+#, python-format
+msgid "Property Types"
+msgstr "انواع املاک"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_wizard_validation_estate
+msgid "Property Validation"
+msgstr "اعتبار سنجی ملکيت"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.wizard_valuation_menu
+#: model:ir.ui.menu,name:egp_property.wizard_valuation_id
+msgid "Property Valuation"
+msgstr "ارزش گذاری املاک"
+
+#. module: egp_property
+#: model:ir.actions.report,name:egp_property.action_report_property_details_copy
+msgid "Property copy"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+msgid "Property information"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__property_location
+msgid "Property location"
+msgstr "موقيعت ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+msgid "Property name"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_property_valuation
+msgid "Property valuation"
+msgstr "ارزش گذاری ملکيت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__quantity
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Quantity"
+msgstr "مقدار"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "RESET STATE"
+msgstr "برګشت به حالت اوليه"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/real_estate.py:0
+#, python-format
+msgid "RESET is Possible only in Cancel State"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Ready"
+msgstr "آماده"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__kanban_state__done
+msgid "Ready for next stage"
+msgstr "آماده برای مرحله بعد"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_real_estate
+msgid "Real Estate"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.res_users_view_form
+msgid "Real Estate Property"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_graph
+msgid "Real Estates"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "Record Colour"
+msgstr "رنگ رکورد"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "شناسه موضوع رکورد"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__recurring_maintenance
+msgid "Recurrent"
+msgstr "مکرر"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__blocked
+msgid "Red"
+msgstr "سرخ"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__estate_property_offer__status__refused
+msgid "Refused"
+msgstr "مسترد"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_search
+msgid "Refused Property"
+msgstr "املاک رد شده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__remaining_amount
+msgid "Remaining Amount"
+msgstr "مقدار باقی مانده"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Reopen Request"
+msgstr "درخواست را دوباره باز کنید"
+
+#. module: maintenance
+#: model:maintenance.stage,name:maintenance.stage_3
+msgid "Repaired"
+msgstr "تعمیر شده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__repeat_interval
+msgid "Repeat Every"
+msgstr "تکرار هر"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__repeat_unit
+msgid "Repeat Unit"
+msgstr "واحد تکرار"
+
+#. modules: egp_property, maintenance
+#: model:ir.ui.menu,name:egp_property.wizard_main_id
+#: model:ir.ui.menu,name:maintenance.maintenance_reporting
+#: model:ir.ui.menu,name:maintenance.menu_m_reports
+msgid "Reporting"
+msgstr "گزارش"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__request_ids
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "Request"
+msgstr "درخواست"
+
+#. module: maintenance
+#: model:mail.message.subtype,name:maintenance.mt_req_created
+msgid "Request Created"
+msgstr "درخواست ایجاد شد"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__request_date
+msgid "Request Date"
+msgstr "تاریخ درخواست"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__done
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__done
+msgid "Request Done"
+msgstr "درخواست انجام شده"
+
+#. module: maintenance
+#. odoo-python
+#: code:addons/maintenance/models/maintenance.py:0
+#: code:addons/maintenance/models/maintenance.py:0
+#, python-format
+msgid "Request planned for %s"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Requested By"
+msgstr "درخواست شده توسط"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+msgid "Requested by:"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
+msgid "Requester"
+msgstr "درخواست کننده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_ids
+msgid "Requests"
+msgstr "درخواست ها"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__technician_user_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Responsible"
+msgstr "پاسخگو"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_user_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__activity_user_id
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__activity_user_id
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__activity_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_user_id
+msgid "Responsible User"
+msgstr "کاربر مسئول"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__room
+msgid "Room"
+msgstr "اطاق"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+msgid "Rooms"
+msgstr "اطاقها"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__running
+#: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__open
+msgid "Running"
+msgstr "در حال جريان"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Running Contracts"
+msgstr "قراردادهای در حال اجرا"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_sms_error
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__message_has_sms_error
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__message_has_sms_error
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__sales_person
+msgid "Salesman"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Scheduled"
+msgstr "برنامه ریزی شد"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__schedule_date
+msgid "Scheduled Date"
+msgstr "تاریخ برنامه ریزی شده"
+
+#. module: maintenance
+#: model:maintenance.stage,name:maintenance.stage_4
+msgid "Scrap"
+msgstr "اسقاط"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__scrap_date
+msgid "Scrap Date"
+msgstr "تاریخ اسقاط"
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
+msgid "Search"
+msgstr "جستجو کردن"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Search Contract"
+msgstr "قرارداد جستجو"
+
+#. module: egp_property
+#: model:ir.ui.menu,name:egp_property.wizard_menu_id
+msgid "Search Properties"
+msgstr "جستجو ملکيت"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__grade_type_property__second_grade
+msgid "Second Grade"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__selling_price
+msgid "Selling Price"
+msgstr "قيمت قرارداد"
+
+#. module: egp_property
+#: model:mail.template,description:egp_property.rent_received_mail_template
+msgid ""
+"Sent manually in presence module when an employee wasn't working despite not"
+" being off"
+msgstr ""
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_type__sequence
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__sequence
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__sequence
+msgid "Sequence"
+msgstr "ترتيب"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__serial_no
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Serial Number"
+msgstr "شماره سریال"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__archive
+msgid ""
+"Set archive to true to hide the maintenance request without deleting it."
+msgstr ""
+"بایگانی را روی درست تنظیم کنید تا درخواست تعمیر و نگهداری بدون حذف آن پنهان "
+"شود."
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_configuration
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_config
+msgid "Settings"
+msgstr "تنظیمات"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Show all records which has next action date is before today"
+msgstr "تمام رکوردهایی که تاریخ اقدام بعدی آن قبل از امروز است را نشان بده"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Show all records which have a next action date before today"
+msgstr "نمایش تمام رکوردهایی که تاریخ اقدام بعدی قبل از امروز دارند"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+#: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
+msgid "Signature"
+msgstr "امضاء"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Sold"
+msgstr "فروخته"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__south
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__garden_orientation__south
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "South"
+msgstr "جنوب"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__stage_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Stage"
+msgstr "مرحله"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.hr_equipment_stage_action
+msgid "Stages"
+msgstr "مراحل"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__date_start
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Start Date"
+msgstr "تاریخ شروع"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Start searching date"
+msgstr "شروع به جستجو در تاریخ"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__status
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__contract_status
+#: model_terms:ir.ui.view,arch_db:egp_property.contract_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.location_type_search
+#: model_terms:ir.ui.view,arch_db:egp_property.property_tag_search
+msgid "State"
+msgstr "حالت"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_state
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__state
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__state
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
+#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
+msgid "Status"
+msgstr "حالت"
+
+#. module: maintenance
+#: model:mail.message.subtype,name:maintenance.mt_req_status
+msgid "Status Changed"
+msgstr "وضعیت تغییر کرد"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__activity_state
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_state
+#: model:ir.model.fields,help:egp_property.field_pms_department__activity_state
+#: model:ir.model.fields,help:egp_property.field_real_estate__activity_state
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__activity_state
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"وضعیت بر اساس فعالیت ها\n"
+"سررسید: تاریخ سررسید گذشته است\n"
+"امروز: تاریخ فعالیت امروز است\n"
+"برنامه ریزی شده: فعالیت های آینده."
+
+#. module: maintenance
+#: model:mail.message.subtype,description:maintenance.mt_req_status
+msgid "Status changed"
+msgstr "وضعیت تغییر کرد"
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_pms_contract__state
+msgid "Status of the contract"
+msgstr "حالت قرارداد"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__name
+msgid "Subjects"
+msgstr "موضوعات"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__tag_ids
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__tag_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__tag_ids
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Tag"
+msgstr "نوع ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Tagged Property"
+msgstr "نوع ملکيت"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/real_estate.py:0
+#: model:ir.model.fields,field_description:egp_property.field_property_type_tag__tag_name
+#, python-format
+msgid "Tags"
+msgstr "نوع ملکيت"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__maintenance_team_id
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
+msgid "Team"
+msgstr "تیم"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__member_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__member_ids
+msgid "Team Members"
+msgstr "اعضای تیم"
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,field_description:egp_property.field_agent_team__name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__name
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+msgid "Team Name"
+msgstr "نام تيم"
+
+#. modules: egp_property, maintenance
+#: model:ir.actions.act_window,name:egp_property.agent_team_pms_action
+#: model:ir.actions.act_window,name:maintenance.maintenance_team_action_settings
+msgid "Teams"
+msgstr "تيم ها"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__technician_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_mixin__technician_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__user_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Technician"
+msgstr "متخصص فنی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__tenant_id
+msgid "Tenant"
+msgstr "مستاجر"
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_tenant_payment
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Tenant Payment"
+msgstr "کرايه"
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.action_tenant_payment
+msgid "Tenant Payments"
+msgstr "پرداخت های مستاجر"
+
+#. module: egp_property
+#: model:mail.template,subject:egp_property.rent_received_mail_template
+msgid "Tenant Rent Received mail"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__tenant_payment_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__tenant_ids
+msgid "Tenants"
+msgstr "مستاجرین"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__instruction_text
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__instruction_type__text
+msgid "Text"
+msgstr "متن"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
+msgstr ""
+"مدلی (Odoo Document Kind) که این نام مستعار با آن مطابقت دارد. هر ایمیل "
+"دریافتی که به سابقه موجود پاسخ نمی‌دهد باعث ایجاد یک رکورد جدید از این مدل "
+"می‌شود (به عنوان مثال یک وظیفه پروژه)"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr ""
+"نام مستعار ایمیل، به عنوان مثال 'jobs'. اگر می خواهید ایمیل های "
+"<jobs@example.odoo.com> را دریافت کنید"
+
+#. module: egp_property
+#: model:res.groups,comment:egp_property.group_manager
+msgid "The user will be able to manage all property MCIT system ."
+msgstr ""
+
+#. module: egp_property
+#: model:res.groups,comment:egp_property.group_expert_karshinas
+msgid ""
+"The user will be able to manage all property MCIT system without delete option.\n"
+"            "
+msgstr ""
+
+#. module: maintenance
+#: model:res.groups,comment:maintenance.group_equipment_manager
+msgid "The user will be able to manage equipment."
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.actions.act_window,help:egp_property.action_agent_language
+msgid "There is no Language!!!"
+msgstr "زبان وجود ندارد !!!"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__grade_type_property__third_grade
+msgid "Third Grade"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__effective_date
+#: model:ir.model.fields,help:maintenance.field_maintenance_mixin__effective_date
+msgid "This date will be used to compute the Mean Time Between Failure."
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_building_part
+msgid "This is for MCIT Property"
+msgstr ""
+
+#. module: egp_property
+#: model:res.groups,comment:egp_property.group_public_user
+msgid "This user can only read available property list ."
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__name
+#: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
+msgid "Title"
+msgstr "نام"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "To Do"
+msgstr "جهت اقدام"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__end_date
+msgid "To: "
+msgstr "تا :"
+
+#. modules: egp_property, maintenance
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Today Activities"
+msgstr "فعالیت های امروز"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
+msgid "Toilets"
+msgstr "تشناب"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Top Priorities"
+msgstr "اولویت های برتر"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__total_amount
+msgid "Total Amount"
+msgstr "مقدار کل"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Total Amount :"
+msgstr "مقدار کل :"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "Total Area"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "Total Area :"
+msgstr "مساحت کل :"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__total_area
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__total_area
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__total_area
+msgid "Total Area(sqm)"
+msgstr "مساحت کل (متر مربع)"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/property_contract.py:0
+#, python-format
+msgid "Total Offered"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__total_properties
+msgid "Total Properties"
+msgstr "کل ملکيت ها"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__total_property
+msgid "Total Property"
+msgstr "کل ملکيت"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "Total Property :"
+msgstr "کل ملکيت :"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__total_amount
+msgid "Total Property Amount"
+msgstr "کل مبلغ ملکيت"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/wizard/wizard_validation.py:0
+#, python-format
+msgid "Total Property Created Within Given Date"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.actions.act_window,name:egp_property.wizard_real_estate_menu
+msgid "Total Property Validation"
+msgstr "اعتبار سنجی کل املاک"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Total Received Amount"
+msgstr "مجموع مبلغ دریافتی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__total_rent_received
+msgid "Total Rent Received"
+msgstr "مجموع کرايه دریافتی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_tenant_payment__total_rent_received_sum
+msgid "Total Rent Received (Sum)"
+msgstr "مجموع کرايه دریافتی (مجموع)"
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
+msgid ""
+"Track equipment and link it to an employee or department.\n"
+"                You will be able to manage allocations, issues and maintenance of your equipment."
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Type in notes about this contract..."
+msgstr "یادداشت های مربوط به این قرارداد را تایپ کنید ..."
+
+#. modules: egp_property, maintenance
+#: model:ir.model.fields,help:egp_property.field_agent_view__activity_exception_decoration
+#: model:ir.model.fields,help:egp_property.field_pms_contract__activity_exception_decoration
+#: model:ir.model.fields,help:egp_property.field_pms_department__activity_exception_decoration
+#: model:ir.model.fields,help:egp_property.field_real_estate__activity_exception_decoration
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__activity_exception_decoration
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع فعالیت استثنایی برای رکورد."
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
+msgid "Type to find an employee..."
+msgstr "سخص مورد نظر خود راجستجو کنید"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Unassigned"
+msgstr "محول نشده"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Under Maintenance"
+msgstr "تحت تعمیر و نگهداری"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Unread Messages"
+msgstr "پیام های ناخوانده"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "Unscheduled"
+msgstr "برنامه ریزی نشده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__repeat_type
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_type__until
+msgid "Until"
+msgstr "تا"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__image
+msgid "Upload Property Image"
+msgstr "آپلود تصویر ملکيت"
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_tenant_payment__tenant_attachments
+msgid "Upload Tenant Payment photos and documents."
+msgstr "عکسها و اسناد پرداخت مستاجر را بارگذاری کنید."
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_real_estate__property_attachments
+msgid "Upload property photos and documents."
+msgstr "عکس و اسناد ملکيت را بارگذاری کنید."
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Upload your PDF file."
+msgstr "فایل PDF خود را بارگذاری کنید."
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__equipment_assign_to
+msgid "Used By"
+msgstr "استفاده‌شده توسط"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Used in location"
+msgstr "استفاده شده در محل"
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_estate_property_type__sequence
+msgid "Used to order stages. Lower is better."
+msgstr "برای ترتيب مراحل استفاده می شود. پایین تر بهتر است."
+
+#. module: egp_property
+#: model:ir.model,name:egp_property.model_res_users
+msgid "User"
+msgstr "کاربر"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__user_entered_price
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
+msgid "User Entered Price"
+msgstr "قیمت وارد شده توسط کاربر"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__validity
+#: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
+msgid "Validity"
+msgstr "اعتبار"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "Validity(Days)"
+msgstr "اعتبار (روزها)"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_property_valuation__evaluate_price
+msgid "Valuated Price()"
+msgstr "قیمت ارزیابی شده()"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Vendor"
+msgstr "فروشنده"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_ref
+msgid "Vendor Reference"
+msgstr "مرجع فروشنده"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__0
+msgid "Very Low"
+msgstr "خیلی کم"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
+msgid "View all records"
+msgstr "مشاهده تمام معلومات"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/real_estate.py:0
+#, python-format
+msgid ""
+"WARNING....\n"
+" Deletion is possible only in New or Cancel State"
+msgstr ""
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/estate_offer.py:0
+#, python-format
+msgid ""
+"Warning....\n"
+" Offered Price should be Positive!"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__warranty_date
+msgid "Warranty Expiration Date"
+msgstr "تاریخ انقضای گارانتی"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_agent_view__website_message_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__website_message_ids
+#: model:ir.model.fields,field_description:egp_property.field_pms_department__website_message_ids
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields,help:egp_property.field_agent_view__website_message_ids
+#: model:ir.model.fields,help:egp_property.field_pms_contract__website_message_ids
+#: model:ir.model.fields,help:egp_property.field_pms_department__website_message_ids
+#: model:ir.model.fields,help:egp_property.field_real_estate__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__week
+msgid "Weeks"
+msgstr "هفته"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_real_estate__west
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__garden_orientation__west
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "West"
+msgstr "غرب"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_pms_contract__winner_id
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
+msgid "Winner"
+msgstr "برنده"
+
+#. module: egp_property
+#: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_year
+msgid "Year"
+msgstr "سال"
+
+#. module: maintenance
+#: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__year
+msgid "Years"
+msgstr "سال"
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/real_estate.py:0
+#, python-format
+msgid "You can not Cancel a Property After property in Use!!"
+msgstr ""
+
+#. module: egp_property
+#. odoo-python
+#: code:addons/egp_property/models/buildingPart.py:0
+#, python-format
+msgid "You cannot create recursive part."
+msgstr ""
+
+#. module: maintenance
+#. odoo-python
+#: code:addons/maintenance/models/maintenance.py:0
+#: code:addons/maintenance/models/maintenance.py:0
+#, python-format
+msgid ""
+"You cannot delete an equipment category containing equipment or maintenance "
+"requests."
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Your instructions"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
+msgid "abc@gmail.com"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
+msgid "avtar"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "days"
+msgstr "روز"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+msgid "e.g. Internal Maintenance"
+msgstr "به عنوان مثال، تعمیر و نگهداری داخلی"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "e.g. LED Monitor"
+msgstr "به عنوان مثال، مانیتور LED"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "e.g. MCIT Meeting Room"
+msgstr "مثل: صالون عمومی جلسه ها وزارت مخابرات"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+msgid "e.g. Monitors"
+msgstr "به عنوان مثال، مانیتورها"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "e.g. Screen not working"
+msgstr "به عنوان مثال، صفحه نمایش کار نمی کند"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
+msgid "e.g. YYYY-Team name"
+msgstr "مثال :تیم زمین یک توت"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+msgid "e.g. domain.com"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "location Type"
+msgstr "ساحه ملکیت"
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_graph
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_pivot
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_tree
+msgid "maintenance Request"
+msgstr "درخواست تعمیر و نگهداری"
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "m²"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
+#: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
+msgid "property price"
+msgstr ""
+
+#. module: egp_property
+#: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
+msgid "total_rent_received"
+msgstr "مجموع اجاره دریافت شده"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__legal_agreement
+msgid "تفاهم نامه"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__legal_deed
+msgid "قباله شرعي"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__current_status__use
+msgid "ّIn Use"
+msgstr "غیر مازاد"
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__legar_protocol
+msgid "پروتوکول شرعي"
+msgstr ""
+
+#. module: egp_property
+#: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__official_booklet
+msgid "کتابچه رسمي"
+msgstr ""
