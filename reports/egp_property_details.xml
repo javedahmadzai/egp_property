@@ -96,7 +96,7 @@
                                             <span t-field="property.property_area_type"/>
                                         </td>
                                         <td>
-                                            <span t-field="property.current_status"/>
+                                            <span t-field="property.state"/>
                                         </td>
                                         <td class="text-center">
                                             <span t-field="property.bedrooms"/>

@@ -85,7 +85,7 @@
                                         <th style="font-weight: bold; background-color: #F2F2F2;">Current Status</th>
                                         <td>
                                             <!--                                            <t t-esc="property.current_status"/>-->
-                                            <t t-esc="property.get_current_status_label()"/>
+                                            <t t-esc="property.get_state_label()"/>
                                         </td>
                                     </tr>
                                     <tr>

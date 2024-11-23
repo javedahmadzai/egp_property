@@ -2,6 +2,7 @@
 <odoo>
     <menuitem id="menu_root"
               name="Properties"
+              groups="base.group_erp_manager,egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas,egp_property.group_public_user"
               sequence="0"/>
 
     <menuitem id="first_menu"

@@ -7,11 +7,6 @@ from markupsafe import Markup
 from random import randint
 
 
-# get random color int for language
-def _get_default_color(self):
-    return randint(1, 11)
-
-
 class AgentView(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _name = 'agent.view'
@@ -32,10 +27,9 @@ class AgentView(models.Model):
     agent_phone = fields.Char(string="Agent Phone:", tracking=True, required=True)
     agent_pic = fields.Binary(string="Agent Image")
     department_id = fields.Many2one('pms.department', string="Department")
-
-    agent_language_ids = fields.Many2many('agent.language', string="Agent Language Known", tracking=True,
-                                          ondelete="cascade")
     employee_id = fields.Many2one('hr.employee', string="Employee")
+    # emp_dep = fields.Many2one('hr.department', string="Department")
+
     # implements sql constraints to check agent mail ID
     _sql_constraints = [
         ('check_unique_email', 'UNIQUE(agent_mail)', "The Agent Email must be unique"),
@@ -63,7 +57,7 @@ class AgentView(models.Model):
             self.agent_mail = self.employee_id.work_email
             self.agent_phone = self.employee_id.work_phone
             # self.agent_address = self.employee_id.private_street
-            # self.department_id = self.employee_id.department_id.id if self.employee_id.department_id else False
+            # self.emp_dep = self.employee_id.department_id.id if self.employee_id.department_id else False
             self.agent_position_title = self.employee_id.job_id.name if self.employee_id.job_id else False
             # self.agent_address = self.employee_id.private_street or ""
             self.agent_pic = self.employee_id.image_1920
@@ -74,12 +68,3 @@ class AgentView(models.Model):
             if rec.agent_phone and len(str(rec.agent_phone)) > 14:
                 raise ValidationError(
                     _("INVALID agent phone number ,\n The agent phone number cannot exceed 14 characters."))
-
-
-class AgentLangauge(models.Model):
-    _name = 'agent.language'
-    _rec_name = 'language'
-    _description = 'Agent Info'
-    language = fields.Char(string="Language", required=True)
-    active = fields.Boolean(string='Active', default=True)
-    color = fields.Integer(string="Color", default=_get_default_color)

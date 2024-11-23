@@ -13,5 +13,14 @@ class AccountMove(models.Model):
     property_id = fields.Many2one('real.estate', string='Properties')
 
 
+#  remove error when Two or more than two users added into same groups for ir.attachment model
 class IrAttachment(models.Model):
     _inherit = "ir.attachment"
+
+    @api.model
+    def read(self, fields=None, load='_classic_read'):
+        self = self.sudo()
+        return super(IrAttachment, self).read(fields=fields, load=load)
+
+
+

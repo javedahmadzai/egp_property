@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="pms_contract_report_details">
+            <t t-call="web.html_container">
+                <t t-call="web.basic_layout">
+                    <t t-foreach="docs" t-as="contract">
+                        <div class="page" style="font-family: Calibri;">
+                            <div class="row">
+                                <div class="col-4" style="margin-left: 8; text-align: left;">
+                                    <img src="egp_property/static/description/img/mcit_logo.png" height="150px;"
+                                         width="130px;" alt="MCIT Logo"/>
+                                </div>
+                                <div class="col-4">
+                                    <div class="content" style="text-align: center;">
+                                        <h5>Islamic Emirates of Afghanistan</h5>
+                                        <p>Ministry of Communications and IT</p>
+                                        <p>Head of Administration</p>
+                                        <p>General Property Management</p>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="margin-right: 8;">
+                                    <img src="egp_property/static/description/img/Emirate_logo.png" height="150px;"
+                                         width="130px;" alt="Emirate Logo"/>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <h2 style="font-weight: bold; background-color: #F2F2F2; text-align: center;">Contract
+                                    Information Report
+                                </h2>
+                            </div>
+                            <table class="table table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Contract Reference</th>
+                                        <td>
+                                            <t t-esc="contract.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Property Name</th>
+                                        <td>
+                                            <t t-esc="contract.property_id.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>property Tag</th>
+                                        <td>
+                                            <t t-foreach="contract.tag_ids" t-as="tag">
+                                                <t t-if="tag != contract.tag_ids[0]">,</t>
+                                                <span t-field="tag.tag_name"/>
+                                            </t>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Deed Number</th>
+                                        <td>
+                                            <t t-esc="contract.deed_number"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Location Type</th>
+                                        <td>
+                                            <t t-foreach="contract.property_type" t-as="pro">
+                                                <t t-if="pro != contract.property_type[0]">,</t>
+                                                <span t-field="pro.property_type"/>
+                                            </t>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>property Type</th>
+                                        <td>
+                                            <t t-esc="contract.property_area_type"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Area</th>
+                                        <td>
+                                            <t t-esc="contract.property_id.total_area"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Location</th>
+                                        <td>
+                                            <t t-esc="contract.property_id.property_location"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Monthly Rent</th>
+                                        <td>
+                                            <t t-esc="contract.monthly_rent"/>
+                                            <t t-esc="contract.currency_id.symbol"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contract Start Date</th>
+                                        <td>
+                                            <t t-esc="contract.date_start"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contract End Date</th>
+                                        <td>
+                                            <t t-esc="contract.date_end"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Status</th>
+                                        <td>
+                                            <t t-esc="contract.state"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contracted Price</th>
+                                        <td>
+                                            <t t-esc="contract.selling_price"/>
+                                            <t t-esc="contract.currency_id.symbol"/>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+
+
+                            <!-- Offers table -->
+                            <table class="table table-bordered table-responsive">
+                                <h3>Received Offers</h3>
+                                <thead>
+                                    <tr>
+                                        <th>Offer Number</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Partner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-if="contract.offer_ids">
+                                        <t t-if="not contract.offer_ids">
+                                            <tr>
+                                                <td colspan="4">No offers available for this property</td>
+                                            </tr>
+                                        </t>
+                                        <t t-foreach="contract.offer_ids" t-as="offer">
+                                            <tr>
+                                                <td>
+                                                    <t t-esc="offer.offer_number"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="offer.price"/>
+                                                    <t t-esc="contract.currency_id.symbol"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="offer.status"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="offer.partner_id.name"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </t>
+                                    <t t-if="not contract.offer_ids">
+                                        <tr>
+                                            <td colspan="4">No offers available for this property</td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+                            <!-- Winner Offer -->
+                            <div>
+                                <h3>Winner and Best Offer Information</h3>
+                                <table class="table table-bordered table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Best Offer Price</th>
+                                            <th>Best Offer Agent</th>
+                                            <th>Winner</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-if="contract.winner_id">
+                                            <tr>
+                                                <td>
+                                                    <t t-esc="contract.best_offer"/>
+                                                    <t t-esc="contract.currency_id.symbol"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="contract.best_offer_agent_id.name"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="contract.winner_id.name"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <t t-if="not contract.winner_id">
+                                            <tr>
+                                                <td colspan="3">No winner offer assigned</td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Contract Team Table -->
+                            <table class="table table-bordered table-responsive">
+                                <h3>Contract Team Information</h3>
+                                <thead>
+                                    <tr>
+                                        <th>Team Name</th>
+                                        <th colspan="2">
+                                            <t t-if="contract.agent_team_id">
+                                                <t t-esc="contract.agent_team_id.name"/>
+                                            </t>
+                                            <t t-if="not contract.agent_team_id">No team assigned</t>
+                                        </th>
+                                    </tr>
+                                    <t t-if="contract.agent_team_id and contract.agent_team_id.member_ids">
+                                        <tr>
+                                            <th>S.N</th>
+                                            <th>Agent Name</th>
+                                            <th>Position</th>
+                                        </tr>
+                                    </t>
+                                </thead>
+                                <tbody>
+                                    <t t-if="contract.agent_team_id and contract.agent_team_id.member_ids">
+                                        <t t-set="member_no" t-value="1"/>
+                                        <t t-foreach="contract.agent_team_id.member_ids" t-as="member">
+                                            <tr>
+                                                <td>
+                                                    <t t-esc="member_no"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="member.agent_name"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="member.agent_position_title"/>
+                                                </td>
+                                            </tr>
+                                            <t t-set="member_no" t-value="member_no + 1"/>
+                                        </t>
+                                    </t>
+                                    <t t-if="contract.agent_team_id and not contract.agent_team_id.member_ids">
+                                        <tr>
+                                            <td colspan="3">No members in this team</td>
+                                        </tr>
+                                    </t>
+                                    <t t-if="not contract.agent_team_id">
+                                        <tr>
+                                            <td colspan="3">No team assigned</td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+                            <div class="row">
+                                <div class="col-6 mt-3">
+                                    <p>Prepared By</p>
+                                    <span t-field="user.name"/>
+                                </div>
+                                <div class="col-6 mt-3 text-end">
+                                    <p>Signature</p>
+                                    <span>______________________</span>
+                                </div>
+                            </div>
+                        </div> <!-- /.div page -->
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
+

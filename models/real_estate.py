@@ -39,6 +39,11 @@ class RealEstate(models.Model):
         ('Concrete', 'Concrete')
     ], tracking=True, default='pokhta', string="Building Type")
 
+    location_type = fields.Selection([
+        ('central', 'Capital'),
+        ('provincial', 'Provincial'),
+    ], tracking=True, default='central', string="Capital/Provincial")
+
     property_area_type = fields.Selection([
         ('ground', 'Ground'),
         ('building', 'Building'),
@@ -64,14 +69,6 @@ class RealEstate(models.Model):
     #     ('not_use', 'Excess')
     # ], required=True, default='0', string='Current Status')
 
-    # for printing the display value in xml report
-    # def get_current_status_label(self):
-    #     label_mapping = {
-    #         'use': 'In Use',
-    #         'not_use': 'Excess'
-    #     }
-    #     return label_mapping.get(self.current_status, '')
-
     garage = fields.Boolean()
     garden = fields.Boolean()
     tag_ids = fields.Many2many('property.type.tag', tracking=True, ondelete='cascade')
@@ -85,6 +82,17 @@ class RealEstate(models.Model):
         ('offer_accepted', 'In Use'),
         ('cancel', 'Cancelled')],
         string="Status", tracking=True, default='new', readonly=True)
+
+    # for printing the display value in xml report
+    def get_state_label(self):
+        label_mapping = {
+            'new': 'New',
+            'offer_received': 'Excess',
+            'offer_accepted': 'In Use',
+            'cancel': 'Cancelled'
+        }
+        return label_mapping.get(self.state, '')
+
     floors = fields.Char(string="Floors")
     grade_type_property = fields.Selection([
         ('first_grade', 'First Grade'),

@@ -91,7 +91,7 @@ class PmsContract(models.Model):
     def _expand_states(self, states, domain, order):
         return [key for key, val in type(self).state.selection]
 
-        # Close contract when the end date is equal to or smaller than today's date
+    # Close contract when the end date is equal to or smaller than today's date
 
     #
     # @api.depends('date_end', 'state')
@@ -134,17 +134,24 @@ class PmsContract(models.Model):
             'target': 'current',
         }
 
+    def unlink(self):
+        for rec in self:
+            if rec.state not in ['draft', 'cancel']:
+                raise ValidationError(_("WARNING....\n Deletion is possible only in Draft or Cancelled State"))
+            return super(PmsContract, self).unlink()
+
+
     # button for invoice
-    def action_for_invoice(self):
-        return {
-            'name': _('Invoice'),
-            'view_mode': 'form',
-            'type': 'ir.actions.act_window',
-            # 'domain': [('offer_property_id', '=', self.id)],
-            'res_model': 'account.move',
-            'view_id': 'account.action_move_out_invoice_type',
-            'target': 'current',
-        }
+    # def action_for_invoice(self):
+    #     return {
+    #         'name': _('Invoice'),
+    #         'view_mode': 'form',
+    #         'type': 'ir.actions.act_window',
+    #         # 'domain': [('offer_property_id', '=', self.id)],
+    #         'res_model': 'account.move',
+    #         'view_id': 'account.action_move_out_invoice_type',
+    #         'target': 'current',
+    #     }
 
     # 1st way for check maximum best offer give by Clients(Create Button Not Work When it apply)
     # @api.depends('offer_ids.price')

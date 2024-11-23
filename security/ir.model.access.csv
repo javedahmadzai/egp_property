@@ -1,6 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
 
+access_real_estate_base,real.estate.base,model_real_estate,base.group_user,1,0,0,0
 access_real_estate,real.estate,model_real_estate,egp_property.group_admin,1,0,0,0
 access_agent_view,agent.view,model_agent_view,egp_property.group_admin,1,0,0,0
 access_estate_property_offer,estate.property.offer,model_estate_property_offer,egp_property.group_admin,1,0,0,0
@@ -8,7 +9,6 @@ access_estate_property_type,estate.property.type,model_estate_property_type,egp_
 access_property_type_tag,property.type.tag,model_property_type_tag,egp_property.group_admin,1,0,0,0
 access_property_valuation,property.valuation,model_property_valuation,egp_property.group_admin,1,0,0,0
 access_wizard_validation_estate,wizard.validation.estate,model_wizard_validation_estate,egp_property.group_admin,1,0,0,0
-access_agent_language,agent.language,model_agent_language,egp_property.group_admin,1,0,0,0
 access_res_users,res.users,model_res_users,egp_property.group_admin,1,0,0,0
 access_tenant_payment,tenant.payment,model_tenant_payment,egp_property.group_admin,1,0,0,0
 access_pms_contract,pms.contract,model_pms_contract,egp_property.group_admin,1,0,0,0
@@ -21,6 +21,7 @@ access_res_partner,res.partner,base.model_res_partner,egp_property.group_admin,1
 
 
 
+
 access_real_estate_manager,real.estate.manager,model_real_estate,egp_property.group_manager,1,1,1,1
 access_agent_view_manager,agent.view.manager,model_agent_view,egp_property.group_manager,1,1,1,1
 access_estate_property_offer_manager,estate.property.offer.manager,model_estate_property_offer,egp_property.group_manager,1,1,1,1
@@ -28,7 +29,6 @@ access_estate_property_type_manager,estate.property.type.manager,model_estate_pr
 access_property_type_tag_manager,property.type.tag.manager,model_property_type_tag,egp_property.group_manager,1,1,1,1
 access_property_valuation_manager,property.valuation.manager,model_property_valuation,egp_property.group_manager,1,1,1,1
 access_wizard_validation_estate_manager,wizard.validation.estate.manager,model_wizard_validation_estate,egp_property.group_manager,1,1,1,1
-access_agent_language_manager,agent.language.manager,model_agent_language,egp_property.group_manager,1,1,1,1
 access_res_users_manager,res.users.manager,model_res_users,egp_property.group_manager,1,1,1,1
 access_base_res_users_manager,base.res.users.manager,base.model_res_users,egp_property.group_manager,1,1,1,1
 access_tenant_payment_manager,tenant.payment.manager,model_tenant_payment,egp_property.group_manager,1,1,1,1
@@ -59,7 +59,6 @@ access_estate_property_type_expert_karshinas,estate.property.type.expert.karshin
 access_property_type_tag_expert_karshinas,property.type.tag.expert.karshinas,model_property_type_tag,egp_property.group_expert_karshinas,1,1,1,0
 access_property_valuation_expert_karshinas,property.valuation.expert.karshinas,model_property_valuation,egp_property.group_expert_karshinas,1,1,1,0
 access_wizard_validation_estate_expert_karshinas,wizard.validation.estate.expert.karshinas,model_wizard_validation_estate,egp_property.group_expert_karshinas,1,1,1,0
-access_agent_language_expert_karshinas,agent.language.expert.karshinas,model_agent_language,egp_property.group_expert_karshinas,1,1,1,0
 access_res_users_expert_karshinas,res.users.expert.karshinas,model_res_users,egp_property.group_expert_karshinas,1,1,1,0
 access_base_res_users_expert_karshinas,base.res.users.expert.karshinas,base.model_res_users,egp_property.group_expert_karshinas,1,1,1,0
 access_tenant_payment_expert_karshinas,tenant.payment.expert.karshinas,model_tenant_payment,egp_property.group_expert_karshinas,1,1,1,0

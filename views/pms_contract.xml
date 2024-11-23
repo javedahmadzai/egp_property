@@ -173,8 +173,8 @@
                         <button class="oe_stat_button" type="object" name="action_count_offer" icon="fa-ticket">
                             <field name="count_offer" widget="statinfo" string="Offers" style="font-weight: bold;"/>
                         </button>
-                        <button class="oe_stat_button" type="object" name="action_for_invoice" icon="fa-plus">
-                        </button>
+                        <!--                        <button class="oe_stat_button" type="object" name="action_for_invoice" icon="fa-plus">-->
+                        <!--                        </button>-->
 
                     </div>
 
@@ -187,11 +187,9 @@
                                    readonly="state in ('open','close')"/>
                             <field name="kanban_state"
                                    class="d-flex align-items-center"
-                                   groups="!hr_contract.group_hr_contract_manager"
                                    widget="state_selection" readonly="1"/>
                             <field name="kanban_state"
                                    class="d-flex align-items-center"
-                                   groups="hr_contract.group_hr_contract_manager"
                                    widget="state_selection" readonly="0"/>
                         </h1>
                     </div>
@@ -234,7 +232,8 @@
                                    readonly="state in ('open','close')"/>
                             <field name="currency_id" readonly="state in ('open','close')"/>
 
-                            <field name="winner_id" options="{'no_edit':True,'no_create':True,'no_open':True}" widget="many2one_avatar_employee"
+                            <field name="winner_id" options="{'no_edit':True,'no_create':True,'no_open':True}"
+                                   widget="many2one_avatar_employee"
                                    readonly="1"/>
                             <field name="selling_price"/>
                             <field name="best_offer"/>
@@ -243,7 +242,8 @@
                     </group>
                     <notebook>
 
-                        <page string="Offer" groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas">
+                        <page string="Offer"
+                              groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas">
                             <field name="offer_id" readonly="state in ('open','close','cancel')">
                                 <tree editable="top" decoration-success="status=='accepted'"
                                       decoration-danger="status == 'refused'">
@@ -276,7 +276,7 @@
                                           decoration-danger="is_paid == False"
                                           decoration-bf="is_paid == False">
                                         <field name="contract_id" string="Property" style="width:100px"
-                                               options="{'no_edit':True,'no_create':True,'no_open':True}" />
+                                               options="{'no_edit':True,'no_create':True,'no_open':True}"/>
                                         <field name="tenant_id"/>
                                         <field name="tenant_phone_number"/>
                                         <field name="account_number"/>

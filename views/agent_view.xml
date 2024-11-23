@@ -141,8 +141,8 @@
                             <field name="agent_address" invisible="agent_type == 'employee'"  />
                         </group>
                         <group>
-                            <field name="department_id" invisible="agent_type == 'employee'"/>
-                            <field name="agent_language_ids" widget="many2many_tags" invisible="agent_type == 'employee'" />
+<!--                            <field name="department_id" invisible="agent_type == 'employee'"/>-->
+<!--                            <field name="emp_dep" invisible="agent_type == 'external'"/>-->
                         </group>
                     </group>
                 </sheet>
@@ -168,8 +168,7 @@
                 <field name="agent_phone"/>
                 <field name="employee_id"/>
                 <field name="agent_type"/>
-                <field name="agent_language_ids" widget="many2many_tags" />
-                <field name="department_id" optional="show"/>
+<!--                <field name="department_id" optional="show"/>-->
             </tree>
         </field>
     </record>

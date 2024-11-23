@@ -65,7 +65,7 @@ class WizardValidationEstate(models.TransientModel):
     def generate_csv_data(self, records):
         csv_data = io.StringIO()
         csv_writer = csv.writer(csv_data)
-        header = ['Property Name', 'Price', 'Status', 'Floors', 'Bedrooms',
+        header = ['Property Name', 'Price', 'Status', 'Date', 'Floors', 'Bedrooms',
                   'living_area', 'Garden', 'Garden Area', 'Orientation', 'Garage', 'Total Areas (Sqm)']
         csv_writer.writerow(header)
 

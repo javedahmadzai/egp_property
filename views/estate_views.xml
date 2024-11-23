@@ -35,13 +35,14 @@
                 <field name="name" decoration-bf="1"/>
                 <field name="grade_type_property"/>
                 <field name="property_location"/>
-<!--                <field name="current_status"/>-->
+                <!--                <field name="current_status"/>-->
                 <field name="bedrooms" optional="hide"/>
                 <field name="living_area" class="text-center"/>
                 <field name="floors" class="text-center"/>
                 <field name="expected_price"/>
                 <field name="date_availability" optional="hide"/>
                 <field name="state"/>
+                <field name="location_type"/>
                 <field name="tag_ids" widget="many2many_tags" options="{'color_field':'color'}"/>
             </tree>
         </field>
@@ -69,29 +70,37 @@
                 <field name="living_area"/>
                 <field name="name"/>
                 <field name="bedrooms" string="Rooms"/>
+                <field name="location_type"/>
                 <!-- Add arvhive filter -->
                 <separator/>
                 <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
                 <group expand="0" string="Group By">
                     <filter string="Garden" name="group_by_garden" context="{'group_by': 'garden'}"/>
-                    <filter string="Location Type" name="group_by_property" context="{'group_by': 'property_area_type'}"/>
+                    <filter string="Location Type" name="group_by_property"
+                            context="{'group_by': 'property_area_type'}"/>
                     <filter string="Offers" name="group_by_offers" context="{'group_by': 'tag_ids'}"/>
                 </group>
                 <!-- add a search panel  -->
                 <searchpanel>
                     <field name="property_area_type" expand="1" select="multi" icon="fa-filter"
-                           enable_counters="1"/>
+                           enable_counters="1" string="نوع ملکيت"/>
                     <field name="property_type" icon="fa-users" enable_counters="1" select="multi"/>
+                    <field name="location_type" icon="fa-map" enable_counters="1" select="multi"/>
                 </searchpanel>
-                <!-- add search filter -->
-<!--                <field name="current_status" filter_domain="[('current_status', '=', 'use')]"/>-->
-<!--                <field name="current_status" filter_domain="[('current_status', '=', 'not_use')]"/>-->
                 <!-- Filter -->
                 <filter string='Available properties' name='filter_by_properties'
                         domain="['|', ('state', '=', 'new'), ('state', '=', 'offer_received')]"/>
+                <filter string='Location Type' name='filter_by_location_type'
+                        domain="['|', '|', ('state', '=', 'new'), ('state', '=', 'offer_received'),('state', '=', 'offer_accepted')]"/>
+                <filter string='Capital Properties' name='filter_by_central_properties'
+                        domain="[('location_type', '=', 'central')]"/>
+                <filter string='Provincial Properties' name='filter_by_provincial_properties'
+                        domain="[('location_type', '=', 'provincial')]"/>
                 <!-- Group By -->
                 <filter string='Status' name='group_by_state' context='{"group_by":"state"}'/>
-
+                <filter string='Central/Provincial Properties' name='group_by_location_type'
+                        context='{"group_by":"location_type"}'
+                        domain="['|', ('location_type', '=', 'central'), ('location_type', '=', 'provincial')]"/>
             </search>
 
         </field>
@@ -160,8 +169,8 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                   <button name="action_cancel" string="Cancel" type="object" class="btn-primary"
-                            invisible="state in ['cancel', 'new']"/>
+                    <button name="action_cancel" string="Cancel" type="object" class="btn-primary"
+                            invisible="state in ['cancel','new']"/>
                     <button name="action_reset_new" string="RESET STATE" type="object" class="btn-primary"
                             invisible="state != 'cancel'"/>
                     <field name="state" widget="statusbar" nolabel="1" options="{'clickable': '1'}"/>
@@ -213,11 +222,12 @@
                             <field name="property_type" string="Location Type"
                                    options="{'no_create_edit':True,'no_create':True, 'color_field':'color'}"
                                    widget="many2many_tags"/>
+                            <field name="location_type"/>
                             <field name="property_area_type"/>
                             <field name="building_type" invisible="property_area_type in ['ground', 'fort']"/>
                             <field name="deed_number"/>
                             <field name="property_location"/>
-<!--                            <field name="current_status"/>-->
+                            <!--                            <field name="current_status"/>-->
                             <field name="grade_type_property" widget="selection"/>
                         </group>
                         <group>
