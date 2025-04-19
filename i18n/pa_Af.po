@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-28 04:24+0000\n"
-"PO-Revision-Date: 2024-09-28 04:24+0000\n"
+"POT-Creation-Date: 2024-09-28 04:23+0000\n"
+"PO-Revision-Date: 2024-09-28 04:23+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -34,12 +34,12 @@ msgstr "+۹۳"
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
 msgid "<b>Category:</b>"
-msgstr "<b>دسته‌بندی:</b>"
+msgstr "<b>ګټګوری:</b>"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
 msgid "<b>Expected Price:</b>"
-msgstr "قيمت ملکيت"
+msgstr "ملکیت قیمت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
@@ -59,12 +59,12 @@ msgstr "<b>درخواست به:</b>"
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "<b>Serial Number:</b>"
-msgstr "<b>شماره سریال:</b>"
+msgstr "<b>سریال نمبر:</b>"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_kanban
 msgid "<b>Total Area:</b>"
-msgstr "ساحه مجموع"
+msgstr "ټول ساحه"
 
 #. module: egp_property
 #: model:mail.template,body_html:egp_property.rent_received_mail_template
@@ -156,7 +156,7 @@ msgstr ""
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
 msgid "<strong>Maintenance:</strong>"
-msgstr "<strong>نگهداری:</strong>"
+msgstr "<strong>ساتنه:</strong>"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_defaults
@@ -170,17 +170,17 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__estate_property_offer__status__accepted
 msgid "Accepted"
-msgstr "پذیرفته شده"
+msgstr "قبول شوی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_offer_search
 msgid "Accepted Property"
-msgstr "ملکيت پذیرفته شده"
+msgstr "قبول شوی ملکیت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__account_number
 msgid "Account Number"
-msgstr "شماره اکونت"
+msgstr "اکونت نمبر"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_needaction
@@ -222,7 +222,7 @@ msgstr "فعال"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_ids
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_ids
 msgid "Activities"
-msgstr "فعالیت ها"
+msgstr "فعالیتونه"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_exception_decoration
@@ -242,7 +242,7 @@ msgstr "دکوراسیون استثنایی فعالیت"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_state
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_state
 msgid "Activity State"
-msgstr "وضعیت فعالیت"
+msgstr "حالت فعالیت"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_type_icon
@@ -263,18 +263,18 @@ msgstr "انواع فعالیت"
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.agent_team_pms_action
 msgid "Add a new Agent Team"
-msgstr "یک تیم هيت جدید اضافه کنید"
+msgstr "نوی ریکارد اضافه کړی"
 
 #. module: maintenance
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
 msgid "Add a new equipment"
-msgstr "افزودن تجهیزات جدید"
+msgstr "نوی ریکارد اضافه کړی"
 
 #. module: maintenance
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_category_action
 msgid "Add a new equipment category"
-msgstr "افزودن یک دسته تجهیزات جدید"
+msgstr "نوی ریکارد اضافه کړی"
 
 #. module: maintenance
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action
@@ -284,7 +284,7 @@ msgstr "افزودن یک دسته تجهیزات جدید"
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_todo_request_action_from_dashboard
 #: model_terms:ir.actions.act_window,help:maintenance.maintenance_request_action_reports
 msgid "Add a new maintenance request"
-msgstr "افزودن یک درخواست تعمیر و نگهداری جدید"
+msgstr "نوی ریکارد اضافه کړی"
 
 #. module: maintenance
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_stage_action
@@ -305,48 +305,48 @@ msgstr "هيت"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_address
 msgid "Agent Address"
-msgstr "ادرس هيت"
+msgstr "دهیت پته"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__reference
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_view_tree
 msgid "Agent ID"
-msgstr "آی دی هيت"
+msgstr "آی دی "
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
 msgid "Agent Id"
-msgstr "آی دی هيت"
+msgstr "آی دی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_pic
 msgid "Agent Image"
-msgstr "عکس هيت"
+msgstr "انځور"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_agent_language
 msgid "Agent Info"
-msgstr "معلومات هيت"
+msgstr "معلومات "
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_agent_commission
 msgid "Agent Information"
-msgstr "معلومات هيت"
+msgstr "معلومات "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_language_ids
 msgid "Agent Language Known"
-msgstr "زبان هيت"
+msgstr "دژبو سره بلدتیا"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
 msgid "Agent Name"
-msgstr "نام هيت"
+msgstr "نوم"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_phone
 msgid "Agent Phone:"
-msgstr "شماره هيت"
+msgstr "شماره "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__agent_team_id
@@ -354,19 +354,19 @@ msgstr "شماره هيت"
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Agent Team"
-msgstr "تيم هيت"
+msgstr "ټیم"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_agent_team
 #: model:ir.ui.menu,name:egp_property.menu_agent_teams
 msgid "Agent Teams"
-msgstr "تیم های هيت"
+msgstr "تیمونه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_type
 #: model_terms:ir.ui.view,arch_db:egp_property.view_agent_search
 msgid "Agent Type"
-msgstr "نوع هيت"
+msgstr " د هیت ډول"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_agent_view
@@ -376,13 +376,13 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_mail
 msgid "Agent mail Id"
-msgstr "ايميل آی دی"
+msgstr "ايميل "
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.agent_menu
 #: model:ir.ui.menu,name:egp_property.commission_menu
 msgid "Agents"
-msgstr "هيت"
+msgstr "هيتان"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_id
@@ -443,12 +443,12 @@ msgstr "مقدار"
 #. module: maintenance
 #: model:ir.model.constraint,message:maintenance.constraint_maintenance_equipment_serial_no
 msgid "Another asset already exists with this serial number!"
-msgstr "دارایی دیگری در حال حاضر با این شماره سریال وجود دارد!"
+msgstr "په دغه سریال نمبر یاندی بل ملکیت شتون لری!"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__archive
 msgid "Archive"
-msgstr "بایگانی"
+msgstr "آرشیف"
 
 #. modules: egp_property, maintenance
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
@@ -465,39 +465,39 @@ msgstr "بایگانی"
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
 msgid "Archived"
-msgstr "بايګانی"
+msgstr "آرشیف شوی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Area"
-msgstr "ساحه زمين"
+msgstr "ساحه"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
 msgid "Assign To User"
-msgstr "واگذاری به کاربر"
+msgstr "کاروونکی ته ورکړل شوی"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Assigned"
-msgstr "واگذار شده"
+msgstr "سپارل شوی"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__assign_date
 msgid "Assigned Date"
-msgstr "تاریخ واگذار شده"
+msgstr "د سپارلو تاریخ"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "Assigned to"
-msgstr "واگذار شده به"
+msgstr "سپارل شوی دی"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_ir_attachment
 msgid "Attachment"
-msgstr "پیوست"
+msgstr "ضمیمه"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_attachment_count
@@ -508,23 +508,23 @@ msgstr "پیوست"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_attachment_count
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_attachment_count
 msgid "Attachment Count"
-msgstr "تعداد پیوست ها"
+msgstr "دضمیمه تعداد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__tenant_attachments
 msgid "Attachment File"
-msgstr "اسناد ضمیمه"
+msgstr "ضمیمه سند"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__attachments
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__property_attachments
 msgid "Attachments"
-msgstr "ضميمه اسناد"
+msgstr "ضميمه "
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 msgid "Available properties"
-msgstr "ملکيت موجود"
+msgstr "موجود ملکیتونه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__toilet
@@ -534,24 +534,24 @@ msgstr "تشناب"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Bedroom Area(sqm)"
-msgstr "مساحت اطاق(متر مربع)"
+msgstr "داطاق پراخولی (متر مربع)"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__bedrooms
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__bedrooms
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__bedrooms
 msgid "Bedrooms"
-msgstr "اطاقها"
+msgstr "اطاقونه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__best_offer_agent_id
 msgid "Best Offer Agent"
-msgstr "بلندترين درخواست کننده"
+msgstr "لوړ ترین غوښتنلیک راوړونګی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__best_offer
 msgid "Best Offered"
-msgstr "بلندترين درخواستی"
+msgstr "لوړترینه غوښتنلیک"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__beswa
@@ -572,35 +572,35 @@ msgstr "بسواسه"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Blocked"
-msgstr "مسدود شده"
+msgstr "تړل شوی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_name
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Name"
-msgstr "نام کتاب"
+msgstr "دکتاب نوم"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_page
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Page"
-msgstr "صفحه کتاب"
+msgstr "صفحه "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_vol
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Volume"
-msgstr "جلد کتاب"
+msgstr "جلد "
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Book Year"
-msgstr "سال کتاب"
+msgstr "کال"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Boundaries"
-msgstr ""
+msgstr "سرحدونه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__building
@@ -614,28 +614,28 @@ msgstr "بلدينګ"
 #: model:ir.ui.menu,name:egp_property.building_part_menu
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Building Part"
-msgstr "اجزآ تعمير"
+msgstr "دتعمیر برخی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__building_type
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__building_type
 msgid "Building Type"
-msgstr "نوع تعمير"
+msgstr "ډول"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__sale_buyer
 msgid "Buyer"
-msgstr ""
+msgstr "اخستونکی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__sale_buyer_email
 msgid "Buyer Mail"
-msgstr ""
+msgstr "ایمیل"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__property_buyer
 msgid "Buyer Name"
-msgstr "نام مستجر"
+msgstr "دکرایه کوونکی نوم"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__wizard_validation_estate__download_format__csv
@@ -646,7 +646,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Cancel"
-msgstr "لغو کنید"
+msgstr "لغوه شوی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__cancel
@@ -654,13 +654,13 @@ msgstr "لغو کنید"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "Cancelled"
-msgstr "لغو شد"
+msgstr "لغوه شوی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__card_number
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Card Number"
-msgstr "نمبر کارت"
+msgstr "دکارت نمبر"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__category_id
@@ -668,19 +668,19 @@ msgstr "نمبر کارت"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Category"
-msgstr "دسته بندی"
+msgstr "کټګوری"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__name
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
 msgid "Category Name"
-msgstr "نام دسته بندی"
+msgstr "دکټګوری نوم"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "Choose Any Buyer Name ! NOT MANDATORY"
-msgstr "هر نام خریدار را انتخاب کنید! غیر اجباری"
+msgstr "دکرایه کوونکی نوم! اختیاری دی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
@@ -690,29 +690,29 @@ msgstr "از تقویم يا حنتری انتخاب کنید"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Close"
-msgstr "بستن"
+msgstr "تړل"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__close_date
 msgid "Close Date"
-msgstr "تاریخ بستن"
+msgstr "دتړلو تاریخ"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "Close This Wizard PopUp"
-msgstr "این پاپ‌ آپ را ببندید"
+msgstr "دغه صفحه انتخاب کړی"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__close
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__close
 msgid "Closed"
-msgstr "بسته شد"
+msgstr "تړل شوی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Closed This Wizard PopUp"
-msgstr "این پاپ‌ آپ را ببندید"
+msgstr "دغه صفحه وتړی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract_type__code
@@ -726,7 +726,7 @@ msgstr "کود"
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__color
 #: model:ir.model.fields,field_description:egp_property.field_property_type_tag__color
 msgid "Color"
-msgstr "رنک"
+msgstr "رنګ"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__color
@@ -735,12 +735,12 @@ msgstr "رنک"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__color
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__color
 msgid "Color Index"
-msgstr "رنگ پس زمینه"
+msgstr "رنګ"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__note
 msgid "Comments"
-msgstr "نظرها"
+msgstr "نظرونه"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__company_id
@@ -750,14 +750,14 @@ msgstr "نظرها"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__company_id
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__company_id
 msgid "Company"
-msgstr "شرکت"
+msgstr "کمپنی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_building_part__complete_name
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
 msgid "Complete Name"
-msgstr "نام مکمل"
+msgstr "پوره نوم"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment__estimated_next_failure
@@ -793,60 +793,60 @@ msgstr "تنظيمات"
 #: model:ir.ui.menu,name:egp_property.menu_pms_contract
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Contract"
-msgstr "قرارداد"
+msgstr "قراردادونه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Contract Details"
-msgstr "توضيحات قرارداد"
+msgstr "دقرارداد وضاحت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Contract End Date"
-msgstr "تاريخ ختم قرازداد"
+msgstr "دقرارداد د ختم تاریخ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__name
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Contract Reference"
-msgstr "ريفرينس قرارداد"
+msgstr "ريفرينس "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__contract_type_id
 #: model_terms:ir.ui.view,arch_db:egp_property.contract_type_search
 msgid "Contract Type"
-msgstr "نوع قرارداد"
+msgstr "دقرارداد ډول"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.pms_contract_type_action
 msgid "Contract Types"
-msgstr "نوع قرار داد "
+msgstr "دقرارداد ډولونه "
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_pms_contract
 msgid "Contract information"
-msgstr "معلومات قرارداد"
+msgstr "دقرارداد معلومات"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.pms_contract_menu
 msgid "Contract type"
-msgstr "نوع قرار داد"
+msgstr "دقرارداد ډول"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__selling_price
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Contracted Price"
-msgstr "قیمت قرارداد"
+msgstr "دقرارداد قیمت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 msgid "Contracts"
-msgstr "قراردادها"
+msgstr "قراردادونه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Contracts to review"
-msgstr ""
+msgstr "دقرارداد کتل"
 
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__maintenance_type__corrective
@@ -857,22 +857,22 @@ msgstr "اصلاحی"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__cost
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Cost"
-msgstr "هزینه"
+msgstr "ارزښت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__count_offer
 msgid "Count Offer"
-msgstr "تعداد درخواستی"
+msgstr "دغوښتنلیکونو تعداد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__count_tags
 msgid "Count Tags"
-msgstr "تعداد نوع ملکيت"
+msgstr "دټګونو تعداد"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_property_type_tag
 msgid "Create Your 1st Tags 🤗 !!"
-msgstr "نوع ملکيت خود را بسازید 🤗 !!"
+msgstr "نوی ریکارد اضافه کړی 🤗 !!"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_department
@@ -882,32 +882,32 @@ msgstr ""
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_property_type
 msgid "Create Your Housing Estate !!"
-msgstr "املاک مسکونی خود را ایجاد کنید!!"
+msgstr "نوی ریکارد اضافه کړی!!"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_pms_contract
 msgid "Create Your New Contract !!"
-msgstr "قرارداد جدید خود را بسازید!!"
+msgstr "نوی ریکارد اضافه کړی!!"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_real_estate
 msgid "Create Your first Property or Housing Estate !!"
-msgstr "اولین ملکيت یا مسکن خود را ایجاد کنید!!"
+msgstr "نوی ریکارد اضافه کړی!!"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_tenant_payment
 msgid "Create Your first Tenant Payment of Housing Estate or Property !!"
-msgstr "اولین پرداخت مستاجر خود را برای ملکيت و يا مسکن ایجاد کنید!!"
+msgstr "نوی ریکارد اضافه کړی!!"
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_building_part
 msgid "Create Your new record here..."
-msgstr "رکورد جدید خود را اینجا بسازید..."
+msgstr "نوی ریکارد اضافه کړی..."
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.pms_contract_type_action
 msgid "Create a new property contract type"
-msgstr ""
+msgstr "نوی ریکارد اضافه کړی"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.res_config_settings_view_form
@@ -917,7 +917,7 @@ msgstr ""
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "Created By"
-msgstr "ایجاد شده توسط"
+msgstr "جوړونکی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__create_uid
@@ -940,12 +940,12 @@ msgstr "ایجاد شده توسط"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__create_uid
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__create_uid
 msgid "Created by"
-msgstr "ایجاد شده توسط"
+msgstr "جوړشوی دی د"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__owner_user_id
 msgid "Created by User"
-msgstr "ایجاد شده توسط کاربر"
+msgstr "جوړشوی دی د کارونکی په واسطه"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__create_date
@@ -968,7 +968,7 @@ msgstr "ایجاد شده توسط کاربر"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__create_date
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__create_date
 msgid "Created on"
-msgstr "ایجادشده در"
+msgstr "جوړشوی د په"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__currency_id
@@ -977,19 +977,19 @@ msgstr "ایجادشده در"
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.view_tenant_payment_tree
 msgid "Currency"
-msgstr "واحد پولی"
+msgstr "پولی واحد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__currency_symbol
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__currency_symbol
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__currency_symbol
 msgid "Currency Symbol"
-msgstr "سمبول واحد پولی"
+msgstr "دپولی واحد سمبول"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Current Contract"
-msgstr "قرارداد فعلی"
+msgstr "اوسنی قرار داد"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_open_count
@@ -1002,7 +1002,7 @@ msgstr "تعمیر و نگهداری فعلی"
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__current_status
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Current Status"
-msgstr "حالت فعلی"
+msgstr "اوسنی حالت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
@@ -1040,12 +1040,12 @@ msgstr "تاريخ"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__date_availability
 msgid "Date Availability"
-msgstr "تاریخ دسترس"
+msgstr "تاریخ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__deadline
 msgid "Date Deadline"
-msgstr "تاریخ مهلت"
+msgstr "اخری تاریخ"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_request__request_date
@@ -1069,23 +1069,23 @@ msgstr "تاریخ اتمام تعمیر و نگهداری"
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__day
 msgid "Days"
-msgstr "روز"
+msgstr "ورځی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Days Paid"
-msgstr "روزهای پرداخت شده"
+msgstr "ورځی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Deadline"
-msgstr "ضرب الاجل"
+msgstr "اخری تاریخ"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Deed Number"
-msgstr "نمبر قباله"
+msgstr "دقبالی نمبر"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__deed_number
@@ -1094,7 +1094,7 @@ msgstr "نمبر قباله"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Deed or title deed number"
-msgstr "شماره یا سند ملکیت"
+msgstr "دقبالی یا سند شماره"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_defaults
@@ -1106,27 +1106,27 @@ msgstr "مقادیر پیش فرض"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "Delete"
-msgstr "حذف"
+msgstr "لری کول"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__department_id
 #: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__department
 #: model_terms:ir.ui.view,arch_db:egp_property.view_maintenance_equipment_form_inherited
 msgid "Department"
-msgstr "ديپارتمنت هيت"
+msgstr "ديپارتمنت "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_department__department_name
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 #: model_terms:ir.ui.view,arch_db:egp_property.view_department_form
 msgid "Department Name"
-msgstr "نام ديپارتمنت"
+msgstr "ددیپارتمنت نوم"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_department
 #: model:ir.ui.menu,name:egp_property.second_submenu_department
 msgid "Departments"
-msgstr "ديپارتمنت ها"
+msgstr "ديپارتمنتونه"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__description
@@ -1136,7 +1136,7 @@ msgstr "ديپارتمنت ها"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Description"
-msgstr "وضاحت"
+msgstr "تشریحات"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_building_part__details
@@ -1169,7 +1169,7 @@ msgstr "جزئیات"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__display_name
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__display_name
 msgid "Display Name"
-msgstr "نام نمایش"
+msgstr "ښودل شوی نوم"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__document_type__document
@@ -1181,51 +1181,51 @@ msgstr "مکتوب"
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__document_number
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Document Number"
-msgstr "شماره مکتوب"
+msgstr "دمکتوب شماره"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__document_property
 msgid "Document Property"
-msgstr "سند ملکیت"
+msgstr "دملکیت سند"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__document_type
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Document Type"
-msgstr "نوع سند"
+msgstr "دسند ډول"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Documents"
-msgstr "اسناد ضمیمه"
+msgstr "سندونه"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Done"
-msgstr "انجام شده"
+msgstr "ترسره شوی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__download_format
 msgid "Download Format"
-msgstr "فرمت دانلود"
+msgstr "دډولود فارمټ"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "Download The Filtered Record"
-msgstr "ریکاردهای فلترشده را داونلود کنيد"
+msgstr "فیلتر شوی ریکارد دولود کول"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__draft
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__draft
 msgid "Draft"
-msgstr "جديد"
+msgstr "نوی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__duration
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Duration"
-msgstr "مدت زمان"
+msgstr "دقرارداد وخت"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_request__duration
@@ -1245,7 +1245,7 @@ msgstr ""
 #. module: egp_property
 #: model:ir.module.category,name:egp_property.module_category_MCIT_PMS
 msgid "EGP Property-PMS"
-msgstr "کتګوری برای سيستم مديريت عمومی املاک"
+msgstr "ملکیتونو دمدیریت سیستم کټګوری "
 
 #. module: egp_property
 #: model:mail.template,name:egp_property.rent_received_mail_template
@@ -1258,7 +1258,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "East"
-msgstr "شرق"
+msgstr "ختیڅ"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_department_view_kanban
@@ -1268,7 +1268,7 @@ msgstr ""
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_kanban
 msgid "Edit Contract"
-msgstr "ویرایش قرارداد"
+msgstr "په قرار داد کی تغیرات"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
@@ -1324,19 +1324,19 @@ msgstr "کارمند"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Employee Name"
-msgstr "نام کارمند"
+msgstr "کارمند نوم"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_kanban_view_agent
 msgid "Employee's Name"
-msgstr "نام کارمند"
+msgstr "کارمند نوم"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__date_end
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__repeat_until
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "End Date"
-msgstr "تاريخ ختم"
+msgstr "دختم تاریخ"
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_pms_contract__date_end
@@ -1356,7 +1356,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Equipment"
-msgstr "تجهیزات يا اجناس"
+msgstr "جنسونه"
 
 #. module: maintenance
 #: model:mail.message.subtype,description:maintenance.mt_mat_assign
@@ -1370,12 +1370,12 @@ msgstr "تجهیزات واگذار شده"
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_cat
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
 msgid "Equipment Categories"
-msgstr "دسته بندی تجهیزات"
+msgstr "دجنسونو کټګوری"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__category_id
 msgid "Equipment Category"
-msgstr "دسته تجهیزات"
+msgstr "دجنسونو کټګوری"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__equipment_count
@@ -1390,12 +1390,12 @@ msgstr "مدیر تجهیزات"
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__name
 msgid "Equipment Name"
-msgstr "نام تجهیزات"
+msgstr "دجنس نوم"
 
 #. module: egp_property
 #: model:ir.actions.report,name:egp_property.action_report_equipment
 msgid "Equipment report"
-msgstr "فرنت"
+msgstr "ریپورټ"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_estate_property_type
@@ -1416,28 +1416,28 @@ msgstr ""
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Evaluate Price(Afghani)"
-msgstr "ارزیابی قیمت (افغانی)"
+msgstr "ارزول شوی قیمت (افغانی)"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Evaluate Price(Dollor $)"
-msgstr "ارزیابی قیمت (دالر$)"
+msgstr "ارزول شوی قیمت (دالر$)"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Evaluated Price"
-msgstr "قیمت ارزیابی شده"
+msgstr "ارزول شوی قیمت"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__current_status__not_use
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__offer_received
 msgid "Excess"
-msgstr "غير مازاد"
+msgstr "اضافه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Expectation Price"
-msgstr "قيمت ملکيت"
+msgstr "دملکیت قیمت"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__expected_mtbf
@@ -1458,22 +1458,22 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__expected_price
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Expected Price"
-msgstr "قيمت ملکيت"
+msgstr "قيمت "
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__agent_view__agent_type__external
 msgid "External"
-msgstr "شخص بیرونی"
+msgstr "بیرونی شخص"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__grade_type_property__first_grade
 msgid "First Grade"
-msgstr ""
+msgstr "لومړی درجه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__floor
 msgid "Floor"
-msgstr "منزل"
+msgstr "پوړ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__floors
@@ -1482,7 +1482,7 @@ msgstr "منزل"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 msgid "Floors"
-msgstr "منازل"
+msgstr "پوړونه"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__fold
@@ -1510,7 +1510,7 @@ msgstr "روند درخواست را دنبال کنید و با همکار ار
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_follower_ids
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_follower_ids
 msgid "Followers"
-msgstr "دنبال کنندگان"
+msgstr "تعقیبوونکی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_partner_ids
@@ -1521,7 +1521,7 @@ msgstr "دنبال کنندگان"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_partner_ids
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "پیروان (شرکاء)"
+msgstr "تعقیبوونکی (شرکاء)"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,help:egp_property.field_agent_view__activity_type_icon
@@ -1541,12 +1541,12 @@ msgstr "برای همیشه"
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__fort
 msgid "Fort Qala"
-msgstr "چهارديوالی شده"
+msgstr "چهارديوالی "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__start_date
 msgid "From: "
-msgstr "از: "
+msgstr "له: "
 
 #. modules: egp_property, maintenance
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
@@ -1568,7 +1568,7 @@ msgstr "ګيراج"
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Garage Availability"
-msgstr "ګيراج دارد ؟"
+msgstr "آیا ګیراج لری ؟"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__garden
@@ -1582,7 +1582,7 @@ msgstr "باغ"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Garden Area(Sqm)"
-msgstr "ساحه باغ (متر مربع)"
+msgstr "دباغ پراخوالی (متر مربع)"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__garden_area
@@ -1592,26 +1592,26 @@ msgstr "ساحه باغ (متر مربع)"
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Garden Area(sqm)"
-msgstr "ساحه باغ (متر مربع)"
+msgstr "دباغ پراخوالی (متر مربع)"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Garden Availability"
-msgstr "باغ دارد ؟"
+msgstr "باغ لری ؟"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__garden_orientation
 msgid "Garden Orientation"
-msgstr "موقيعت باغ"
+msgstr "دباغ موقعیت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "General Property Management"
-msgstr "مديريت عمومی املاک"
+msgstr "دملکیتونو عمومی مدیریت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__gereb
@@ -1634,7 +1634,7 @@ msgstr "لینک اسلاید گوگل"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__grade_type_property
 msgid "Grade Type Property"
-msgstr "حالت درجه"
+msgstr "دملکیت درجه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
@@ -1645,17 +1645,17 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__done
 msgid "Green"
-msgstr "رنگ سبز"
+msgstr "شین رنګ"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__normal
 msgid "Grey"
-msgstr "رنگ خاکستری"
+msgstr "خړ رنګ"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__property_area_type__ground
 msgid "Ground"
-msgstr "زمين خالی"
+msgstr "خالی ځمکه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.contract_type_search
@@ -1666,20 +1666,20 @@ msgstr "زمين خالی"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 msgid "Group By"
-msgstr ""
+msgstr "ګروپ بندی شوی"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Group by..."
-msgstr "گروه‌بندی بر مبنای..."
+msgstr "ګروپ بندی شوی..."
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__hall
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 msgid "Hall"
-msgstr "سالون"
+msgstr "دهلیز"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__has_message
@@ -1697,7 +1697,7 @@ msgstr "آیا دارای پیام است"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Head of Administration"
-msgstr "رياست اداری و خدمات"
+msgstr "مالی او اداری ریاست"
 
 #. module: egp_property
 #: model:ir.module.category,description:egp_property.module_category_MCIT_PMS
@@ -1707,12 +1707,12 @@ msgstr ""
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__3
 msgid "High"
-msgstr "بالا"
+msgstr "پورته"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "High-priority"
-msgstr "اولویت بالا"
+msgstr "لوړ اولویت"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__id
@@ -1753,6 +1753,8 @@ msgid ""
 "INVALID LIVING AREA ,\n"
 " The living area must be positive and greater than 0"
 msgstr ""
+"اشتباه،\n"
+"دساحه پراخوالی باید مثبت او له صفر څخه لوی وی"
 
 #. module: egp_property
 #. odoo-python
@@ -1761,7 +1763,9 @@ msgstr ""
 msgid ""
 "INVALID agent phone number ,\n"
 " The agent phone number cannot exceed 14 characters."
-msgstr "شماره تماس باید از ۱۴ عدد زیات نه باشد"
+msgstr ""
+"اشتباه،\n"
+"داړیکی شماره باید له ۱۴ عدودونو څخه زیات نه وی ."
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__activity_exception_icon
@@ -1824,12 +1828,12 @@ msgstr ""
 #: model:maintenance.stage,name:maintenance.stage_1
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "In Progress"
-msgstr "در جریان"
+msgstr "په جریان کی"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__state__offer_accepted
 msgid "In Use"
-msgstr "مازاد"
+msgstr "تر استفادی لاندی"
 
 #. module: egp_property
 #. odoo-python
@@ -1839,6 +1843,8 @@ msgid ""
 "Input Error in End Date Field \n"
 " You can Choose end Date Till Today"
 msgstr ""
+"اشتباه \n"
+"تاسی کولی شی چی اخری تاریخ تر نن ورځی انتخاب کړی"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__document_type__inquiry
@@ -1850,7 +1856,7 @@ msgstr "استعلام"
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__inquiry_number
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Inquiry Number"
-msgstr "شماره استعلام"
+msgstr "داستعلام شماره"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__instruction_type
@@ -1886,13 +1892,13 @@ msgstr "آیا دنبال می کند"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__is_paid
 msgid "Is Paid"
-msgstr "پرداخت شده؟"
+msgstr "آیا پیسی تحویل شوی؟"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Islamic Emirate of Afghanistan"
-msgstr "امارت اسلامی افغانستان"
+msgstr "دافغانستان اسلامی امارت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
@@ -1913,24 +1919,24 @@ msgstr "وضعیت کانبان"
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__raw
 msgid "Khama"
-msgstr "خامه"
+msgstr "خام"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__building_part__part_type__kitchen
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 msgid "Kitchen"
-msgstr "اشپزخانه"
+msgstr "پخلنځی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__language
 #: model:ir.ui.menu,name:egp_property.language_menu
 msgid "Language"
-msgstr "زبان"
+msgstr "ژبه"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_agent_language
 msgid "Languages"
-msgstr "زبانها"
+msgstr "ژبی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_language__write_uid
@@ -2002,7 +2008,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__living_area
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Living Area(sqm)"
-msgstr "ساحه زمين(متر مربع)"
+msgstr "دملکیت پراخوالی(متر مربع)"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_incoming_local
@@ -2014,7 +2020,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Location"
-msgstr "مکان"
+msgstr "موقعیت"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_property_type
@@ -2025,18 +2031,18 @@ msgstr "مکان"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_property_form
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Location Type"
-msgstr "ساحه ملکيت"
+msgstr "دملکیت ساحه"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.second_submenu
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Location type"
-msgstr "ساحه ملکيت"
+msgstr "دملکیت ساحه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Location types"
-msgstr "ساحه ملکیت"
+msgstr "دملکیت ساحه"
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_reports_losses
@@ -2046,7 +2052,7 @@ msgstr "تجزیه و تحلیل ضرر و زیان"
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__1
 msgid "Low"
-msgstr "پایین"
+msgstr "لاندینی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
@@ -2075,7 +2081,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 #: model_terms:ir.ui.view,arch_db:maintenance.res_config_settings_view_form
 msgid "Maintenance"
-msgstr "نگهداری"
+msgstr "ساتنه"
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_request_calendar
@@ -2092,12 +2098,12 @@ msgstr "تعداد تعمیر و نگهداری"
 #. module: maintenance
 #: model:ir.model,name:maintenance.model_maintenance_equipment
 msgid "Maintenance Equipment"
-msgstr "تجهیزات نگهداری"
+msgstr "دجنسونو ساتنه"
 
 #. module: maintenance
 #: model:ir.model,name:maintenance.model_maintenance_equipment_category
 msgid "Maintenance Equipment Category"
-msgstr "دسته تجهیزات تعمیر و نگهداری"
+msgstr "دجنسونو د ساتنی کټګوری"
 
 #. module: maintenance
 #: model:ir.model,name:maintenance.model_maintenance_mixin
@@ -2166,19 +2172,19 @@ msgstr "مراحل تعمیر و نگهداری"
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_tree
 msgid "Maintenance Team"
-msgstr "تیم تعمیر و نگهداری"
+msgstr "دساتنی ټیم"
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.maintenance_dashboard_action
 #: model:ir.model,name:maintenance.model_maintenance_team
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_teams
 msgid "Maintenance Teams"
-msgstr "تیم‌های تعمیر و نگهداری"
+msgstr "دساتنی ټیم"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__maintenance_type
 msgid "Maintenance Type"
-msgstr "نوع تعمیر و نگهداری"
+msgstr "دساتنی ډول"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
@@ -2202,12 +2208,12 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__meeting_address
 msgid "Meeting Address"
-msgstr "موقيعت جلسه"
+msgstr "دجلسه ځای"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Meeting Information"
-msgstr "معلومات جلسه"
+msgstr "دجلسی معلومات"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_error
@@ -2243,7 +2249,7 @@ msgstr "متر"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Ministry of Communications and IT"
-msgstr "وزارت مخابرات و تکنالوجی معلوماتی"
+msgstr "دمخابراتو او تکنالوژی وزارت"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__model
@@ -2254,28 +2260,28 @@ msgstr "مدل"
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__monthly_rent
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__monthly_rent
 msgid "Monthly Rent"
-msgstr "کرايه ماهانه"
+msgstr "میاشتنی کرایه"
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_pms_contract__monthly_rent
 msgid "Monthly rent amount for the property"
-msgstr "مبلغ اجاره ماهانه ملک"
+msgstr "دملکیت میاشتنی کرایه مقدار"
 
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__month
 msgid "Months"
-msgstr "ماه"
+msgstr "میاشت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__months_paid
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Months Paid"
-msgstr "ماه های پرداخت شده"
+msgstr "تحویل شوی میاشتی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Mothamed"
-msgstr ""
+msgstr "خانه سمان"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__my_activity_date_deadline
@@ -2305,12 +2311,12 @@ msgstr "تعمیر و نگهداری من"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Name"
-msgstr "نام"
+msgstr "نوم"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__nema_pokhta
 msgid "Nema Pokhta"
-msgstr "نيمه پخته"
+msgstr "نيمه پوخ"
 
 #. module: egp_property
 #. odoo-python
@@ -2320,12 +2326,12 @@ msgstr "نيمه پخته"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 #, python-format
 msgid "New"
-msgstr "جديد"
+msgstr "نوی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_agent_view_pivot
 msgid "New Agent"
-msgstr "هيت جدید"
+msgstr "نوی هیت"
 
 #. module: maintenance
 #: model:maintenance.stage,name:maintenance.stage_0
@@ -2365,13 +2371,13 @@ msgstr "نوع فعالیت بعدی"
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_property_offer
 msgid "No Offers Provides Till Yet , Please Wait....."
-msgstr "هنوز هیچ درخواستی ارائه نشده است، لطفا صبر کنید....."
+msgstr "تراوسه نوی غوښتنلیک نه دی راغلی لظفا صبر وګړی....."
 
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_agent_commission
 #: model_terms:ir.actions.act_window,help:egp_property.action_maintenance_equipment
 msgid "No records"
-msgstr "هيچ ريکارد وجود ندارد"
+msgstr "ریکارد شتون نه لری"
 
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__2
@@ -2479,33 +2485,33 @@ msgstr "تعداد پیامهای با خطای تحویل"
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Offer"
-msgstr "درخواستی"
+msgstr "غوښتنلیک"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Offer Accept"
-msgstr "درخواستی قبول شد"
+msgstr "غوښتنلیک قبول شوی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_type__offer_counts
 msgid "Offer Counts"
-msgstr "تعداد درخواستی ها"
+msgstr "دغوښتنلیکونو تعداد"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__offer_date
 msgid "Offer Date"
-msgstr "تاريخ درخواستی"
+msgstr "تاریخ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__offer_number
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__offer_number
 msgid "Offer Number"
-msgstr "شماره درخواستی"
+msgstr "شماره"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Offer Received"
-msgstr "درخواستی دریافت شد"
+msgstr "غوښتنلیک قبول شوی"
 
 #. module: egp_property
 #. odoo-python
@@ -2516,7 +2522,7 @@ msgstr "درخواستی دریافت شد"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 #, python-format
 msgid "Offers"
-msgstr "درخواستی ها"
+msgstr "غوښتنلیکونه"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_force_thread_id
@@ -2532,22 +2538,22 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__order_office
 msgid "Order Office"
-msgstr "ادراه درخواست کننده"
+msgstr "غوښتونکی آداره"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Orientation"
-msgstr "موقيعت باغ"
+msgstr "دباغ موقعیت"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__maintenance_equipment__equipment_assign_to__other
 msgid "Other"
-msgstr "دیگر"
+msgstr "بل څه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Other Info"
-msgstr "معلومات دیگر"
+msgstr "نور معلومات"
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_reports_oee
@@ -2557,7 +2563,7 @@ msgstr "اثربخشی کلی تجهیزات (OEE)"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__OwaisBank
 msgid "Owais Bank"
-msgstr "آوايز بانک"
+msgstr "بانکی آویز"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__owner_user_id
@@ -2565,7 +2571,7 @@ msgstr "آوايز بانک"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
 msgid "Owner"
-msgstr "مالک"
+msgstr "ګټونکی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__instruction_pdf
@@ -2577,12 +2583,12 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_pms_department
 msgid "PMS Department"
-msgstr ""
+msgstr "دیپارتمنتونه"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_property_offer
 msgid "PROPERTY OFFERS"
-msgstr "درخواستی املاک"
+msgstr "دملکیتونو غوښتنلیکونه"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_parent_model_id
@@ -2595,7 +2601,7 @@ msgstr "مدل والد"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
 msgid "Parent Part"
-msgstr "بخش مربوطه"
+msgstr "مربوط په"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_parent_thread_id
@@ -2618,7 +2624,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
 msgid "Part Name"
-msgstr "نام بخش"
+msgstr "نوم"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_building_part__part_type
@@ -2627,12 +2633,12 @@ msgstr "نام بخش"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
 msgid "Part Type"
-msgstr "نوع بخش"
+msgstr "ډول"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__partner_id
 msgid "Partner"
-msgstr "مستاجر"
+msgstr "کرایه کوونکی"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_request__instruction_google_slide
@@ -2644,7 +2650,7 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__payment_date
 msgid "Payment Date"
-msgstr "تاریخ پرداخت"
+msgstr "دتحویلی تاریخ"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.menu_tenant_payment_list
@@ -2654,17 +2660,17 @@ msgstr "کرايه"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__tenant_phone_number
 msgid "Phone Number"
-msgstr "شماره تماس"
+msgstr "داړیکی شماره"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Pick Property Name"
-msgstr "نام ملکيت را انتخاب کنید"
+msgstr "دملکیت نوم انتخاب کړه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__building_type__pokhta
 msgid "Pokhta"
-msgstr "پخته"
+msgstr "پوخ"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_contact
@@ -2683,7 +2689,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__agent_position_title
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
 msgid "Position Title"
-msgstr "نام بست"
+msgstr "دبست عنوان"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
@@ -2713,7 +2719,7 @@ msgstr "قيمت"
 #: code:addons/egp_property/wizard/valuation.py:0
 #, python-format
 msgid "Price Evaluation for Specific Property Based on Living area Size"
-msgstr ""
+msgstr " دملکیت قیمت ارزیابی کول دپراخولی په اساس "
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__priority
@@ -2723,12 +2729,12 @@ msgstr "اولویت"
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Product Information"
-msgstr "اطلاعات محصول"
+msgstr "دجنس معلومات"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Product Location"
-msgstr "موقيعت جنس"
+msgstr "دجنس موقعیت"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_real_estate
@@ -2740,7 +2746,7 @@ msgstr "موقيعت جنس"
 #: model:ir.ui.menu,name:egp_property.menu_root
 #: model:ir.ui.menu,name:egp_property.submenu_first_menu
 msgid "Properties"
-msgstr "املاک"
+msgstr "ملکیتونه"
 
 #. module: egp_property
 #: model:ir.actions.report,name:egp_property.action_report_property_details
@@ -2769,7 +2775,7 @@ msgstr ""
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_area_type
 msgid "Property Area Type"
-msgstr "نوع ساحه ملکیت"
+msgstr " ملکیت دساحه ډول"
 
 #. module: egp_property
 #: model:res.groups,name:egp_property.group_public_user
@@ -2780,27 +2786,27 @@ msgstr "گروپ يوزر عام برای سیستم مدیریت عمومی ا�
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Property Boundaries"
-msgstr "حدود اربعه"
+msgstr "څلور آطرافه"
 
 #. module: egp_property
 #: model:res.groups,name:egp_property.group_admin
 msgid "Property Director"
-msgstr "گروپ ادمين برای سیستم مدیریت عمومی املاک"
+msgstr "ددایریکتر ګروپ دملکیتونو د عمومی مدیریت لپاره"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Property Document Details"
-msgstr "معلومات سند ملکيت"
+msgstr ""
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 msgid "Property Document information"
-msgstr "معلومات سند ملکيت"
+msgstr ""
 
 #. module: egp_property
 #: model:res.groups,name:egp_property.group_expert_karshinas
 msgid "Property Expert/Karshinas"
-msgstr ""
+msgstr "دکارشناس  ګروپ دملکیتونو د عمومی مدیریت لپاره"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.real_estate_view_gantt
@@ -2810,7 +2816,7 @@ msgstr "نمای گانت ملکيت"
 #. module: egp_property
 #: model:res.groups,name:egp_property.group_manager
 msgid "Property Manager"
-msgstr "گروپ منيجر برای سیستم مدیریت عمومی املاک"
+msgstr "دمنجر ګروپ دملکیتونو د عمومی مدیریت لپاره"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__property_name
@@ -2821,29 +2827,29 @@ msgstr "گروپ منيجر برای سیستم مدیریت عمومی املا
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_tree
 msgid "Property Name"
-msgstr "نام ملکيت"
+msgstr "دملکیت نوم"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_estate_property_offer
 msgid "Property Offer"
-msgstr "درخواستی ملکيت"
+msgstr "دملکیت غوښتنلیک"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Property Owner"
-msgstr ""
+msgstr "دملکیت څښتن"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_property_type_tag
 msgid "Property Tag"
-msgstr "نوع ملکيت"
+msgstr "دملکیت ډول"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.tag_submenu
 #: model_terms:ir.ui.view,arch_db:egp_property.property_tag_search
 msgid "Property Tags"
-msgstr "نوع ملکيت"
+msgstr "دملکیت ډولونه "
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__property_type
@@ -2857,7 +2863,7 @@ msgstr "نوع ملکيت"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Property Type"
-msgstr "نوع ساحه ملکيت"
+msgstr "دملکیتونو دساحه ډول"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_property_type_tag
@@ -2870,43 +2876,43 @@ msgstr "ساحه ملکيت"
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__property_types
 #, python-format
 msgid "Property Types"
-msgstr "انواع املاک"
+msgstr "دملکیت ډولونه"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_wizard_validation_estate
 msgid "Property Validation"
-msgstr "اعتبار سنجی ملکيت"
+msgstr "دملکیت پلټنه"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.wizard_valuation_menu
 #: model:ir.ui.menu,name:egp_property.wizard_valuation_id
 msgid "Property Valuation"
-msgstr "قيمت گذاری املاک"
+msgstr "دملکیت ارزښت پیداکول د یو متر په اساس"
 
 #. module: egp_property
 #: model:ir.actions.report,name:egp_property.action_report_property_details_copy
 msgid "Property copy"
-msgstr "راپور ملکيت"
+msgstr "راپور"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 msgid "Property information"
-msgstr "معلومات ملکيت"
+msgstr ""
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__property_location
 msgid "Property location"
-msgstr "موقيعت ملکيت"
+msgstr "دملکیت موقعیت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 msgid "Property name"
-msgstr "نام ملکيت"
+msgstr "دملکیت نوم"
 
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_property_valuation
 msgid "Property valuation"
-msgstr "قيمت گذاری ملکيت"
+msgstr "دملکیت ارزښت پیداکول د یو متر په اساس"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__quantity
@@ -2917,14 +2923,14 @@ msgstr "مقدار"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "RESET STATE"
-msgstr "برګشت به حالت اوليه"
+msgstr "اولی حالت"
 
 #. module: egp_property
 #. odoo-python
 #: code:addons/egp_property/models/real_estate.py:0
 #, python-format
 msgid "RESET is Possible only in Cancel State"
-msgstr "بازګشت به حالت اوليه تنها درحالت لغوه شده امکان پذير است"
+msgstr "RESET تنها د لغوه کیدو په صورت که امکان لری"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
@@ -2969,22 +2975,22 @@ msgstr "مکرر"
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__kanban_state__blocked
 msgid "Red"
-msgstr "سرخ"
+msgstr "سور"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__estate_property_offer__status__refused
 msgid "Refused"
-msgstr "مسترد"
+msgstr "لغوه شوی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_offer_search
 msgid "Refused Property"
-msgstr "املاک رد شده"
+msgstr "لغوه شوی ملکیت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__remaining_amount
 msgid "Remaining Amount"
-msgstr "مقدار باقی مانده"
+msgstr "پاتی شوی مقدار"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
@@ -3011,7 +3017,7 @@ msgstr "واحد تکرار"
 #: model:ir.ui.menu,name:maintenance.maintenance_reporting
 #: model:ir.ui.menu,name:maintenance.menu_m_reports
 msgid "Reporting"
-msgstr "گزارش"
+msgstr "راپور"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__request_ids
@@ -3059,7 +3065,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 #: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
 msgid "Requester"
-msgstr "درخواست کننده"
+msgstr "غوښتونکی"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_ids
@@ -3096,18 +3102,18 @@ msgstr "اطاق"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_building_part_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 msgid "Rooms"
-msgstr "اطاقها"
+msgstr "اطاقونه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__contract_status__running
 #: model:ir.model.fields.selection,name:egp_property.selection__pms_contract__state__open
 msgid "Running"
-msgstr "در حال جريان"
+msgstr "په جریان کی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Running Contracts"
-msgstr "قراردادهای در حال اجرا"
+msgstr "قرارداد جریان لری"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__message_has_sms_error
@@ -3148,27 +3154,27 @@ msgstr "تاریخ اسقاط"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
 msgid "Search"
-msgstr "جستجو کردن"
+msgstr "پلټنه کول"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Search Contract"
-msgstr "قرارداد جستجو"
+msgstr "دقرارداد پلټنه"
 
 #. module: egp_property
 #: model:ir.ui.menu,name:egp_property.wizard_menu_id
 msgid "Search Properties"
-msgstr "جستجو ملکيت"
+msgstr "دملکیت پلټنه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__grade_type_property__second_grade
 msgid "Second Grade"
-msgstr ""
+msgstr "دوهمه درجه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__selling_price
 msgid "Selling Price"
-msgstr "قيمت قرارداد"
+msgstr "دقرارداد قیمت"
 
 #. module: egp_property
 #: model:mail.template,description:egp_property.rent_received_mail_template
@@ -3188,7 +3194,7 @@ msgstr "ترتيب"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__serial_no
 #: model_terms:ir.ui.view,arch_db:egp_property.equipment_report
 msgid "Serial Number"
-msgstr "شماره سریال"
+msgstr "سریال نمبر"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_request__archive
@@ -3225,7 +3231,7 @@ msgstr "امضاء"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Sold"
-msgstr "فروخته"
+msgstr "خرڅ شوی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__south
@@ -3250,12 +3256,12 @@ msgstr "مراحل"
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__date_start
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Start Date"
-msgstr "تاریخ شروع"
+msgstr "شروع تاریخ"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "Start searching date"
-msgstr "شروع به جستجو در تاریخ"
+msgstr "دپلټنی شروع دتاریخ په اساس"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__status
@@ -3275,7 +3281,7 @@ msgstr "حالت"
 #: model_terms:ir.ui.view,arch_db:egp_property.view_estate_search
 #: model_terms:ir.ui.view,arch_db:egp_property.view_offer_tree
 msgid "Status"
-msgstr "حالت"
+msgstr "حالتونه"
 
 #. module: maintenance
 #: model:mail.message.subtype,name:maintenance.mt_req_status
@@ -3322,12 +3328,12 @@ msgstr "موضوعات"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Tag"
-msgstr "نوع ملکيت"
+msgstr "ډول"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Tagged Property"
-msgstr "نوع ملکيت"
+msgstr "ملکیت ډول"
 
 #. module: egp_property
 #. odoo-python
@@ -3348,7 +3354,7 @@ msgstr "تیم"
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__member_ids
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_team__member_ids
 msgid "Team Members"
-msgstr "اعضای تیم"
+msgstr "دټیم غړی"
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,field_description:egp_property.field_agent_team__name
@@ -3356,13 +3362,13 @@ msgstr "اعضای تیم"
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
 msgid "Team Name"
-msgstr "نام تيم"
+msgstr "دټیم نوم"
 
 #. modules: egp_property, maintenance
 #: model:ir.actions.act_window,name:egp_property.agent_team_pms_action
 #: model:ir.actions.act_window,name:maintenance.maintenance_team_action_settings
 msgid "Teams"
-msgstr "تيم ها"
+msgstr "ټیمونه"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__technician_user_id
@@ -3370,7 +3376,7 @@ msgstr "تيم ها"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__user_id
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Technician"
-msgstr "متخصص فنی"
+msgstr "فنی کارپوه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__tenant_id
@@ -3386,7 +3392,7 @@ msgstr "کرايه"
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.action_tenant_payment
 msgid "Tenant Payments"
-msgstr "پرداخت های مستاجر"
+msgstr "دکرایه کوونکی تادیات"
 
 #. module: egp_property
 #: model:mail.template,subject:egp_property.rent_received_mail_template
@@ -3445,12 +3451,12 @@ msgstr ""
 #. module: egp_property
 #: model_terms:ir.actions.act_window,help:egp_property.action_agent_language
 msgid "There is no Language!!!"
-msgstr "زبان وجود ندارد !!!"
+msgstr "ژبه شتون نه لری !!!"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__grade_type_property__third_grade
 msgid "Third Grade"
-msgstr ""
+msgstr "دریمه درجه"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment__effective_date
@@ -3472,7 +3478,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__name
 #: model_terms:ir.ui.view,arch_db:egp_property.view_advertise_form
 msgid "Title"
-msgstr "نام"
+msgstr "عنوان"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
@@ -3483,7 +3489,7 @@ msgstr "جهت اقدام"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__end_date
 msgid "To: "
-msgstr "تا :"
+msgstr "تر :"
 
 #. modules: egp_property, maintenance
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
@@ -3505,85 +3511,85 @@ msgstr "اولویت های برتر"
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__total_amount
 msgid "Total Amount"
-msgstr "مقدار کل"
+msgstr "ټول مقدار"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "Total Amount :"
-msgstr "مقدار کل :"
+msgstr "ټول مقدار :"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "Total Area"
-msgstr ""
+msgstr "ټول پراخوالی"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_tree
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "Total Area :"
-msgstr "مساحت کل :"
+msgstr "ټول پراخوالی :"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__total_area
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__total_area
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__total_area
 msgid "Total Area(sqm)"
-msgstr "مساحت کل (متر مربع)"
+msgstr "ټول پراخوالی (متر مربع)"
 
 #. module: egp_property
 #. odoo-python
 #: code:addons/egp_property/models/property_contract.py:0
 #, python-format
 msgid "Total Offered"
-msgstr ""
+msgstr "ټول غوښتنلیکونه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__total_properties
 msgid "Total Properties"
-msgstr "کل ملکيت ها"
+msgstr "ټول ملکیتونه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__total_property
 msgid "Total Property"
-msgstr "کل ملکيت"
+msgstr "  ملکیتونه شمیر:"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "Total Property :"
-msgstr "کل ملکيت :"
+msgstr "ټول ملکیتونه :"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_wizard_validation_estate__total_amount
 msgid "Total Property Amount"
-msgstr "کل مبلغ ملکيت"
+msgstr "مجموعی مقدار د ملکیت"
 
 #. module: egp_property
 #. odoo-python
 #: code:addons/egp_property/wizard/wizard_validation.py:0
 #, python-format
 msgid "Total Property Created Within Given Date"
-msgstr ""
+msgstr "راکړل شوی ملکیتونه د تاریخ په اساس"
 
 #. module: egp_property
 #: model:ir.actions.act_window,name:egp_property.wizard_real_estate_menu
 msgid "Total Property Validation"
-msgstr "اعتبار سنجی کل املاک"
+msgstr "ملکیتونو پلټنه"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Total Received Amount"
-msgstr "مجموع مبلغ دریافتی"
+msgstr "ټول ترلاسه شوی مقدار"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__total_rent_received
 msgid "Total Rent Received"
-msgstr "مجموع کرايه دریافتی"
+msgstr "ټول ترلاسه شوی کرایه"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_tenant_payment__total_rent_received_sum
 msgid "Total Rent Received (Sum)"
-msgstr "مجموع کرايه دریافتی (مجموع)"
+msgstr "ټوله ترلاسه شوی کرایه (مجموع)"
 
 #. module: maintenance
 #: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action
@@ -3596,7 +3602,7 @@ msgstr ""
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Type in notes about this contract..."
-msgstr "یادداشت های مربوط به این قرارداد را تایپ کنید ..."
+msgstr "ددغه قرار داد مربوطه نوټ اضافه کړی ..."
 
 #. modules: egp_property, maintenance
 #: model:ir.model.fields,help:egp_property.field_agent_view__activity_exception_decoration
@@ -3611,7 +3617,7 @@ msgstr "نوع فعالیت استثنایی برای رکورد."
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_view_form
 msgid "Type to find an employee..."
-msgstr "سخص مورد نظر خود راجستجو کنید"
+msgstr "دکارمند پلټنه "
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
@@ -3639,37 +3645,37 @@ msgstr "برنامه ریزی نشده"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_request__repeat_type
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_type__until
 msgid "Until"
-msgstr "تا"
+msgstr "تر"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_real_estate__image
 msgid "Upload Property Image"
-msgstr "آپلود تصویر ملکيت"
+msgstr "انځور اضافه کړی"
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_tenant_payment__tenant_attachments
 msgid "Upload Tenant Payment photos and documents."
-msgstr "عکسها و اسناد پرداخت مستاجر را بارگذاری کنید."
+msgstr "دتحویل شوی پیسو سندونه اضافه ګړی."
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_real_estate__property_attachments
 msgid "Upload property photos and documents."
-msgstr "عکس و اسناد ملکيت را بارگذاری کنید."
+msgstr "دملکیت سندونه اضافه کړی."
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Upload your PDF file."
-msgstr "فایل PDF خود را بارگذاری کنید."
+msgstr "خپل سند د فی-دی-اف په شکل اضافه کړی."
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__equipment_assign_to
 msgid "Used By"
-msgstr "استفاده‌شده توسط"
+msgstr "استفاده شوی د"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Used in location"
-msgstr "استفاده شده در محل"
+msgstr "هغه ځای چی جنس پکی استفاده شوی"
 
 #. module: egp_property
 #: model:ir.model.fields,help:egp_property.field_estate_property_type__sequence
@@ -3679,13 +3685,13 @@ msgstr "برای ترتيب مراحل استفاده می شود. پایین ت
 #. module: egp_property
 #: model:ir.model,name:egp_property.model_res_users
 msgid "User"
-msgstr "کاربر"
+msgstr "کاروونکی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__user_entered_price
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_valuation_form
 msgid "User Entered Price"
-msgstr "قیمت وارد شده توسط کاربر"
+msgstr "د یو متر قیمت"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_estate_property_offer__validity
@@ -3696,33 +3702,33 @@ msgstr "اعتبار"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "Validity(Days)"
-msgstr "اعتبار (روزها)"
+msgstr "اعتبار (ورځی)"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_property_valuation__evaluate_price
 msgid "Valuated Price()"
-msgstr "قیمت ارزیابی شده()"
+msgstr "ارزیابی شوی قیمت()"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_id
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Vendor"
-msgstr "فروشنده"
+msgstr "خانه سامان"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_ref
 msgid "Vendor Reference"
-msgstr "مرجع فروشنده"
+msgstr "دخانه سامان مرجع"
 
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__priority__0
 msgid "Very Low"
-msgstr "خیلی کم"
+msgstr "ډیر کم"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.wizard_estate_form
 msgid "View all records"
-msgstr "مشاهده تمام معلومات"
+msgstr "دټولو ریګارډونو لیدل"
 
 #. module: egp_property
 #. odoo-python
@@ -3731,7 +3737,7 @@ msgstr "مشاهده تمام معلومات"
 msgid ""
 "WARNING....\n"
 " Deletion is possible only in New or Cancel State"
-msgstr ""
+msgstr "دملکیت لری کول تنها په نوی او لغوه شوی حالت کی کیدای شی"
 
 #. module: egp_property
 #. odoo-python
@@ -3740,12 +3746,12 @@ msgstr ""
 msgid ""
 "Warning....\n"
 " Offered Price should be Positive!"
-msgstr ""
+msgstr "دغوښتنلیک قیمت باید مثبت عدد وی"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__warranty_date
 msgid "Warranty Expiration Date"
-msgstr "تاریخ انقضای گارانتی"
+msgstr "دورنتی دختم تاریخ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_agent_view__website_message_ids
@@ -3774,23 +3780,23 @@ msgstr "هفته"
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "West"
-msgstr "غرب"
+msgstr "لویدیځ"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_pms_contract__winner_id
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_search
 msgid "Winner"
-msgstr "برنده"
+msgstr "ګټونکی"
 
 #. module: egp_property
 #: model:ir.model.fields,field_description:egp_property.field_maintenance_equipment__book_year
 msgid "Year"
-msgstr "سال"
+msgstr "کال"
 
 #. module: maintenance
 #: model:ir.model.fields.selection,name:maintenance.selection__maintenance_request__repeat_unit__year
 msgid "Years"
-msgstr "سال"
+msgstr "کالونه"
 
 #. module: egp_property
 #. odoo-python
@@ -3804,7 +3810,7 @@ msgstr ""
 #: code:addons/egp_property/models/buildingPart.py:0
 #, python-format
 msgid "You cannot create recursive part."
-msgstr ""
+msgstr "شما نمی توانید بخش بازگشتی ایجاد کنید."
 
 #. module: maintenance
 #. odoo-python
@@ -3834,7 +3840,7 @@ msgstr ""
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "days"
-msgstr "روز"
+msgstr "ورځی"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
@@ -3844,12 +3850,12 @@ msgstr "به عنوان مثال، تعمیر و نگهداری داخلی"
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "e.g. LED Monitor"
-msgstr "به عنوان مثال، مانیتور LED"
+msgstr "مثال:دبرقی مانیتو"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "e.g. MCIT Meeting Room"
-msgstr "مثل: صالون عمومی جلسه ها وزارت مخابرات"
+msgstr "مثال:دمخابراتو وزارت دجلسو اطاق"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
@@ -3864,7 +3870,7 @@ msgstr "به عنوان مثال، صفحه نمایش کار نمی کند"
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.agent_team_view_form
 msgid "e.g. YYYY-Team name"
-msgstr "مثال :تیم زمین یک توت"
+msgstr "مثال :دیک توت دځمکی ټیم"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
@@ -3875,7 +3881,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "location Type"
-msgstr "ساحه ملکیت"
+msgstr "ملکیت ساحه"
 
 #. module: maintenance
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_graph
@@ -3893,27 +3899,27 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details
 #: model_terms:ir.ui.view,arch_db:egp_property.egp_property_report_details_copy
 msgid "property price"
-msgstr ""
+msgstr "دملکیت قیمت"
 
 #. module: egp_property
 #: model_terms:ir.ui.view,arch_db:egp_property.pms_contract_view_form
 msgid "total_rent_received"
-msgstr "مجموع اجاره دریافت شده"
+msgstr "ټوله ترلاسه شوی کرایه"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__legal_agreement
 msgid "تفاهم نامه"
-msgstr ""
+msgstr "قرارداد لیک"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__legal_deed
 msgid "قباله شرعي"
-msgstr ""
+msgstr "شرعی قباله"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__current_status__use
 msgid "ّIn Use"
-msgstr "غیر مازاد"
+msgstr "تر استفاده لاندی"
 
 #. module: egp_property
 #: model:ir.model.fields.selection,name:egp_property.selection__real_estate__document_property__legar_protocol

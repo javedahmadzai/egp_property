@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- pivot view for offer -->
+    <record id="view_offer_pivot" model="ir.ui.view">
+        <field name="name">estate.property.offer.pivot</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="offer_property_id" type="row"/>
+                <field name="partner_id" type="row"/>
+                <field name="status" type="col"/>
+                <field name="price" type="measure" string="Contracted Price" sum="True"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Kanban view for offer -->
+    <record id="view_offer_kanban" model="ir.ui.view">
+        <field name="name">estate.property.offer.kanban</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_card">
+                            <div class="o_kanban_record_title">
+                                <strong>
+                                    <field name="offer_property_id" widget="many2one" options="{'no_create': True}"/>
+                                </strong>
+                            </div>
+
+                            <div class="o_kanban_record_partner">
+                                <strong>Winner :</strong>
+                                <field name="partner_id" widget="many2one"
+                                       options="{'no_quick_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                            </div>
+
+                            <div class="o_kanban_record_price">
+                                <strong>Contracted Price:</strong>
+                                <field name="price" widget="monospace"/>
+                            </div>
+                            <div class="o_kanban_record_status">
+                                <field name="status" widget="statusbar"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+
+                <!-- Fields to be Displayed in the Kanban View -->
+                <field name="offer_property_id"/>
+                <field name="partner_id"/>
+                <field name="price"/>
+                <field name="status"/>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- offer search view -->
+    <record id="view_offer_search" model="ir.ui.view">
+        <field name="name">estate.property.offer.search</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="offer_number" string="Offer Number"/>
+                <field name="partner_id" string="Partner"/>
+                <field name="offer_property_id" string="Property name"/>
+                <field name="price" string="Price"/>
+
+                <filter name="filter_accepted" string="Accepted Property" domain="[('status','=','accepted')]"/>
+                <filter name="filter_refused" string="Refused Property" domain="[('status','=','refused')]"/>
+
+                <!-- Group By -->
+                <filter string='Status' name='group_by_status' context='{"group_by":"status"}'/>
+                <filter string='Property' name='group_by_offer_property_id'
+                        context='{"group_by":"offer_property_id"}'/>
+                <filter string='Price' name='group_by_offer_price'
+                        context='{"group_by":"price"}'/>
+
+                <group string="Filters">
+                    <filter name="filter_property" string="Property" domain="[('offer_property_id','!=',False)]"/>
+                    <filter name="filter_status" string="Status" domain="[('status','!=',False)]"/>
+                </group>
+                <!-- add a search panel  -->
+                <searchpanel>
+                    <field name="status" icon="fa-filter" enable_counters="1" select="multi"/>
+                </searchpanel>
+
+            </search>
+        </field>
+    </record>
+
+    <!-- offer list view -->
+    <record id="view_offer_tree" model="ir.ui.view">
+        <field name="name">estate.property.offer.tree</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <tree editable="top" decoration-success="status == 'accepted'" decoration-danger="status == 'refused'">
+                <field name="offer_number"/>
+                <field name="offer_property_id" options="{'no_create_edit':True,'no_create':True}"/>
+                <field name="price" string="Price" widget="monospace"/>
+                <field name='status' string="Status" readonly="1" optional="hide"/>
+                <field name="partner_id" string="Requester"/>
+                <field name="validity" string="Validity"/>
+                <field name="deadline" optional="hide"/>
+                <field name="create_date" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_offer_form" model="ir.ui.view">
+        <field name="name">estate.property.offer.form</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <form>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_property_offer" model="ir.actions.act_window">
+        <field name="name">PROPERTY OFFERS</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property.offer</field>
+        <field name="view_mode">kanban,tree,form,pivot,search</field>
+        <field name="context">
+            {'search_default_filter_accepted':1 }
+        </field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Offers Provides Till Yet , Please Wait.....
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem id="offer_submenu"
+              name="Offers"
+              parent="menu_root"
+              action="action_property_offer"
+              groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+              sequence="10"/>
+
+</odoo>

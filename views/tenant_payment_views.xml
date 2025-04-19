@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Tenant Payment Search View -->
+        <record id="view_tenant_payment_search" model="ir.ui.view">
+            <field name="name">tenant.payment.search</field>
+            <field name="model">tenant.payment</field>
+            <field name="arch" type="xml">
+                <search>
+                    <!-- Search Fields -->
+                    <field name="tenant_id" string="Tenant"/>
+                    <field name="property_id" string="Property"/>
+                    <field name="payment_date" string="Payment Date"/>
+                    <field name="amount" string="Amount"/>
+                    <field name="is_paid" string="Payment Status"/>
+                    <filter name="contract_id" string="Property"/>
+                    <!-- Group By Options -->
+                    <filter string="Tenant" name="group_by_tenant" context="{'group_by':'tenant_id'}"/>
+                    <filter string="Property" name="group_by_tenant" context="{'group_by':'contract_id'}"/>
+                    <filter string="Paid" name="group_by_property" context="{'group_by':'is_paid'}"/>
+                    <!-- add a search panel  -->
+                    <searchpanel>
+                        <field name="contract_id" string="Property" icon="fas fa-home" enable_counters="1"
+                               select="multi"/>
+                    </searchpanel>
+                </search>
+            </field>
+        </record>
+
+        <!-- Tenant Payment Kanban View -->
+        <record id="view_tenant_payment_kanban" model="ir.ui.view">
+            <field name="name">tenant.payment.kanban</field>
+            <field name="model">tenant.payment</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <!-- Fields to display on the Kanban card -->
+                    <field name="tenant_id"/>
+                    <field name="payment_date"/>
+                    <field name="amount" widget="monetary"
+                           options="{'currency_field': 'currency_id'}"/>
+                    <field name="tenant_phone_number"/>
+                    <field name="currency_id"/>
+
+                    <!-- Defining the display of Kanban Cards -->
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_details">
+                                <div>
+                                    <strong>Tenant:</strong>
+                                    <field name="tenant_id"/>
+                                </div>
+                                <div>
+                                    <strong>Phone:</strong>
+                                    <field name="tenant_phone_number"/>
+                                </div>
+
+                                <div>
+                                    <strong>Amount:</strong>
+                                    <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                </div>
+                                <div>
+                                    <strong>Date:</strong>
+                                    <field name="payment_date"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+
+                    <!-- Optional: Adding grouping by payment status -->
+                    <group by="is_paid"/>
+                </kanban>
+            </field>
+        </record>
+        <!-- Tenant Payment Tree View -->
+        <record id="view_tenant_payment_tree" model="ir.ui.view">
+            <field name="name">tenant.payment.tree</field>
+            <field name="model">tenant.payment</field>
+            <field name="arch" type="xml">
+                <tree editable="top">
+                    <field name="tenant_id"/>
+                    <field name="tenant_phone_number"/>
+                    <!--                    <field name="property_id"/>-->
+                    <field name="contract_id" string="Property"/>
+                    <field name="payment_date"/>
+                    <field name="currency_id" string="Currency"/>
+                    <field name="amount" widget="monetary"
+                           options="{'currency_field': 'currency_id', 'currency_field_symbol': 'currency_symbol'}"
+                           invisible="currency_id == False"/>
+                    <!--                    <field name="months"/>-->
+                    <field name="account_number"/>
+                    <field name="OwaisBank"/>
+                    <field name="is_paid"/>
+                    <field name="description"/>
+                    <field name="tenant_attachments" widget="many2many_binary"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Tenant Payment Form View -->
+        <record id="view_tenant_payment_form" model="ir.ui.view">
+            <field name="name">tenant.payment.form</field>
+            <field name="model">tenant.payment</field>
+            <field name="arch" type="xml">
+                <form>
+
+
+                </form>
+            </field>
+        </record>
+
+        <!-- Tenant Payment Action -->
+        <record id="action_tenant_payment" model="ir.actions.act_window">
+            <field name="name">Tenant Payments</field>
+            <field name="res_model">tenant.payment</field>
+            <field name="view_mode">tree,form,kanban,pivot</field>
+            <!--            <field name="search_view_id" ref="view_tenant_payment_search"/>-->
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create Your first Tenant Payment of Housing Estate or Property !!
+                </p>
+            </field>
+        </record>
+
+        <!-- Tenant Payment Menu Item -->
+        <menuitem id="menu_tenant_payment_list"
+                  name="Payments"
+                  parent="menu_root"
+                  groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+                  action="action_tenant_payment"
+                  sequence="15"/>
+    </data>
+</odoo>

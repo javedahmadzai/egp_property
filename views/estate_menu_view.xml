@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_root"
+              name="Properties"
+              groups="base.group_erp_manager,egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas,egp_property.group_public_user"
+              sequence="0"/>
+
+    <menuitem id="first_menu"
+              name="Properties"
+              parent="menu_root"
+              groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas,egp_property.group_public_user"
+              sequence="2"/>
+
+    <menuitem id="menu_second"
+              name="Configurations"
+              parent="menu_root"
+              groups="egp_property.group_manager,egp_property.group_expert_karshinas"
+              sequence="40"/>
+
+    <menuitem id="agent_menu"
+              name="Agents"
+              parent="menu_root"
+              groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+              sequence="10"/>
+
+</odoo>

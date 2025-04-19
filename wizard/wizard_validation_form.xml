@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="wizard_estate_form" model="ir.ui.view">
+        <field name="name">wizard.estate.form</field>
+        <field name="model">wizard.validation.estate</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="start_date" widget="hijri_date" placeholder="Start searching date"/>
+                            <field name="property_buyer" placeholder="Choose Any Buyer Name ! NOT MANDATORY"/>
+                            <field name="download_format"/>
+                        </group>
+                        <group>
+                            <field name="end_date" widget="hijri_date" placeholder="Choose From Calendar "/>
+                            <field name="total_property" string="Total Property : "/>
+                            <field name="total_amount" string="Total Amount : "/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+
+                    <button name="action_validate_property" type="object" class="fa fa-eye btn-warning"
+                            title="View all records"/>
+                    <button name="action_download_data" type="object" class="fa fa-download btn-success"
+                            help="Download The Filtered Record in CSV "/>
+                     <button name="action_print_report" type="object" class="fa fa-file-pdf-o btn-primary"
+                            help="Download The Filtered Record in PDF"/>
+                    <button name="action_cancel" type="object" class="fa fa-times btn-danger"
+                            title="Close This Wizard PopUp"/>
+
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_real_estate_menu" model="ir.actions.act_window">
+        <field name="name">Total Property Validation</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wizard.validation.estate</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+            id="wizard_main_id"
+            name="Reporting"
+            parent="menu_root"
+            groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+            sequence="30"
+    />
+
+    <menuitem
+            id="wizard_menu_id"
+            name="Search Properties"
+            parent="wizard_main_id"
+            action="wizard_real_estate_menu"
+            groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+            sequence="11"
+    />
+</odoo>

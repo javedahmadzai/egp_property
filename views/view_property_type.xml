@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="location_type_search" model="ir.ui.view">
+        <field name="name">location.type.search</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="property_type"/>
+                <field name="active"/>
+                <!--                Add archive filter-->
+                <separator/>
+<!--                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>-->
+                <group expand="0" string="Group By">
+                    <filter string="Location Type" name="group_by_location" context="{'group_by': 'property_type'}"/>
+                    <filter string="State" name="group_by_state" domain="['|',('active', '=',True),('active', '=', False)]"/>
+                </group>
+
+            </search>
+
+        </field>
+    </record>
+
+    <record id="view_property_tree" model="ir.ui.view">
+        <field name="name">estate.property.type.tree</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <tree sample="1">
+                <field name="property_type"/>
+                <!--                <field name="sequence"/>-->
+                <field name="color" widget="color_picker"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_property_form" model="ir.ui.view">
+        <field name="name">estate.property.type.form</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+
+                    <div class="oe_title">
+                        <h1>
+                            <label for="property_type" string="Location Type" class="oe_edit_only"/>
+                            <field name="property_type"/>
+                        </h1>
+                    </div>
+
+                    <group>
+                        <field name="color" widget="color_picker"/>
+                        <field name="active"/>
+                        <field name="sequence" invisible="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_property_type" model="ir.actions.act_window">
+        <field name="name">Location Type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your Housing Estate Type 🤗 !!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="second_submenu"
+              name="Location type"
+              parent="menu_second"
+              action="action_property_type"
+              groups="egp_property.group_admin,egp_property.group_manager,egp_property.group_expert_karshinas"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- property details report action    -->
+    <record id="action_report_property_details" model="ir.actions.report">
+        <field name="name">Property</field>
+        <field name="model">real.estate</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.egp_property_report_details</field>
+        <field name="report_file">egp_property.egp_property_report_details</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="egp_property.model_real_estate"/>
+        <field name="groups_id"
+               eval="[(4, ref('egp_property.group_manager')),(4, ref('egp_property.group_expert_karshinas'))]"/>
+        <!--        <field name="paperformat_id" ref="egp_property.report_paperformat_a4"/>-->
+    </record>
+
+    <!-- property details report action copy    -->
+    <record id="action_report_property_details_copy" model="ir.actions.report">
+        <field name="name">Property copy</field>
+        <field name="model">real.estate</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.egp_property_report_details_copy</field>
+        <field name="report_file">egp_property.egp_property_report_details_copy</field>
+        <field name="print_report_name">'Property - %s' % (object.name).replace('/', '')</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="egp_property.model_real_estate"/>
+        <field name="groups_id"
+               eval="[(4, ref('egp_property.group_manager')),(4, ref('egp_property.group_expert_karshinas'))]"/>
+        <field name="paperformat_id" ref="egp_property.report_paperformat_a4"/>
+    </record>
+
+    <!-- Equipment report action -->
+    <record id="action_report_equipment" model="ir.actions.report">
+        <field name="name">Equipment report</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.equipment_report</field>
+        <field name="report_file">egp_property.equipment_report</field>
+        <field name="print_report_name">(object.name).replace('/', '')</field>
+        <field name="binding_type">report</field>
+        <field name="binding_model_id" ref="egp_property.model_maintenance_equipment"/>
+        <field name="groups_id"
+               eval="[(4, ref('egp_property.group_manager')),(4, ref('egp_property.group_expert_karshinas'))]"/>
+        <!--        <field name="paperformat_id" ref="egp_property.report_paperformat_a4"/>-->
+    </record>
+
+
+    <!-- PMS Contract report action -->
+    <record id="action_report_pms_contract" model="ir.actions.report">
+        <field name="name">Contract Report</field>
+        <field name="model">pms.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.pms_contract_report_details</field>
+        <field name="report_file">egp_property.pms_contract_report_details</field>
+        <!--        <field name="print_report_name">(object.name).replace('/', '')</field>-->
+        <field name="binding_model_id" ref="egp_property.model_pms_contract"/>
+        <field name="binding_type">report</field>
+        <field name="groups_id"
+               eval="[(4, ref('egp_property.group_manager')),(4, ref('egp_property.group_expert_karshinas'))]"/>
+
+    </record>
+
+
+    <!-- Searched property report action via wizard -->
+    <record id="action_property_report_pdf" model="ir.actions.report">
+        <field name="name">property Reports</field>
+        <field name="model">real.estate</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">egp_property.report_action_property_template</field>
+        <field name="report_file">egp_property.report_action_property_template</field>
+        <field name="print_report_name">'property_report_report'</field>
+        <field name="binding_type">report</field>
+    </record>
+
+
+</odoo>

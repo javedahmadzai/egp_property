@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_action_property_template">
+        <t t-call="web.external_layout">
+            <div class="page" style="font-family: Calibri; font-size:16px; text-align: right;">
+                <main>
+                    <div class="row">
+                        <div class="col-4" style="margin-left: 8; text-align: left;">
+                            <img src="egp_property/static/description/img/mcit_logo.png" height="150px;"
+                                 width="130px;" alt="MCIT Logo"/>
+                        </div>
+                        <div class="col-4">
+                            <div class="content" style="text-align: center;">
+                                <p style="font-size:20px;">
+                                    وزارت مخابرات وتکنالوژی
+                                    <br/>
+                                    معینیت مالی واداری
+                                    <br/>
+                                    مدیریت املاک
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4" style="margin-right: 8;">
+                            <img src="egp_property/static/description/img/Emirate_logo.png" height="150px;"
+                                 width="130px;" alt="Emirate Logo"/>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <table class="table table-sm o_main_table table-bordered" style="text-align:right;">
+                        <thead>
+                            <tr>
+                                <th>نام</th>
+                                <th>حالت</th>
+                                <th>مساحت کلی</th>
+                                <th>طبقات</th>
+                                <th>اتاق خواب</th>
+                                <th>مساحت باغ</th>
+                                <th>فضای باغ</th>
+                                <th>گاراج</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="doc">
+                                <tr style="text-align:center;">
+                                    <td>
+                                        <t t-esc="doc.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.state"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.total_area"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.floors"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.bedrooms"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.garden_area"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.garden_orientation"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="doc.garage"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </main>
+            </div>
+        </t>
+    </template>
+
+</odoo>
